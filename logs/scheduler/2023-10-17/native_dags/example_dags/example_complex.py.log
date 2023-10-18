@@ -1,0 +1,25 @@
+[2023-10-16T21:04:52.580-0400] {processor.py:157} INFO - Started process (PID=20402) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:04:52.582-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2023-10-16T21:04:52.583-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.583-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:04:52.599-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:04:52.882-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.881-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:52.886-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.886-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:52.888-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.888-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:52.888-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.888-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:04:52.893-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.893-0400] {dag.py:2963} INFO - Creating ORM DAG for example_complex
+[2023-10-16T21:04:52.893-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:52.893-0400] {dag.py:3722} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2023-10-16T21:04:52.901-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.321 seconds
+[2023-10-16T21:07:50.305-0400] {processor.py:157} INFO - Started process (PID=20603) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:07:50.307-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2023-10-16T21:07:50.307-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:50.307-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:07:50.323-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:07:50.418-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:50.418-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:07:50.423-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:50.423-0400] {dag.py:3722} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2023-10-16T21:07:50.432-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2023-10-16T21:11:21.853-0400] {processor.py:157} INFO - Started process (PID=20814) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:11:21.855-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2023-10-16T21:11:21.855-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:21.855-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:11:21.871-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2023-10-16T21:11:21.965-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:21.965-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:11:21.970-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:21.970-0400] {dag.py:3722} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2023-10-16T21:11:21.979-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.127 seconds

@@ -1,0 +1,25 @@
+[2023-10-16T21:05:06.742-0400] {processor.py:157} INFO - Started process (PID=20413) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:05:06.745-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2023-10-16T21:05:06.745-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:06.745-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:05:06.783-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:05:07.061-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.061-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:07.065-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.065-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:07.068-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.068-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:07.068-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.068-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:05:07.073-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.073-0400] {dag.py:2963} INFO - Creating ORM DAG for example_bash_operator
+[2023-10-16T21:05:07.077-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:07.077-0400] {dag.py:3722} INFO - Setting next_dagrun for example_bash_operator to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:05:07.085-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py took 0.343 seconds
+[2023-10-16T21:08:02.939-0400] {processor.py:157} INFO - Started process (PID=20619) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:08:02.941-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2023-10-16T21:08:02.941-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:02.941-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:08:02.978-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:08:03.050-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:03.050-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:08:03.059-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:03.059-0400] {dag.py:3722} INFO - Setting next_dagrun for example_bash_operator to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:08:03.069-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py took 0.131 seconds
+[2023-10-16T21:11:34.547-0400] {processor.py:157} INFO - Started process (PID=20822) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:11:34.549-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2023-10-16T21:11:34.549-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:34.549-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:11:34.586-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py
+[2023-10-16T21:11:34.655-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:34.655-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:11:34.664-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:34.664-0400] {dag.py:3722} INFO - Setting next_dagrun for example_bash_operator to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:11:34.692-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py took 0.146 seconds

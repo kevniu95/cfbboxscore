@@ -1,0 +1,60 @@
+[2023-10-16T21:03:50.221-0400] {processor.py:157} INFO - Started process (PID=20353) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:03:50.223-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:03:50.223-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.223-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:03:50.245-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:03:50.554-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.553-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:03:50.558-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.558-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:03:50.560-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.560-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:03:50.560-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.560-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:03:50.565-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.565-0400] {dag.py:2963} INFO - Creating ORM DAG for tutorial_dag
+[2023-10-16T21:03:50.565-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:03:50.565-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:03:50.574-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.354 seconds
+[2023-10-16T21:05:19.700-0400] {processor.py:157} INFO - Started process (PID=20433) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:05:19.704-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:05:19.704-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:19.704-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:05:19.725-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:05:19.819-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:19.819-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:05:19.823-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:19.823-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:05:19.833-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.133 seconds
+[2023-10-16T21:06:11.935-0400] {processor.py:157} INFO - Started process (PID=20511) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:11.937-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:06:11.937-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:11.937-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:11.958-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:12.048-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:12.048-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:06:12.052-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:12.052-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:06:12.061-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.127 seconds
+[2023-10-16T21:06:50.682-0400] {processor.py:157} INFO - Started process (PID=20554) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:50.685-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:06:50.685-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:50.685-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:50.709-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:06:50.831-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:50.831-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:06:50.838-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:06:50.838-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:06:50.853-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.172 seconds
+[2023-10-16T21:08:15.715-0400] {processor.py:157} INFO - Started process (PID=20630) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:15.717-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:08:15.717-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:15.717-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:15.739-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:15.836-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:15.836-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:08:15.840-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:15.840-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:08:15.850-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.135 seconds
+[2023-10-16T21:08:43.579-0400] {processor.py:157} INFO - Started process (PID=20665) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:43.581-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:08:43.581-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:43.581-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:43.602-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:08:43.695-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:43.694-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:08:43.699-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:08:43.699-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:08:43.708-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.130 seconds
+[2023-10-16T21:10:24.821-0400] {processor.py:157} INFO - Started process (PID=20773) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:10:24.823-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:10:24.823-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:24.823-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:10:24.844-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:10:24.934-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:24.934-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:10:24.938-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:24.938-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:10:24.948-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.127 seconds
+[2023-10-16T21:11:47.651-0400] {processor.py:157} INFO - Started process (PID=20830) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:11:47.653-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2023-10-16T21:11:47.653-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:47.653-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:11:47.673-0400] {processor.py:839} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2023-10-16T21:11:47.764-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:47.764-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:11:47.768-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:47.768-0400] {dag.py:3722} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2023-10-16T21:11:47.778-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.127 seconds

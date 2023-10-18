@@ -1,0 +1,925 @@
+[2023-10-16T21:03:38.009-0400] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-10-16T21:03:38.009-0400] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-10-16T21:03:38.009-0400] {manager.py:489} INFO - Checking for new files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags every 300 seconds
+[2023-10-16T21:03:38.009-0400] {manager.py:755} INFO - Searching for files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:03:38.025-0400] {manager.py:758} INFO - There are 46 files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:03:38.872-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.77s           2023-10-17T01:03:38
+================================================================================
+[2023-10-16T21:04:09.146-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.32s           2023-10-17T01:03:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.78s           2023-10-17T01:03:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.90s           2023-10-17T01:03:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.77s           2023-10-17T01:03:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.11s           2023-10-17T01:04:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  1.14s           2023-10-17T01:03:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  1.14s           2023-10-17T01:03:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.06s           2023-10-17T01:04:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  1.11s           2023-10-17T01:03:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.12s           2023-10-17T01:04:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  1.12s           2023-10-17T01:03:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.16s           2023-10-17T01:03:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.24s           2023-10-17T01:03:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  1.07s           2023-10-17T01:04:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.12s           2023-10-17T01:03:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  1.14s           2023-10-17T01:04:09
+================================================================================
+[2023-10-16T21:04:40.638-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.78s           2023-10-17T01:04:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.32s           2023-10-17T01:03:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.78s           2023-10-17T01:03:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.90s           2023-10-17T01:03:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.77s           2023-10-17T01:03:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2023-10-17T01:04:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.11s           2023-10-17T01:04:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.12s           2023-10-17T01:04:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  1.14s           2023-10-17T01:03:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  1.18s           2023-10-17T01:04:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  1.07s           2023-10-17T01:04:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  1.11s           2023-10-17T01:04:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  1.14s           2023-10-17T01:03:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.06s           2023-10-17T01:04:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  1.11s           2023-10-17T01:03:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  1.20s           2023-10-17T01:04:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  1.09s           2023-10-17T01:04:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  1.09s           2023-10-17T01:04:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.12s           2023-10-17T01:04:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  1.12s           2023-10-17T01:03:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  1.05s           2023-10-17T01:04:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  1.16s           2023-10-17T01:04:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.16s           2023-10-17T01:03:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.24s           2023-10-17T01:03:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  1.10s           2023-10-17T01:04:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.09s           2023-10-17T01:04:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  1.27s           2023-10-17T01:04:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  1.12s           2023-10-17T01:04:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  1.07s           2023-10-17T01:04:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  1.10s           2023-10-17T01:04:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.12s           2023-10-17T01:03:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  1.14s           2023-10-17T01:04:09
+================================================================================
+[2023-10-16T21:05:11.526-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.78s           2023-10-17T01:04:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:04:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.37s           2023-10-17T01:05:11
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.78s           2023-10-17T01:03:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.90s           2023-10-17T01:03:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.82s           2023-10-17T01:05:09
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2023-10-17T01:04:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.11s           2023-10-17T01:04:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  1.06s           2023-10-17T01:04:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.12s           2023-10-17T01:04:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  1.14s           2023-10-17T01:03:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  1.18s           2023-10-17T01:04:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  1.07s           2023-10-17T01:05:07
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  1.07s           2023-10-17T01:04:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  1.11s           2023-10-17T01:04:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  1.09s           2023-10-17T01:04:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  1.07s           2023-10-17T01:05:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  1.14s           2023-10-17T01:03:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.06s           2023-10-17T01:04:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  1.11s           2023-10-17T01:03:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  1.20s           2023-10-17T01:04:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  1.09s           2023-10-17T01:04:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  1.09s           2023-10-17T01:04:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.12s           2023-10-17T01:04:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.19s           2023-10-17T01:04:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  1.12s           2023-10-17T01:03:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  1.19s           2023-10-17T01:04:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  1.28s           2023-10-17T01:05:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  1.05s           2023-10-17T01:04:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  1.16s           2023-10-17T01:04:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.16s           2023-10-17T01:03:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.24s           2023-10-17T01:03:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  1.10s           2023-10-17T01:04:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  1.20s           2023-10-17T01:04:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.09s           2023-10-17T01:04:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  1.27s           2023-10-17T01:04:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  1.12s           2023-10-17T01:04:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  1.06s           2023-10-17T01:04:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  1.07s           2023-10-17T01:04:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  1.10s           2023-10-17T01:04:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  1.17s           2023-10-17T01:04:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  1.04s           2023-10-17T01:04:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  1.12s           2023-10-17T01:03:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  1.08s           2023-10-17T01:05:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  1.14s           2023-10-17T01:04:09
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  1.15s           2023-10-17T01:04:49
+================================================================================
+[2023-10-16T21:05:41.600-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.78s           2023-10-17T01:04:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:04:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.37s           2023-10-17T01:05:11
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.75s           2023-10-17T01:05:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.75s           2023-10-17T01:05:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.82s           2023-10-17T01:05:09
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2023-10-17T01:04:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.90s           2023-10-17T01:05:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  1.06s           2023-10-17T01:04:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.12s           2023-10-17T01:04:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.81s           2023-10-17T01:05:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  1.18s           2023-10-17T01:04:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  1.07s           2023-10-17T01:05:07
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.86s           2023-10-17T01:05:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  1.11s           2023-10-17T01:04:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  1.09s           2023-10-17T01:04:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  1.07s           2023-10-17T01:05:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.87s           2023-10-17T01:05:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.89s           2023-10-17T01:05:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.83s           2023-10-17T01:05:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.87s           2023-10-17T01:05:37
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  1.09s           2023-10-17T01:04:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  1.09s           2023-10-17T01:04:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.85s           2023-10-17T01:05:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.19s           2023-10-17T01:04:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.81s           2023-10-17T01:05:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  1.19s           2023-10-17T01:04:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  1.28s           2023-10-17T01:05:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.82s           2023-10-17T01:05:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  1.19s           2023-10-17T01:05:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.85s           2023-10-17T01:05:19
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.80s           2023-10-17T01:05:26
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  1.10s           2023-10-17T01:04:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  1.20s           2023-10-17T01:04:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  1.09s           2023-10-17T01:04:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  1.27s           2023-10-17T01:04:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  1.12s           2023-10-17T01:04:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  1.06s           2023-10-17T01:04:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.77s           2023-10-17T01:05:28
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  1.10s           2023-10-17T01:04:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  1.17s           2023-10-17T01:04:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  1.04s           2023-10-17T01:04:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.87s           2023-10-17T01:05:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  1.08s           2023-10-17T01:05:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.80s           2023-10-17T01:05:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  1.15s           2023-10-17T01:04:49
+================================================================================
+[2023-10-16T21:06:12.210-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.76s           2023-10-17T01:05:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:04:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.28s           2023-10-17T01:06:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.74s           2023-10-17T01:06:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.75s           2023-10-17T01:06:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.77s           2023-10-17T01:06:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  1.06s           2023-10-17T01:04:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.90s           2023-10-17T01:05:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  1.06s           2023-10-17T01:04:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.10s           2023-10-17T01:05:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.83s           2023-10-17T01:06:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.82s           2023-10-17T01:05:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  1.07s           2023-10-17T01:05:07
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.86s           2023-10-17T01:05:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.83s           2023-10-17T01:05:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  1.09s           2023-10-17T01:04:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  1.07s           2023-10-17T01:05:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:06:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.89s           2023-10-17T01:05:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.83s           2023-10-17T01:05:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.87s           2023-10-17T01:05:37
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.86s           2023-10-17T01:05:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  1.09s           2023-10-17T01:04:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.85s           2023-10-17T01:05:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.19s           2023-10-17T01:04:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.81s           2023-10-17T01:05:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  1.19s           2023-10-17T01:04:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  1.28s           2023-10-17T01:05:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.82s           2023-10-17T01:05:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  1.19s           2023-10-17T01:05:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.86s           2023-10-17T01:06:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.80s           2023-10-17T01:05:26
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.83s           2023-10-17T01:05:49
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  1.20s           2023-10-17T01:04:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.84s           2023-10-17T01:05:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.85s           2023-10-17T01:05:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.83s           2023-10-17T01:05:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  1.06s           2023-10-17T01:04:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.77s           2023-10-17T01:05:28
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.83s           2023-10-17T01:05:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  1.17s           2023-10-17T01:04:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  1.04s           2023-10-17T01:04:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.87s           2023-10-17T01:05:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  1.08s           2023-10-17T01:05:05
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.80s           2023-10-17T01:05:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  1.15s           2023-10-17T01:04:49
+================================================================================
+[2023-10-16T21:06:35.640-0400] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-10-16T21:06:38.898-0400] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-10-16T21:06:38.899-0400] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-10-16T21:06:38.899-0400] {manager.py:489} INFO - Checking for new files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags every 300 seconds
+[2023-10-16T21:06:38.899-0400] {manager.py:755} INFO - Searching for files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:06:38.907-0400] {manager.py:758} INFO - There are 46 files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:06:39.677-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:06:39
+================================================================================
+[2023-10-16T21:07:10.212-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.00s           2023-10-17T01:06:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.74s           2023-10-17T01:06:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.74s           2023-10-17T01:06:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:06:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.37s           2023-10-17T01:07:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.80s           2023-10-17T01:06:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:06:49
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.55s           2023-10-17T01:07:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.96s           2023-10-17T01:06:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.95s           2023-10-17T01:07:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.17s           2023-10-17T01:07:02
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.84s           2023-10-17T01:06:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.00s           2023-10-17T01:06:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.08s           2023-10-17T01:06:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.97s           2023-10-17T01:07:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:06:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2023-10-17T01:07:08
+================================================================================
+[2023-10-16T21:07:40.562-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.78s           2023-10-17T01:07:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.75s           2023-10-17T01:07:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.00s           2023-10-17T01:06:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.74s           2023-10-17T01:06:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.74s           2023-10-17T01:06:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:06:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.82s           2023-10-17T01:07:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.37s           2023-10-17T01:07:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.29s           2023-10-17T01:07:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.80s           2023-10-17T01:06:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.82s           2023-10-17T01:07:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.91s           2023-10-17T01:07:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.89s           2023-10-17T01:07:20
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:06:49
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.55s           2023-10-17T01:07:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.96s           2023-10-17T01:06:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.95s           2023-10-17T01:07:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.95s           2023-10-17T01:07:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.81s           2023-10-17T01:07:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.17s           2023-10-17T01:07:02
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.84s           2023-10-17T01:06:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.98s           2023-10-17T01:07:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.91s           2023-10-17T01:07:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.00s           2023-10-17T01:06:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.08s           2023-10-17T01:06:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  1.14s           2023-10-17T01:07:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.97s           2023-10-17T01:07:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  1.04s           2023-10-17T01:07:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.85s           2023-10-17T01:07:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.97s           2023-10-17T01:07:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.99s           2023-10-17T01:07:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:06:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2023-10-17T01:07:08
+================================================================================
+[2023-10-16T21:08:10.690-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.78s           2023-10-17T01:07:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.75s           2023-10-17T01:07:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.04s           2023-10-17T01:08:07
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.77s           2023-10-17T01:08:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.75s           2023-10-17T01:08:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.76s           2023-10-17T01:08:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.82s           2023-10-17T01:07:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  1.37s           2023-10-17T01:07:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.83s           2023-10-17T01:07:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.29s           2023-10-17T01:07:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.80s           2023-10-17T01:06:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.82s           2023-10-17T01:07:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.83s           2023-10-17T01:08:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.91s           2023-10-17T01:07:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.89s           2023-10-17T01:07:20
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.82s           2023-10-17T01:07:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.87s           2023-10-17T01:07:57
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:06:49
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  1.55s           2023-10-17T01:07:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.96s           2023-10-17T01:06:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.95s           2023-10-17T01:07:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.95s           2023-10-17T01:07:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.81s           2023-10-17T01:07:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  1.17s           2023-10-17T01:07:02
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.18s           2023-10-17T01:07:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.84s           2023-10-17T01:06:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.84s           2023-10-17T01:07:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.87s           2023-10-17T01:07:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.98s           2023-10-17T01:07:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.91s           2023-10-17T01:07:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  1.00s           2023-10-17T01:06:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  1.08s           2023-10-17T01:06:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  1.14s           2023-10-17T01:07:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.82s           2023-10-17T01:07:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.97s           2023-10-17T01:07:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  1.04s           2023-10-17T01:07:18
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.85s           2023-10-17T01:07:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.82s           2023-10-17T01:07:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.97s           2023-10-17T01:07:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.99s           2023-10-17T01:07:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.83s           2023-10-17T01:07:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.83s           2023-10-17T01:07:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:06:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.82s           2023-10-17T01:08:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.94s           2023-10-17T01:07:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.84s           2023-10-17T01:07:46
+================================================================================
+[2023-10-16T21:08:24.936-0400] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-10-16T21:08:31.658-0400] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-10-16T21:08:31.658-0400] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-10-16T21:08:31.658-0400] {manager.py:489} INFO - Checking for new files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags every 300 seconds
+[2023-10-16T21:08:31.658-0400] {manager.py:755} INFO - Searching for files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:08:31.666-0400] {manager.py:758} INFO - There are 46 files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:08:32.457-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.72s           2023-10-17T01:08:32
+================================================================================
+[2023-10-16T21:09:03.460-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.03s           2023-10-17T01:08:34
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.75s           2023-10-17T01:08:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.78s           2023-10-17T01:08:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.72s           2023-10-17T01:08:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.85s           2023-10-17T01:08:56
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.86s           2023-10-17T01:08:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.84s           2023-10-17T01:08:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.86s           2023-10-17T01:08:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.85s           2023-10-17T01:08:45
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.86s           2023-10-17T01:09:02
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.81s           2023-10-17T01:08:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.86s           2023-10-17T01:08:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.82s           2023-10-17T01:09:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.86s           2023-10-17T01:08:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.84s           2023-10-17T01:08:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.80s           2023-10-17T01:08:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.83s           2023-10-17T01:08:46
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.81s           2023-10-17T01:09:00
+================================================================================
+[2023-10-16T21:09:07.033-0400] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-10-16T21:10:12.989-0400] {manager.py:487} INFO - Processing files using up to 1 processes at a time 
+[2023-10-16T21:10:12.990-0400] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-10-16T21:10:12.990-0400] {manager.py:489} INFO - Checking for new files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags every 300 seconds
+[2023-10-16T21:10:12.990-0400] {manager.py:755} INFO - Searching for files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:10:12.998-0400] {manager.py:758} INFO - There are 46 files in /Users/kniu91/Documents/kevins_folders/Projects/cfbboxscore/dags
+[2023-10-16T21:10:13.765-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:10:13
+================================================================================
+[2023-10-16T21:10:44.797-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.98s           2023-10-17T01:10:15
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.78s           2023-10-17T01:10:19
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.77s           2023-10-17T01:10:17
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:10:13
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.84s           2023-10-17T01:10:37
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.81s           2023-10-17T01:10:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:10:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.87s           2023-10-17T01:10:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.84s           2023-10-17T01:10:26
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.84s           2023-10-17T01:10:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.84s           2023-10-17T01:10:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.87s           2023-10-17T01:10:30
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.80s           2023-10-17T01:10:44
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.82s           2023-10-17T01:10:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.83s           2023-10-17T01:10:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.80s           2023-10-17T01:10:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:10:28
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.82s           2023-10-17T01:10:41
+================================================================================
+[2023-10-16T21:11:15.135-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.75s           2023-10-17T01:11:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:11:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      0           0
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  0.98s           2023-10-17T01:10:15
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.78s           2023-10-17T01:10:19
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.77s           2023-10-17T01:10:17
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.70s           2023-10-17T01:10:13
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.91s           2023-10-17T01:11:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.84s           2023-10-17T01:10:37
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.06s           2023-10-17T01:10:57
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.81s           2023-10-17T01:10:21
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.84s           2023-10-17T01:11:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.84s           2023-10-17T01:10:46
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.82s           2023-10-17T01:10:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.82s           2023-10-17T01:10:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.87s           2023-10-17T01:10:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.84s           2023-10-17T01:10:26
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.84s           2023-10-17T01:10:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.83s           2023-10-17T01:10:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.81s           2023-10-17T01:11:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.84s           2023-10-17T01:10:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.87s           2023-10-17T01:10:30
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.80s           2023-10-17T01:10:44
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.82s           2023-10-17T01:10:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.82s           2023-10-17T01:10:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.83s           2023-10-17T01:10:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.82s           2023-10-17T01:10:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.82s           2023-10-17T01:10:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.83s           2023-10-17T01:10:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.85s           2023-10-17T01:11:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.81s           2023-10-17T01:11:15
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.80s           2023-10-17T01:10:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.84s           2023-10-17T01:11:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.84s           2023-10-17T01:11:13
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:10:28
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.82s           2023-10-17T01:10:41
+================================================================================
+[2023-10-16T21:11:46.015-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.75s           2023-10-17T01:11:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:11:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.01s           2023-10-17T01:11:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.74s           2023-10-17T01:11:42
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.75s           2023-10-17T01:11:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.74s           2023-10-17T01:11:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.91s           2023-10-17T01:11:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.84s           2023-10-17T01:10:37
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.81s           2023-10-17T01:11:22
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.06s           2023-10-17T01:10:57
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.84s           2023-10-17T01:11:44
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.84s           2023-10-17T01:11:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.87s           2023-10-17T01:11:34
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.84s           2023-10-17T01:10:46
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.82s           2023-10-17T01:10:52
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.84s           2023-10-17T01:11:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.83s           2023-10-17T01:11:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.85s           2023-10-17T01:11:46
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.87s           2023-10-17T01:10:39
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.84s           2023-10-17T01:10:26
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.84s           2023-10-17T01:10:43
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.83s           2023-10-17T01:10:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.81s           2023-10-17T01:11:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.84s           2023-10-17T01:10:35
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.19s           2023-10-17T01:11:20
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.87s           2023-10-17T01:10:30
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.88s           2023-10-17T01:11:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.82s           2023-10-17T01:11:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.80s           2023-10-17T01:10:44
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.82s           2023-10-17T01:10:48
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.82s           2023-10-17T01:10:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.83s           2023-10-17T01:10:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.82s           2023-10-17T01:10:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.93s           2023-10-17T01:11:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.82s           2023-10-17T01:10:54
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.83s           2023-10-17T01:10:50
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.85s           2023-10-17T01:11:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.81s           2023-10-17T01:11:15
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.80s           2023-10-17T01:10:33
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.84s           2023-10-17T01:11:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.83s           2023-10-17T01:11:17
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.84s           2023-10-17T01:11:13
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.85s           2023-10-17T01:10:28
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.85s           2023-10-17T01:11:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.82s           2023-10-17T01:10:41
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.82s           2023-10-17T01:11:17
+================================================================================
+[2023-10-16T21:12:16.033-0400] {manager.py:887} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py                                                 0           0  0.75s           2023-10-17T01:11:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_kubernetes_executor.py                                                       0           0  0.76s           2023-10-17T01:11:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py                                                                   0           0  1.01s           2023-10-17T01:11:38
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/event_listener.py                                                            0           0  0.74s           2023-10-17T01:11:42
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/plugins/listener_plugin.py                                                           0           0  0.75s           2023-10-17T01:11:40
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py                                                                    0           0  0.74s           2023-10-17T01:11:36
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only.py                                                               1           0  0.91s           2023-10-17T01:11:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group_decorator.py                                                      1           0  0.86s           2023-10-17T01:12:00
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_complex.py                                                                   1           0  0.81s           2023-10-17T01:11:22
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py                                                           1           0  1.06s           2023-10-17T01:10:57
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py                                                  1           0  0.84s           2023-10-17T01:11:44
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py                                                         1           0  0.84s           2023-10-17T01:11:03
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py                                                             1           0  0.87s           2023-10-17T01:11:34
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_operator.py                                                    1           0  0.83s           2023-10-17T01:12:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown.py                                                            1           0  0.82s           2023-10-17T01:12:14
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py                                                           1           0  0.84s           2023-10-17T01:11:27
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py                                                             1           0  0.83s           2023-10-17T01:11:29
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py                                                             1           0  0.85s           2023-10-17T01:11:46
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_task_group.py                                                                1           0  0.81s           2023-10-17T01:12:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial.py                                                                          1           0  0.83s           2023-10-17T01:11:49
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sla_dag.py                                                                   1           0  0.85s           2023-10-17T01:12:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                                           1           0  0.83s           2023-10-17T01:10:59
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                                  1           0  0.81s           2023-10-17T01:11:08
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                                   1           0  0.81s           2023-10-17T01:11:58
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py                                                             1           0  1.19s           2023-10-17T01:11:20
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcom.py                                                                      1           0  0.82s           2023-10-17T01:11:53
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator_decorator.py                                                 1           0  0.88s           2023-10-17T01:11:25
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                                               1           0  0.82s           2023-10-17T01:11:31
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py                                                                  1           0  0.80s           2023-10-17T01:12:06
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_short_circuit_decorator.py                                                   1           0  0.92s           2023-10-17T01:12:10
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py                                                                      1           0  0.83s           2023-10-17T01:11:47
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_target_dag.py                                                        1           0  0.85s           2023-10-17T01:11:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensor_decorator.py                                                          1           0  0.82s           2023-10-17T01:10:55
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                                              1           0  0.93s           2023-10-17T01:11:23
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py                                                                   1           0  0.82s           2023-10-17T01:12:16
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py                                                   1           0  0.91s           2023-10-17T01:12:12
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_nested_branch_dag.py                                                         1           0  0.85s           2023-10-17T01:11:04
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py                           1           0  0.81s           2023-10-17T01:11:15
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                                    1           0  0.81s           2023-10-17T01:11:57
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_params_ui_tutorial.py                                                        1           0  0.84s           2023-10-17T01:11:01
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dynamic_task_mapping.py                                                      1           0  0.83s           2023-10-17T01:11:17
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                                  2           0  0.84s           2023-10-17T01:11:13
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_xcomargs.py                                                                  2           0  0.83s           2023-10-17T01:11:51
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                                  3           0  0.85s           2023-10-17T01:11:32
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_subdag_operator.py                                                           3           0  0.82s           2023-10-17T01:12:02
+/Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_datasets.py                                                                  6           0  0.82s           2023-10-17T01:11:17
+================================================================================
+[2023-10-16T21:12:34.703-0400] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15

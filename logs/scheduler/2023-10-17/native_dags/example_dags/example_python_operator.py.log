@@ -1,0 +1,39 @@
+[2023-10-16T21:04:26.658-0400] {processor.py:157} INFO - Started process (PID=20388) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:04:26.661-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-16T21:04:26.661-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.661-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:04:26.692-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:04:26.974-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.974-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:26.978-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.978-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:26.981-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.981-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:26.981-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.981-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:04:26.986-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.986-0400] {dag.py:2963} INFO - Creating ORM DAG for example_python_operator
+[2023-10-16T21:04:26.986-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:26.986-0400] {dag.py:3722} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-16T21:04:26.995-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.337 seconds
+[2023-10-16T21:05:50.746-0400] {processor.py:157} INFO - Started process (PID=20480) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:05:50.748-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-16T21:05:50.749-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:50.749-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:05:50.781-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:05:51.104-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:51.103-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:05:51.108-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:51.108-0400] {dag.py:3722} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-16T21:05:51.118-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.372 seconds
+[2023-10-16T21:07:25.126-0400] {processor.py:157} INFO - Started process (PID=20588) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:07:25.128-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-16T21:07:25.128-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:25.128-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:07:25.164-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:07:25.521-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:25.520-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:07:25.526-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:25.526-0400] {dag.py:3722} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-16T21:07:25.538-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.413 seconds
+[2023-10-16T21:10:57.306-0400] {processor.py:157} INFO - Started process (PID=20792) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:10:57.309-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-16T21:10:57.309-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:57.309-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:10:57.339-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:10:57.614-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:57.613-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:10:57.618-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:57.618-0400] {dag.py:3722} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-16T21:10:57.628-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.322 seconds
+[2023-10-16T21:12:19.352-0400] {processor.py:157} INFO - Started process (PID=20849) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:12:19.354-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2023-10-16T21:12:19.354-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:19.354-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:12:19.384-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py
+[2023-10-16T21:12:19.667-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:19.667-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:12:19.671-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:19.671-0400] {dag.py:3722} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2023-10-16T21:12:19.681-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_python_operator.py took 0.329 seconds

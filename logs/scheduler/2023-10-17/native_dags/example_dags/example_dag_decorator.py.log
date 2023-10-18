@@ -1,0 +1,25 @@
+[2023-10-16T21:04:50.873-0400] {processor.py:157} INFO - Started process (PID=20401) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:04:50.875-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-10-16T21:04:50.876-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:50.875-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:04:51.043-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:04:51.293-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.293-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:51.298-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.298-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:51.301-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.301-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:51.301-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.301-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:04:51.305-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.305-0400] {dag.py:2963} INFO - Creating ORM DAG for example_dag_decorator
+[2023-10-16T21:04:51.305-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:51.305-0400] {dag.py:3722} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-10-16T21:04:51.314-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py took 0.441 seconds
+[2023-10-16T21:07:48.075-0400] {processor.py:157} INFO - Started process (PID=20602) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:07:48.077-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-10-16T21:07:48.077-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:48.077-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:07:48.216-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:07:48.479-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:48.479-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:07:48.484-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:48.483-0400] {dag.py:3722} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-10-16T21:07:48.493-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py took 0.419 seconds
+[2023-10-16T21:11:19.610-0400] {processor.py:157} INFO - Started process (PID=20812) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:11:19.612-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2023-10-16T21:11:19.612-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:19.612-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:11:19.766-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py
+[2023-10-16T21:11:20.029-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:20.029-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:11:20.033-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:20.033-0400] {dag.py:3722} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2023-10-16T21:11:20.043-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_dag_decorator.py took 0.433 seconds

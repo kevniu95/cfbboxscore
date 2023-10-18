@@ -1,0 +1,25 @@
+[2023-10-16T21:05:00.633-0400] {processor.py:157} INFO - Started process (PID=20406) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:05:00.635-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2023-10-16T21:05:00.635-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.635-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:05:00.651-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:05:00.931-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.930-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:00.935-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.934-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:00.937-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.937-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:05:00.937-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.937-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:05:00.942-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.942-0400] {dag.py:2963} INFO - Creating ORM DAG for example_branch_labels
+[2023-10-16T21:05:00.946-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:00.946-0400] {dag.py:3722} INFO - Setting next_dagrun for example_branch_labels to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:05:00.954-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py took 0.321 seconds
+[2023-10-16T21:07:57.255-0400] {processor.py:157} INFO - Started process (PID=20608) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:07:57.258-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2023-10-16T21:07:57.258-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:57.258-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:07:57.273-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:07:57.365-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:57.365-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:07:57.374-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:57.374-0400] {dag.py:3722} INFO - Setting next_dagrun for example_branch_labels to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:07:57.383-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py took 0.128 seconds
+[2023-10-16T21:11:29.398-0400] {processor.py:157} INFO - Started process (PID=20819) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:11:29.400-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2023-10-16T21:11:29.400-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:29.400-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:11:29.414-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py
+[2023-10-16T21:11:29.505-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:29.505-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:11:29.514-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:11:29.514-0400] {dag.py:3722} INFO - Setting next_dagrun for example_branch_labels to 2023-10-16T00:00:00+00:00, run_after=2023-10-17T00:00:00+00:00
+[2023-10-16T21:11:29.523-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_branch_labels.py took 0.126 seconds

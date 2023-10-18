@@ -1,0 +1,779 @@
+Rank,Date,Location,Opponent,Result,Cmp,PassAtt,PassPct,PassYds,PassTD,RushAtt,RushYds,RushAvg,RushTD,Plays,Yards,YardsPerPlay,PassFirstDowns,RushFirstDowns,PenFirstDowns,TotalFirstDowns,Penalties,PenaltyYards,Fumbles,Interceptions,Turnovers,Team,game_id
+1.0,2023-09-02,,Robert Morris,W (42-7),2,3,66.7,95,1,56,374,6.7,5,59,469,7.9,2,19,3,24,2,10,1,0,1,Air Force,/cfb/boxscores/2023-09-02-air-force.html
+2.0,2023-09-09,N,Sam Houston,W (13-3),1,3,33.3,14,0,59,244,4.1,1,62,258,4.2,1,16,1,18,2,20,1,0,1,Air Force,/cfb/boxscores/2023-09-09-sam-houston-state.html
+3.0,2023-09-15,,Utah State,W (39-21),3,4,75.0,84,0,64,344,5.4,5,68,428,6.3,3,21,0,24,6,60,0,0,0,Air Force,/cfb/boxscores/2023-09-15-air-force.html
+4.0,2023-09-22,@,San Jose State,W (45-20),2,2,100.0,28,0,73,400,5.5,6,75,428,5.7,2,23,0,25,4,43,0,0,0,Air Force,/cfb/boxscores/2023-09-22-san-jose-state.html
+5.0,2023-09-30,,San Diego State,W (49-10),6,7,85.7,189,2,52,287,5.5,4,59,476,8.1,6,17,1,24,1,5,0,0,0,Air Force,/cfb/boxscores/2023-09-30-air-force.html
+6.0,2023-10-14,,Wyoming,W (34-27),6,9,66.7,58,1,53,356,6.7,3,62,414,6.7,3,18,1,22,1,9,2,0,2,Air Force,/cfb/boxscores/2023-10-14-air-force.html
+1.0,2023-09-02,@,Temple,L (21-24),17,29,58.6,205,2,28,74,2.6,1,57,279,4.9,6,6,1,13,10,82,0,1,1,Akron,/cfb/boxscores/2023-09-02-temple.html
+2.0,2023-09-09,,Morgan State,W (24-21),25,34,73.5,266,1,25,4,0.2,0,59,270,4.6,10,7,0,17,8,70,2,3,5,Akron,/cfb/boxscores/2023-09-09-akron.html
+3.0,2023-09-16,@,Kentucky,L (3-35),29,41,70.7,190,0,25,49,2.0,0,66,239,3.6,9,7,0,16,6,41,1,0,1,Akron,/cfb/boxscores/2023-09-16-kentucky.html
+4.0,2023-09-23,@,Indiana,L (27-29),26,44,59.1,211,0,40,263,6.6,3,84,474,5.6,7,15,2,24,10,98,0,3,3,Akron,/cfb/boxscores/2023-09-23-indiana.html
+5.0,2023-09-30,,Buffalo,L (10-13),19,28,67.9,136,1,27,117,4.3,0,55,253,4.6,8,7,0,15,2,20,1,0,1,Akron,/cfb/boxscores/2023-09-30-akron.html
+6.0,2023-10-07,,Northern Illinois,L (14-55),19,34,55.9,146,1,41,107,2.6,1,75,253,3.4,8,7,4,19,4,35,0,1,1,Akron,/cfb/boxscores/2023-10-07-akron.html
+7.0,2023-10-14,@,Central Michigan,L (10-17),16,34,47.1,123,1,19,70,3.7,0,53,193,3.6,5,4,1,10,9,57,0,2,2,Akron,/cfb/boxscores/2023-10-14-central-michigan.html
+1.0,2023-09-02,,Middle Tennessee State,W (56-7),17,24,70.8,226,3,40,205,5.1,5,64,431,6.7,7,13,4,24,2,19,0,0,0,Alabama,/cfb/boxscores/2023-09-02-alabama.html
+2.0,2023-09-09,,Texas,L (24-34),14,27,51.9,255,2,35,107,3.1,0,62,362,5.8,10,7,1,18,10,90,0,2,2,Alabama,/cfb/boxscores/2023-09-09-alabama.html
+3.0,2023-09-16,@,South Florida,W (17-3),10,23,43.5,107,0,42,203,4.8,2,65,310,4.8,3,10,3,16,5,35,1,0,1,Alabama,/cfb/boxscores/2023-09-16-south-florida.html
+4.0,2023-09-23,,Mississippi,W (24-10),17,21,81.0,225,1,45,131,2.9,1,66,356,5.4,9,9,2,20,6,60,0,1,1,Alabama,/cfb/boxscores/2023-09-23-alabama.html
+5.0,2023-09-30,@,Mississippi State,W (40-17),10,13,76.9,164,0,43,193,4.5,3,56,357,6.4,8,9,0,17,6,40,0,0,0,Alabama,/cfb/boxscores/2023-09-30-mississippi-state.html
+6.0,2023-10-07,@,Texas A&M,W (26-20),21,33,63.6,321,3,26,23,0.9,0,59,344,5.8,14,2,0,16,14,99,1,1,2,Alabama,/cfb/boxscores/2023-10-07-texas-am.html
+7.0,2023-10-14,,Arkansas,W (24-21),10,21,47.6,238,2,42,177,4.2,1,63,415,6.6,7,11,0,18,5,45,0,0,0,Alabama,/cfb/boxscores/2023-10-14-alabama.html
+1.0,2023-09-02,,Gardner-Webb,W (45-24),18,24,75.0,247,5,43,147,3.4,1,67,394,5.9,12,9,2,23,2,20,0,0,0,Appalachian State,/cfb/boxscores/2023-09-02-appalachian-state.html
+2.0,2023-09-09,@,North Carolina,L (34-40),22,43,51.2,275,2,44,219,5.0,2,87,494,5.7,16,11,3,30,7,70,0,1,1,Appalachian State,/cfb/boxscores/2023-09-09-north-carolina.html
+3.0,2023-09-16,,East Carolina,W (43-28),17,29,58.6,241,3,45,239,5.3,3,74,480,6.5,11,11,1,23,4,25,1,1,2,Appalachian State,/cfb/boxscores/2023-09-16-appalachian-state.html
+4.0,2023-09-23,@,Wyoming,L (19-22),22,40,55.0,200,0,50,217,4.3,0,90,417,4.6,13,11,3,27,2,15,1,1,2,Appalachian State,/cfb/boxscores/2023-09-23-wyoming.html
+5.0,2023-09-30,@,Louisiana-Monroe,W (41-40),27,39,69.2,335,3,37,201,5.4,1,76,536,7.1,16,9,3,28,6,48,2,2,4,Appalachian State,/cfb/boxscores/2023-09-30-louisiana-monroe.html
+6.0,2023-10-10,,Coastal Carolina,L (24-27),18,31,58.1,305,2,26,111,4.3,1,57,416,7.3,9,6,3,18,6,60,1,0,1,Appalachian State,/cfb/boxscores/2023-10-10-appalachian-state.html
+1.0,2023-09-02,,Northern Arizona,W (38-3),20,26,76.9,292,3,27,186,6.9,1,53,478,9.0,11,11,1,23,11,91,1,1,2,Arizona,/cfb/boxscores/2023-09-02-arizona.html
+2.0,2023-09-09,@,Mississippi State,L (24-31),33,47,70.2,340,2,25,91,3.6,1,72,431,6.0,16,4,3,23,5,55,1,4,5,Arizona,/cfb/boxscores/2023-09-09-mississippi-state.html
+3.0,2023-09-16,,UTEP,W (31-10),25,32,78.1,300,3,32,244,7.6,1,64,544,8.5,12,12,2,26,6,34,1,0,1,Arizona,/cfb/boxscores/2023-09-16-arizona.html
+4.0,2023-09-23,@,Stanford,W (21-20),18,30,60.0,204,1,37,145,3.9,2,67,349,5.2,10,10,0,20,5,36,0,0,0,Arizona,/cfb/boxscores/2023-09-23-stanford.html
+5.0,2023-09-30,,Washington,L (24-31),27,39,69.2,232,3,31,110,3.5,0,70,342,4.9,13,8,6,27,8,60,0,1,1,Arizona,/cfb/boxscores/2023-09-30-arizona.html
+6.0,2023-10-07,@,Southern California,L (41-43),25,35,71.4,303,5,42,203,4.8,0,77,506,6.6,14,12,2,28,12,99,0,1,1,Arizona,/cfb/boxscores/2023-10-07-southern-california.html
+7.0,2023-10-14,@,Washington State,W (44-6),34,43,79.1,342,0,37,174,4.7,5,80,516,6.5,15,11,0,26,5,55,0,0,0,Arizona,/cfb/boxscores/2023-10-14-washington-state.html
+1.0,2023-08-31,,Southern Utah,W (24-21),18,31,58.1,236,2,34,135,4.0,1,65,371,5.7,8,8,2,18,9,100,0,0,0,Arizona State,/cfb/boxscores/2023-08-31-arizona-state.html
+2.0,2023-09-09,,Oklahoma State,L (15-27),16,29,55.2,167,1,34,110,3.2,1,63,277,4.4,4,10,1,15,4,30,0,1,1,Arizona State,/cfb/boxscores/2023-09-09-arizona-state.html
+3.0,2023-09-16,,Fresno State,L (0-29),17,37,45.9,188,0,27,42,1.6,0,64,230,3.6,10,3,2,15,2,30,3,5,8,Arizona State,/cfb/boxscores/2023-09-16-arizona-state.html
+4.0,2023-09-23,,Southern California,L (28-42),23,39,59.0,263,2,32,90,2.8,1,71,353,5.0,11,8,2,21,4,26,1,1,2,Arizona State,/cfb/boxscores/2023-09-23-arizona-state.html
+5.0,2023-09-30,@,California,L (21-24),27,43,62.8,362,0,29,77,2.7,2,72,439,6.1,13,3,1,17,4,30,1,1,2,Arizona State,/cfb/boxscores/2023-09-30-california.html
+6.0,2023-10-07,,Colorado,L (24-27),32,50,64.0,335,1,29,57,2.0,2,79,392,5.0,16,7,2,25,9,88,0,0,0,Arizona State,/cfb/boxscores/2023-10-07-arizona-state.html
+1.0,2023-09-02,,Western Carolina,W (56-13),20,25,80.0,274,4,36,105,2.9,3,61,379,6.2,12,8,1,21,7,86,0,0,0,Arkansas,/cfb/boxscores/2023-09-02-arkansas.html
+2.0,2023-09-09,,Kent State,W (28-6),13,19,68.4,136,2,45,172,3.8,1,64,308,4.8,6,11,2,19,4,34,0,0,0,Arkansas,/cfb/boxscores/2023-09-09-arkansas.html
+3.0,2023-09-16,,Brigham Young,L (31-38),24,35,68.6,247,1,39,177,4.5,2,74,424,5.7,11,9,1,21,14,125,1,1,2,Arkansas,/cfb/boxscores/2023-09-16-arkansas.html
+4.0,2023-09-23,@,Louisiana State,L (31-34),21,31,67.7,289,3,37,137,3.7,0,68,426,6.3,13,9,3,25,11,69,0,2,2,Arkansas,/cfb/boxscores/2023-09-23-louisiana-state.html
+5.0,2023-09-30,N,Texas A&M,L (22-34),9,17,52.9,132,1,39,42,1.1,0,56,174,3.1,5,4,1,10,0,0,0,1,1,Arkansas,/cfb/boxscores/2023-09-30-arkansas.html
+6.0,2023-10-07,@,Mississippi,L (20-27),25,39,64.1,250,2,29,36,1.2,0,68,286,4.2,11,5,1,17,10,70,0,2,2,Arkansas,/cfb/boxscores/2023-10-07-mississippi.html
+7.0,2023-10-14,@,Alabama,L (21-24),14,24,58.3,150,2,36,100,2.8,0,60,250,4.2,6,5,2,13,2,13,0,0,0,Arkansas,/cfb/boxscores/2023-10-14-alabama.html
+1.0,2023-09-02,@,Oklahoma,L (0-73),13,27,48.1,160,0,23,48,2.1,0,50,208,4.2,5,3,2,10,14,111,1,0,1,Arkansas State,/cfb/boxscores/2023-09-02-oklahoma.html
+2.0,2023-09-09,,Memphis,L (3-37),22,41,53.7,166,0,30,64,2.1,0,71,230,3.2,11,5,2,18,3,40,2,2,4,Arkansas State,/cfb/boxscores/2023-09-09-arkansas-state.html
+3.0,2023-09-16,,Stony Brook,W (31-7),11,23,47.8,140,1,46,345,7.5,3,69,485,7.0,8,15,2,25,4,40,0,0,0,Arkansas State,/cfb/boxscores/2023-09-16-arkansas-state.html
+4.0,2023-09-23,,Southern Mississippi,W (44-37),11,21,52.4,233,3,44,192,4.4,2,65,425,6.5,8,10,0,18,3,15,0,1,1,Arkansas State,/cfb/boxscores/2023-09-23-arkansas-state.html
+5.0,2023-09-30,@,Massachusetts,W (52-28),20,25,80.0,383,6,40,173,4.3,1,65,556,8.6,18,9,5,32,10,104,0,0,0,Arkansas State,/cfb/boxscores/2023-09-30-massachusetts.html
+6.0,2023-10-07,@,Troy,L (3-37),15,27,55.6,156,0,32,47,1.5,0,59,203,3.4,7,3,1,11,2,22,0,0,0,Arkansas State,/cfb/boxscores/2023-10-07-troy.html
+1.0,2023-09-02,@,Louisiana-Monroe,L (13-17),6,12,50.0,107,0,50,172,3.4,0,62,279,4.5,4,9,0,13,3,35,3,2,5,Army,/cfb/boxscores/2023-09-02-louisiana-monroe.html
+2.0,2023-09-09,,Delaware State,W (57-0),11,15,73.3,238,3,43,281,6.5,5,58,519,8.9,7,15,1,23,4,50,1,0,1,Army,/cfb/boxscores/2023-09-09-army.html
+3.0,2023-09-15,@,UTSA,W (37-29),8,18,44.4,188,1,65,254,3.9,3,83,442,5.3,8,14,1,23,0,0,0,0,0,Army,/cfb/boxscores/2023-09-15-texas-san-antonio.html
+4.0,2023-09-23,@,Syracuse,L (16-29),9,21,42.9,145,1,46,125,2.7,1,67,270,4.0,4,10,2,16,2,15,0,2,2,Army,/cfb/boxscores/2023-09-23-syracuse.html
+5.0,2023-10-07,,Boston College,L (24-27),10,13,76.9,105,1,33,161,4.9,2,46,266,5.8,4,8,0,12,6,30,1,0,1,Army,/cfb/boxscores/2023-10-07-army.html
+6.0,2023-10-14,,Troy,L (0-19),9,18,50.0,78,0,51,175,3.4,0,69,253,3.7,5,10,2,17,5,31,3,1,4,Army,/cfb/boxscores/2023-10-14-army.html
+1.0,2023-09-02,,Massachusetts,W (59-14),14,25,56.0,203,1,44,289,6.6,6,69,492,7.1,7,17,3,27,4,40,0,0,0,Auburn,/cfb/boxscores/2023-09-02-auburn.html
+2.0,2023-09-09,@,California,W (14-10),10,17,58.8,94,2,38,136,3.6,0,55,230,4.2,5,6,1,12,7,56,3,1,4,Auburn,/cfb/boxscores/2023-09-09-california.html
+3.0,2023-09-16,,Samford,W (45-13),27,36,75.0,340,2,43,222,5.2,4,79,562,7.1,11,15,0,26,5,45,1,2,3,Auburn,/cfb/boxscores/2023-09-16-auburn.html
+4.0,2023-09-23,@,Texas A&M,L (10-27),9,23,39.1,56,0,41,144,3.5,0,64,200,3.1,5,9,0,14,10,64,0,0,0,Auburn,/cfb/boxscores/2023-09-23-texas-am.html
+5.0,2023-09-30,,Georgia,L (20-27),11,20,55.0,88,0,43,219,5.1,2,63,307,4.9,3,12,2,17,1,5,0,1,1,Auburn,/cfb/boxscores/2023-09-30-auburn.html
+6.0,2023-10-14,@,Louisiana State,L (18-48),15,27,55.6,154,1,34,139,4.1,1,61,293,4.8,7,8,3,18,5,42,0,0,0,Auburn,/cfb/boxscores/2023-10-14-louisiana-state.html
+1.0,2023-09-02,@,Kentucky,L (14-44),22,30,73.3,223,1,41,72,1.8,1,71,295,4.2,12,3,3,18,4,26,2,0,2,Ball State,/cfb/boxscores/2023-09-02-kentucky.html
+2.0,2023-09-09,@,Georgia,L (3-45),18,37,48.6,147,0,28,77,2.8,0,65,224,3.4,9,3,1,13,3,27,0,3,3,Ball State,/cfb/boxscores/2023-09-09-georgia.html
+3.0,2023-09-16,,Indiana State,W (45-7),18,24,75.0,137,2,42,288,6.9,3,66,425,6.4,7,17,2,26,4,35,1,0,1,Ball State,/cfb/boxscores/2023-09-16-ball-state.html
+4.0,2023-09-23,,Georgia Southern,L (3-40),14,29,48.3,160,0,28,37,1.3,0,57,197,3.5,7,3,0,10,3,25,0,2,2,Ball State,/cfb/boxscores/2023-09-23-ball-state.html
+5.0,2023-09-30,@,Western Michigan,L (24-42),26,37,70.3,316,3,26,48,1.8,0,63,364,5.8,11,4,4,19,10,107,1,0,1,Ball State,/cfb/boxscores/2023-09-30-western-michigan.html
+6.0,2023-10-07,@,Eastern Michigan,L (10-24),20,35,57.1,157,1,25,148,5.9,0,60,305,5.1,9,6,2,17,8,66,1,1,2,Ball State,/cfb/boxscores/2023-10-07-eastern-michigan.html
+7.0,2023-10-14,,Toledo,L (6-13),4,16,25.0,38,0,38,167,4.4,0,54,205,3.8,1,10,2,13,6,45,0,1,1,Ball State,/cfb/boxscores/2023-10-14-ball-state.html
+1.0,2023-09-02,,Texas State,L (31-42),27,44,61.4,416,2,32,108,3.4,1,76,524,6.9,16,4,2,22,9,45,1,1,2,Baylor,/cfb/boxscores/2023-09-02-baylor.html
+2.0,2023-09-09,,Utah,L (13-20),12,28,42.9,218,0,29,121,4.2,1,57,339,5.9,7,6,1,14,5,35,0,2,2,Baylor,/cfb/boxscores/2023-09-09-baylor.html
+3.0,2023-09-16,,Long Island,W (30-7),13,27,48.1,121,1,48,270,5.6,3,75,391,5.2,8,17,1,26,2,15,1,0,1,Baylor,/cfb/boxscores/2023-09-16-baylor.html
+4.0,2023-09-23,,Texas,L (6-38),29,53,54.7,305,0,31,60,1.9,0,84,365,4.3,14,4,1,19,4,21,0,1,1,Baylor,/cfb/boxscores/2023-09-23-baylor.html
+5.0,2023-09-30,@,Central Florida,W (36-35),21,34,61.8,293,1,43,153,3.6,2,77,446,5.8,13,8,1,22,4,35,1,0,1,Baylor,/cfb/boxscores/2023-09-30-central-florida.html
+6.0,2023-10-07,,Texas Tech,L (14-39),22,38,57.9,324,1,30,17,0.6,0,68,341,5.0,12,4,1,17,1,10,1,0,1,Baylor,/cfb/boxscores/2023-10-07-baylor.html
+1.0,2023-09-02,@,Washington,L (19-56),22,47,46.8,264,1,28,138,4.9,1,75,402,5.4,10,8,3,21,3,29,0,2,2,Boise State,/cfb/boxscores/2023-09-02-washington.html
+2.0,2023-09-09,,Central Florida,L (16-18),14,27,51.9,211,2,39,173,4.4,0,66,384,5.8,10,12,0,22,4,39,0,1,1,Boise State,/cfb/boxscores/2023-09-09-boise-state.html
+3.0,2023-09-16,,North Dakota,W (42-18),22,33,66.7,262,2,35,132,3.8,4,68,394,5.8,12,7,3,22,4,37,2,1,3,Boise State,/cfb/boxscores/2023-09-16-boise-state.html
+4.0,2023-09-22,@,San Diego State,W (34-31),12,22,54.5,162,1,41,241,5.9,3,63,403,6.4,7,12,0,19,4,35,0,0,0,Boise State,/cfb/boxscores/2023-09-22-san-diego-state.html
+5.0,2023-09-30,@,Memphis,L (32-35),23,38,60.5,375,2,32,144,4.5,2,70,519,7.4,14,9,1,24,3,20,0,0,0,Boise State,/cfb/boxscores/2023-09-30-memphis.html
+6.0,2023-10-07,,San Jose State,W (35-27),13,24,54.2,230,2,42,262,6.2,3,66,492,7.5,10,11,1,22,3,25,2,1,3,Boise State,/cfb/boxscores/2023-10-07-boise-state.html
+7.0,2023-10-14,@,Colorado State,L (30-31),15,24,62.5,138,0,43,246,5.7,3,67,384,5.7,7,13,3,23,9,73,2,2,4,Boise State,/cfb/boxscores/2023-10-14-colorado-state.html
+1.0,2023-09-02,,Northern Illinois,L (24-27),17,38,44.7,168,2,28,146,5.2,1,66,314,4.8,7,9,3,19,10,93,0,1,1,Boston College,/cfb/boxscores/2023-09-02-boston-college.html
+2.0,2023-09-09,,Holy Cross,W (31-28),17,23,73.9,201,2,45,208,4.6,2,68,409,6.0,7,13,4,24,10,109,0,0,0,Boston College,/cfb/boxscores/2023-09-09-boston-college.html
+3.0,2023-09-16,,Florida State,L (29-31),20,34,58.8,305,1,41,152,3.7,2,75,457,6.1,9,10,1,20,18,131,0,1,1,Boston College,/cfb/boxscores/2023-09-16-boston-college.html
+4.0,2023-09-23,@,Louisville,L (28-56),21,41,51.2,295,3,31,132,4.3,1,72,427,5.9,13,9,1,23,7,61,0,0,0,Boston College,/cfb/boxscores/2023-09-23-louisville.html
+5.0,2023-09-30,,Virginia,W (27-24),16,26,61.5,183,2,47,203,4.3,1,73,386,5.3,7,12,4,23,5,36,2,2,4,Boston College,/cfb/boxscores/2023-09-30-boston-college.html
+6.0,2023-10-07,@,Army,W (27-24),4,9,44.4,51,0,61,321,5.3,4,70,372,5.3,2,16,1,19,3,25,0,1,1,Boston College,/cfb/boxscores/2023-10-07-army.html
+1.0,2023-09-02,@,Liberty,L (24-34),11,31,35.5,137,1,31,191,6.2,1,62,328,5.3,5,12,2,19,9,86,0,5,5,Bowling Green,/cfb/boxscores/2023-09-02-liberty.html
+2.0,2023-09-09,,Eastern Illinois,W (38-15),25,30,83.3,368,3,34,141,4.1,2,64,509,8.0,16,8,1,25,6,60,0,0,0,Bowling Green,/cfb/boxscores/2023-09-09-bowling-green-state.html
+3.0,2023-09-16,@,Michigan,L (6-31),14,21,66.7,124,0,36,81,2.3,0,57,205,3.6,5,5,0,10,2,15,1,2,3,Bowling Green,/cfb/boxscores/2023-09-16-michigan.html
+4.0,2023-09-23,,Ohio,L (7-38),17,32,53.1,104,0,22,102,4.6,1,54,206,3.8,5,4,1,10,12,123,2,2,4,Bowling Green,/cfb/boxscores/2023-09-23-bowling-green-state.html
+5.0,2023-09-30,@,Georgia Tech,W (38-27),21,33,63.6,263,1,45,175,3.9,3,78,438,5.6,11,11,4,26,10,113,0,0,0,Bowling Green,/cfb/boxscores/2023-09-30-georgia-tech.html
+6.0,2023-10-07,@,Miami (OH),L (0-27),11,23,47.8,72,0,19,63,3.3,0,42,135,3.2,3,5,1,9,7,63,0,1,1,Bowling Green,/cfb/boxscores/2023-10-07-miami-oh.html
+7.0,2023-10-14,@,Buffalo,W (24-14),9,16,56.3,77,1,43,218,5.1,1,59,295,5.0,2,11,0,13,10,105,1,2,3,Bowling Green,/cfb/boxscores/2023-10-14-buffalo.html
+1.0,2023-09-02,@,Wisconsin,L (17-38),26,41,63.4,194,2,30,122,4.1,0,71,316,4.5,8,5,1,14,6,70,0,0,0,Buffalo,/cfb/boxscores/2023-09-02-wisconsin.html
+2.0,2023-09-09,,Fordham,L (37-40),24,30,80.0,265,3,30,97,3.2,2,60,362,6.0,14,8,1,23,8,56,1,0,1,Buffalo,/cfb/boxscores/2023-09-09-buffalo.html
+3.0,2023-09-16,,Liberty,L (27-55),29,51,56.9,276,4,30,87,2.9,0,81,363,4.5,12,5,5,22,6,75,0,2,2,Buffalo,/cfb/boxscores/2023-09-16-buffalo.html
+4.0,2023-09-23,@,Louisiana,L (38-45),18,35,51.4,195,1,44,178,4.0,4,79,373,4.7,10,8,1,19,6,42,0,2,2,Buffalo,/cfb/boxscores/2023-09-23-louisiana-lafayette.html
+5.0,2023-09-30,@,Akron,W (13-10),19,34,55.9,142,1,36,112,3.1,0,70,254,3.6,8,7,1,16,7,65,0,0,0,Buffalo,/cfb/boxscores/2023-09-30-akron.html
+6.0,2023-10-07,,Central Michigan,W (37-13),20,32,62.5,232,0,35,123,3.5,2,67,355,5.3,12,6,0,18,5,30,0,0,0,Buffalo,/cfb/boxscores/2023-10-07-buffalo.html
+7.0,2023-10-14,,Bowling Green State,L (14-24),9,29,31.0,71,1,37,167,4.5,1,66,238,3.6,3,12,3,18,4,30,1,4,5,Buffalo,/cfb/boxscores/2023-10-14-buffalo.html
+1.0,2023-09-02,,Sam Houston,W (14-0),20,33,60.6,145,0,34,112,3.3,2,67,257,3.8,6,6,0,12,8,66,0,0,0,BYU,/cfb/boxscores/2023-09-02-brigham-young.html
+2.0,2023-09-09,,Southern Utah,W (41-16),22,32,68.8,348,4,23,46,2.0,2,55,394,7.2,16,1,1,18,3,25,0,1,1,BYU,/cfb/boxscores/2023-09-09-brigham-young.html
+3.0,2023-09-16,@,Arkansas,W (38-31),14,26,53.8,204,3,31,77,2.5,2,57,281,4.9,10,4,3,17,7,45,1,0,1,BYU,/cfb/boxscores/2023-09-16-arkansas.html
+4.0,2023-09-23,@,Kansas,L (27-38),30,51,58.8,357,2,22,9,0.4,1,73,366,5.0,19,1,3,23,3,30,1,2,3,BYU,/cfb/boxscores/2023-09-23-kansas.html
+5.0,2023-09-29,,Cincinnati,W (35-27),14,25,56.0,225,2,28,70,2.5,2,53,295,5.6,10,5,2,17,4,25,0,0,0,BYU,/cfb/boxscores/2023-09-29-brigham-young.html
+6.0,2023-10-14,@,TCU,L (11-44),15,34,44.1,152,0,32,91,2.8,1,66,243,3.7,6,6,3,15,5,50,1,1,2,BYU,/cfb/boxscores/2023-10-14-texas-christian.html
+1.0,2023-09-02,@,North Texas,W (58-21),27,39,69.2,322,2,56,359,6.4,6,95,681,7.2,16,13,0,29,8,60,1,1,2,California,/cfb/boxscores/2023-09-02-north-texas.html
+2.0,2023-09-09,,Auburn,L (10-14),21,38,55.3,160,0,40,113,2.8,1,78,273,3.5,10,8,1,19,4,45,1,2,3,California,/cfb/boxscores/2023-09-09-california.html
+3.0,2023-09-16,,Idaho,W (31-17),13,25,52.0,114,2,43,256,6.0,2,68,370,5.4,5,14,4,23,6,50,0,0,0,California,/cfb/boxscores/2023-09-16-california.html
+4.0,2023-09-23,@,Washington,L (32-59),27,46,58.7,363,3,35,139,4.0,2,81,502,6.2,17,7,4,28,2,10,0,3,3,California,/cfb/boxscores/2023-09-23-washington.html
+5.0,2023-09-30,,Arizona State,W (24-21),12,29,41.4,130,1,48,196,4.1,2,77,326,4.2,7,12,1,20,7,51,0,0,0,California,/cfb/boxscores/2023-09-30-california.html
+6.0,2023-10-07,,Oregon State,L (40-52),21,32,65.6,207,2,33,240,7.3,3,65,447,6.9,8,12,2,22,3,25,1,1,2,California,/cfb/boxscores/2023-10-07-california.html
+7.0,2023-10-14,@,Utah,L (14-34),15,31,48.4,188,2,24,66,2.8,0,55,254,4.6,8,5,3,16,7,44,1,1,2,California,/cfb/boxscores/2023-10-14-utah.html
+1.0,2023-09-01,@,Michigan State,L (7-31),13,25,52.0,96,1,41,123,3.0,0,66,219,3.3,5,9,5,19,7,75,0,1,1,Central Michigan,/cfb/boxscores/2023-09-01-michigan-state.html
+2.0,2023-09-09,,New Hampshire,W (45-42),8,20,40.0,204,2,52,236,4.5,3,72,440,6.1,5,11,3,19,8,66,0,2,2,Central Michigan,/cfb/boxscores/2023-09-09-central-michigan.html
+3.0,2023-09-16,@,Notre Dame,L (17-41),10,20,50.0,137,0,34,131,3.9,2,54,268,5.0,5,6,3,14,2,20,0,0,0,Central Michigan,/cfb/boxscores/2023-09-16-notre-dame.html
+4.0,2023-09-23,@,South Alabama,W (34-30),20,31,64.5,230,1,38,125,3.3,4,69,355,5.1,8,8,3,19,4,30,0,0,0,Central Michigan,/cfb/boxscores/2023-09-23-south-alabama.html
+5.0,2023-09-30,,Eastern Michigan,W (26-23),19,26,73.1,218,1,27,193,7.1,2,53,411,7.8,11,12,1,24,8,88,0,1,1,Central Michigan,/cfb/boxscores/2023-09-30-central-michigan.html
+6.0,2023-10-07,@,Buffalo,L (13-37),28,49,57.1,280,2,25,80,3.2,0,74,360,4.9,15,5,1,21,6,50,1,3,4,Central Michigan,/cfb/boxscores/2023-10-07-buffalo.html
+7.0,2023-10-14,,Akron,W (17-10),17,32,53.1,181,0,50,117,2.3,2,82,298,3.6,8,12,1,21,6,53,0,2,2,Central Michigan,/cfb/boxscores/2023-10-14-central-michigan.html
+1.0,2023-09-02,,South Carolina State,W (24-3),13,19,68.4,125,1,47,220,4.7,2,66,345,5.2,5,13,1,19,7,43,0,2,2,Charlotte,/cfb/boxscores/2023-09-02-charlotte.html
+2.0,2023-09-09,@,Maryland,L (20-38),13,20,65.0,189,1,34,125,3.7,1,54,314,5.8,9,6,1,16,6,40,1,1,2,Charlotte,/cfb/boxscores/2023-09-09-maryland.html
+3.0,2023-09-16,,Georgia State,L (25-41),23,35,65.7,268,1,29,88,3.0,1,64,356,5.6,11,4,3,18,7,65,1,1,2,Charlotte,/cfb/boxscores/2023-09-16-charlotte.html
+4.0,2023-09-23,@,Florida,L (7-22),14,25,56.0,133,0,28,77,2.8,1,53,210,4.0,6,3,1,10,7,48,0,0,0,Charlotte,/cfb/boxscores/2023-09-23-florida.html
+5.0,2023-09-30,@,Southern Methodist,L (16-34),19,32,59.4,164,1,42,167,4.0,1,74,331,4.5,10,10,4,24,7,73,0,1,1,Charlotte,/cfb/boxscores/2023-09-30-southern-methodist.html
+6.0,2023-10-14,,Navy,L (0-14),11,28,39.3,142,0,40,123,3.1,0,68,265,3.9,6,7,1,14,5,25,1,2,3,Charlotte,/cfb/boxscores/2023-10-14-charlotte.html
+1.0,2023-09-02,,Eastern Kentucky,W (66-13),23,27,85.2,438,6,44,229,5.2,3,71,667,9.4,17,13,0,30,7,55,1,0,1,Cincinnati,/cfb/boxscores/2023-09-02-cincinnati.html
+2.0,2023-09-09,@,Pittsburgh,W (27-21),19,27,70.4,155,2,42,216,5.1,1,69,371,5.4,10,9,1,20,7,90,0,1,1,Cincinnati,/cfb/boxscores/2023-09-09-pittsburgh.html
+3.0,2023-09-16,,Miami (OH),L (24-31),18,34,52.9,265,0,57,273,4.8,2,91,538,5.9,14,13,3,30,10,78,0,2,2,Cincinnati,/cfb/boxscores/2023-09-16-cincinnati.html
+4.0,2023-09-23,,Oklahoma,L (6-20),22,42,52.4,235,0,37,141,3.8,0,79,376,4.8,12,8,1,21,2,20,0,2,2,Cincinnati,/cfb/boxscores/2023-09-23-cincinnati.html
+5.0,2023-09-29,@,Brigham Young,L (27-35),23,37,62.2,256,3,47,242,5.1,0,84,498,5.9,13,13,0,26,7,63,1,1,2,Cincinnati,/cfb/boxscores/2023-09-29-brigham-young.html
+6.0,2023-10-14,,Iowa State,L (10-30),15,29,51.7,99,1,33,115,3.5,0,62,214,3.5,5,7,3,15,6,49,0,2,2,Cincinnati,/cfb/boxscores/2023-10-14-cincinnati.html
+1.0,2023-09-04,@,Duke,L (7-28),27,43,62.8,209,1,40,213,5.3,0,83,422,5.1,14,15,0,29,1,5,2,1,3,Clemson,/cfb/boxscores/2023-09-04-duke.html
+2.0,2023-09-09,,Charleston Southern,W (66-17),36,45,80.0,405,5,42,274,6.5,3,87,679,7.8,21,15,1,37,4,30,1,1,2,Clemson,/cfb/boxscores/2023-09-09-clemson.html
+3.0,2023-09-16,,Florida Atlantic,W (48-14),20,33,60.6,204,3,33,163,4.9,3,66,367,5.6,10,8,2,20,5,55,1,0,1,Clemson,/cfb/boxscores/2023-09-16-clemson.html
+4.0,2023-09-23,,Florida State,L (24-31),25,38,65.8,283,1,41,146,3.6,2,79,429,5.4,14,7,4,25,6,50,1,0,1,Clemson,/cfb/boxscores/2023-09-23-clemson.html
+5.0,2023-09-30,@,Syracuse,W (31-14),23,37,62.2,263,2,35,126,3.6,2,72,389,5.4,12,6,4,22,6,59,1,0,1,Clemson,/cfb/boxscores/2023-09-30-syracuse.html
+6.0,2023-10-07,,Wake Forest,W (17-12),18,28,64.3,131,0,42,207,4.9,2,70,338,4.8,6,13,0,19,6,69,2,0,2,Clemson,/cfb/boxscores/2023-10-07-clemson.html
+1.0,2023-09-02,@,UCLA,L (13-27),28,43,65.1,289,1,34,56,1.6,0,77,345,4.5,14,5,2,21,3,45,1,2,3,Coastal Carolina,/cfb/boxscores/2023-09-02-ucla.html
+2.0,2023-09-09,,Jacksonville State,W (30-16),21,29,72.4,268,1,45,131,2.9,2,74,399,5.4,12,5,2,19,4,27,0,0,0,Coastal Carolina,/cfb/boxscores/2023-09-09-coastal-carolina.html
+3.0,2023-09-16,,Duquesne,W (66-7),15,20,75.0,274,3,35,241,6.9,4,55,515,9.4,8,13,2,23,3,20,1,0,1,Coastal Carolina,/cfb/boxscores/2023-09-16-coastal-carolina.html
+4.0,2023-09-21,,Georgia State,L (17-30),26,42,61.9,295,1,25,107,4.3,0,67,402,6.0,11,8,2,21,10,88,0,0,0,Coastal Carolina,/cfb/boxscores/2023-09-21-coastal-carolina.html
+5.0,2023-09-30,@,Georgia Southern,L (28-38),22,39,56.4,299,1,30,166,5.5,3,69,465,6.7,11,9,1,21,10,110,0,4,4,Coastal Carolina,/cfb/boxscores/2023-09-30-georgia-southern.html
+6.0,2023-10-10,@,Appalachian State,W (27-24),19,28,67.9,373,2,45,196,4.4,1,73,569,7.8,13,11,1,25,9,108,0,0,0,Coastal Carolina,/cfb/boxscores/2023-10-10-appalachian-state.html
+1.0,2023-09-02,@,TCU,W (45-42),38,47,80.9,510,4,34,55,1.6,2,81,565,7.0,20,6,4,30,6,35,1,0,1,Colorado,/cfb/boxscores/2023-09-02-texas-christian.html
+2.0,2023-09-09,,Nebraska,W (36-14),32,44,72.7,396,2,33,58,1.8,2,77,454,5.9,16,4,3,23,9,80,1,0,1,Colorado,/cfb/boxscores/2023-09-09-colorado.html
+3.0,2023-09-16,,Colorado State,W (43-35),38,47,80.9,348,4,25,70,2.8,0,72,418,5.8,15,5,4,24,10,87,1,1,2,Colorado,/cfb/boxscores/2023-09-16-colorado.html
+4.0,2023-09-23,@,Oregon,L (6-42),23,33,69.7,159,1,25,40,1.6,0,58,199,3.4,6,4,3,13,12,106,0,0,0,Colorado,/cfb/boxscores/2023-09-23-oregon.html
+5.0,2023-09-30,,Southern California,L (41-48),30,45,66.7,371,4,45,193,4.3,2,90,564,6.3,12,17,3,32,7,60,0,1,1,Colorado,/cfb/boxscores/2023-09-30-colorado.html
+6.0,2023-10-07,@,Arizona State,W (27-24),26,42,61.9,239,1,30,56,1.9,2,72,295,4.1,12,5,2,19,8,65,0,0,0,Colorado,/cfb/boxscores/2023-10-07-arizona-state.html
+7.0,2023-10-13,,Stanford,L (43-46),33,47,70.2,400,5,35,132,3.8,1,82,532,6.5,19,11,2,32,17,127,0,1,1,Colorado,/cfb/boxscores/2023-10-13-colorado.html
+1.0,2023-09-02,,Washington State,L (24-50),28,44,63.6,318,2,20,37,1.9,0,64,355,5.5,16,2,0,18,4,40,0,2,2,Colorado State,/cfb/boxscores/2023-09-02-colorado-state.html
+2.0,2023-09-16,@,Colorado,L (35-43),35,48,72.9,397,4,39,102,2.6,0,87,499,5.7,17,5,2,24,17,182,1,3,4,Colorado State,/cfb/boxscores/2023-09-16-colorado.html
+3.0,2023-09-23,@,Middle Tennessee State,W (31-23),31,44,70.5,345,3,19,33,1.7,0,63,378,6.0,16,1,1,18,11,90,0,1,1,Colorado State,/cfb/boxscores/2023-09-23-middle-tennessee-state.html
+4.0,2023-09-30,,Utah Tech,W (41-20),27,34,79.4,474,4,29,104,3.6,2,63,578,9.2,20,3,2,25,8,80,1,2,3,Colorado State,/cfb/boxscores/2023-09-30-colorado-state.html
+5.0,2023-10-07,@,Utah State,L (24-44),26,57,45.6,225,0,26,95,3.7,2,83,320,3.9,10,8,2,20,8,55,2,3,5,Colorado State,/cfb/boxscores/2023-10-07-utah-state.html
+6.0,2023-10-14,,Boise State,W (31-30),32,54,59.3,359,3,21,42,2.0,1,75,401,5.3,18,2,1,21,11,84,0,1,1,Colorado State,/cfb/boxscores/2023-10-14-colorado-state.html
+1.0,2023-08-31,,North Carolina State,L (14-24),14,27,51.9,113,0,26,160,6.2,2,53,273,5.2,6,9,0,15,6,61,0,1,1,Connecticut,/cfb/boxscores/2023-08-31-connecticut.html
+2.0,2023-09-09,@,Georgia State,L (14-35),23,39,59.0,276,2,31,50,1.6,0,70,326,4.7,14,4,1,19,8,65,2,1,3,Connecticut,/cfb/boxscores/2023-09-09-georgia-state.html
+3.0,2023-09-16,,Florida International,L (17-24),15,32,46.9,170,1,40,173,4.3,1,72,343,4.8,5,12,3,20,6,60,0,0,0,Connecticut,/cfb/boxscores/2023-09-16-connecticut.html
+4.0,2023-09-23,,Duke,L (7-41),13,28,46.4,114,0,38,89,2.3,1,66,203,3.1,5,8,1,14,5,64,2,0,2,Connecticut,/cfb/boxscores/2023-09-23-connecticut.html
+5.0,2023-09-30,,Utah State,L (33-34),23,32,71.9,255,2,45,218,4.8,2,77,473,6.1,10,14,2,26,9,97,0,1,1,Connecticut,/cfb/boxscores/2023-09-30-connecticut.html
+6.0,2023-10-07,@,Rice,W (38-31),15,19,78.9,215,2,30,104,3.5,2,49,319,6.5,7,5,0,12,6,48,0,0,0,Connecticut,/cfb/boxscores/2023-10-07-rice.html
+1.0,2023-09-04,,Clemson,W (28-7),17,34,50.0,175,0,30,199,6.6,3,64,374,5.8,9,8,0,17,7,45,2,0,2,Duke,/cfb/boxscores/2023-09-04-duke.html
+2.0,2023-09-09,,Lafayette,W (42-7),20,21,95.2,254,2,45,261,5.8,4,66,515,7.8,12,12,5,29,4,25,1,0,1,Duke,/cfb/boxscores/2023-09-09-duke.html
+3.0,2023-09-16,,Northwestern,W (38-14),15,20,75.0,219,0,40,268,6.7,5,60,487,8.1,12,13,0,25,1,15,0,0,0,Duke,/cfb/boxscores/2023-09-16-duke.html
+4.0,2023-09-23,@,Connecticut,W (41-7),23,34,67.6,248,1,27,80,3.0,3,61,328,5.4,15,2,3,20,8,59,0,0,0,Duke,/cfb/boxscores/2023-09-23-connecticut.html
+5.0,2023-09-30,,Notre Dame,L (14-21),12,27,44.4,134,1,40,189,4.7,1,67,323,4.8,8,8,1,17,2,28,1,1,2,Duke,/cfb/boxscores/2023-09-30-duke.html
+6.0,2023-10-14,,North Carolina State,W (24-3),4,12,33.3,107,2,30,194,6.5,1,42,301,7.2,2,7,3,12,6,33,0,1,1,Duke,/cfb/boxscores/2023-10-14-duke.html
+1.0,2023-09-02,@,Michigan,L (3-30),17,29,58.6,132,0,26,103,4.0,0,55,235,4.3,5,7,0,12,12,118,0,1,1,East Carolina,/cfb/boxscores/2023-09-02-michigan.html
+2.0,2023-09-09,,Marshall,L (13-31),13,31,41.9,123,1,38,146,3.8,0,69,269,3.9,4,9,0,13,11,112,0,2,2,East Carolina,/cfb/boxscores/2023-09-09-east-carolina.html
+3.0,2023-09-16,@,Appalachian State,L (28-43),19,33,57.6,161,0,27,99,3.7,2,60,260,4.3,7,7,0,14,11,80,0,3,3,East Carolina,/cfb/boxscores/2023-09-16-appalachian-state.html
+4.0,2023-09-23,,Gardner-Webb,W (44-0),18,32,56.3,184,1,44,182,4.1,5,76,366,4.8,10,12,1,23,5,41,1,0,1,East Carolina,/cfb/boxscores/2023-09-23-east-carolina.html
+5.0,2023-09-30,@,Rice,L (17-24),21,45,46.7,246,0,38,145,3.8,1,83,391,4.7,14,7,4,25,6,59,0,1,1,East Carolina,/cfb/boxscores/2023-09-30-rice.html
+6.0,2023-10-12,,Southern Methodist,L (10-31),18,39,46.2,193,0,38,97,2.6,1,77,290,3.8,9,5,1,15,7,55,1,1,2,East Carolina,/cfb/boxscores/2023-10-12-east-carolina.html
+1.0,2023-09-01,,Howard,W (33-23),19,28,67.9,175,1,30,110,3.7,1,58,285,4.9,8,7,1,16,6,79,0,1,1,Eastern Michigan,/cfb/boxscores/2023-09-01-eastern-michigan.html
+2.0,2023-09-09,@,Minnesota,L (6-25),9,20,45.0,71,0,22,81,3.7,0,42,152,3.6,2,6,1,9,8,75,0,1,1,Eastern Michigan,/cfb/boxscores/2023-09-09-minnesota.html
+3.0,2023-09-16,,Massachusetts,W (19-17),13,26,50.0,157,1,26,214,8.2,1,52,371,7.1,7,4,3,14,11,115,1,0,1,Eastern Michigan,/cfb/boxscores/2023-09-16-eastern-michigan.html
+4.0,2023-09-23,@,Jacksonville State,L (0-21),13,29,44.8,95,0,35,57,1.6,0,64,152,2.4,4,5,1,10,3,15,0,3,3,Eastern Michigan,/cfb/boxscores/2023-09-23-jacksonville-state.html
+5.0,2023-09-30,@,Central Michigan,L (23-26),20,26,76.9,186,1,38,155,4.1,2,64,341,5.3,7,12,2,21,4,40,0,0,0,Eastern Michigan,/cfb/boxscores/2023-09-30-central-michigan.html
+6.0,2023-10-07,,Ball State,W (24-10),18,28,64.3,192,2,38,61,1.6,1,66,253,3.8,11,8,3,22,4,40,0,0,0,Eastern Michigan,/cfb/boxscores/2023-10-07-eastern-michigan.html
+7.0,2023-10-14,,Kent State,W (28-14),9,25,36.0,118,1,37,100,2.7,2,62,218,3.5,5,6,3,14,2,5,1,0,1,Eastern Michigan,/cfb/boxscores/2023-10-14-eastern-michigan.html
+1.0,2023-08-31,@,Utah,L (11-24),31,44,70.5,333,1,21,13,0.6,0,65,346,5.3,15,1,1,17,9,46,0,1,1,Florida,/cfb/boxscores/2023-08-31-utah.html
+2.0,2023-09-09,,McNeese State,W (49-7),18,23,78.3,233,1,51,327,6.4,6,74,560,7.6,13,19,1,33,4,20,1,0,1,Florida,/cfb/boxscores/2023-09-09-florida.html
+3.0,2023-09-16,,Tennessee,W (29-16),19,24,79.2,166,1,43,183,4.3,3,67,349,5.2,11,8,3,22,5,30,0,0,0,Florida,/cfb/boxscores/2023-09-16-florida.html
+4.0,2023-09-23,,Charlotte,W (22-7),21,24,87.5,284,1,35,111,3.2,0,59,395,6.7,10,9,2,21,5,35,2,0,2,Florida,/cfb/boxscores/2023-09-23-florida.html
+5.0,2023-09-30,@,Kentucky,L (14-33),25,30,83.3,244,2,29,69,2.4,0,59,313,5.3,9,5,1,15,10,86,0,1,1,Florida,/cfb/boxscores/2023-09-30-kentucky.html
+6.0,2023-10-07,,Vanderbilt,W (38-14),34,41,82.9,280,3,30,215,7.2,2,71,495,7.0,13,9,3,25,8,70,0,1,1,Florida,/cfb/boxscores/2023-10-07-florida.html
+7.0,2023-10-14,@,South Carolina,W (41-39),30,48,62.5,423,3,33,71,2.2,1,81,494,6.1,17,8,3,28,6,48,0,0,0,Florida,/cfb/boxscores/2023-10-14-south-carolina.html
+1.0,2023-09-02,,Monmouth,W (42-20),22,27,81.5,280,5,32,213,6.7,1,59,493,8.4,11,7,4,22,3,33,1,1,2,Florida Atlantic,/cfb/boxscores/2023-09-02-florida-atlantic.html
+2.0,2023-09-09,,Ohio,L (10-17),23,43,53.5,180,0,15,5,0.3,0,58,185,3.2,11,2,0,13,5,64,0,2,2,Florida Atlantic,/cfb/boxscores/2023-09-09-florida-atlantic.html
+3.0,2023-09-16,@,Clemson,L (14-48),27,46,58.7,210,1,36,83,2.3,1,82,293,3.6,11,6,3,20,6,60,1,3,4,Florida Atlantic,/cfb/boxscores/2023-09-16-clemson.html
+4.0,2023-09-23,@,Illinois,L (17-23),28,49,57.1,256,2,24,97,4.0,0,73,353,4.8,9,7,4,20,6,54,0,1,1,Florida Atlantic,/cfb/boxscores/2023-09-23-illinois.html
+5.0,2023-10-07,,Tulsa,W (20-17),18,28,64.3,144,0,43,234,5.4,2,71,378,5.3,6,10,2,18,1,5,0,1,1,Florida Atlantic,/cfb/boxscores/2023-10-07-florida-atlantic.html
+6.0,2023-10-14,@,South Florida,W (56-14),31,38,81.6,382,3,40,205,5.1,4,78,587,7.5,15,11,1,27,4,40,0,1,1,Florida Atlantic,/cfb/boxscores/2023-10-14-south-florida.html
+1.0,2023-08-26,@,Louisiana Tech,L (17-22),5,14,35.7,4,0,30,178,5.9,2,44,182,4.1,0,6,2,8,5,50,0,1,1,Florida International,/cfb/boxscores/2023-08-26-louisiana-tech.html
+2.0,2023-09-02,,Maine,W (14-12),15,30,50.0,292,2,24,13,0.5,0,54,305,5.6,9,3,1,13,8,79,2,1,3,Florida International,/cfb/boxscores/2023-09-02-florida-international.html
+3.0,2023-09-09,,North Texas,W (46-39),20,32,62.5,291,1,35,223,6.4,4,67,514,7.7,13,8,0,21,6,55,1,2,3,Florida International,/cfb/boxscores/2023-09-09-florida-international.html
+4.0,2023-09-16,@,Connecticut,W (24-17),15,27,55.6,284,2,33,80,2.4,1,60,364,6.1,10,5,1,16,8,65,0,0,0,Florida International,/cfb/boxscores/2023-09-16-connecticut.html
+5.0,2023-09-23,,Liberty,L (6-38),11,24,45.8,147,0,33,64,1.9,1,57,211,3.7,6,4,1,11,5,43,1,1,2,Florida International,/cfb/boxscores/2023-09-23-florida-international.html
+6.0,2023-10-04,@,New Mexico State,L (17-34),28,35,80.0,310,0,29,87,3.0,2,64,397,6.2,14,4,2,20,5,25,0,2,2,Florida International,/cfb/boxscores/2023-10-04-new-mexico-state.html
+7.0,2023-10-11,,UTEP,L (14-27),15,30,50.0,272,0,34,91,2.7,2,64,363,5.7,10,6,0,16,5,57,1,1,2,Florida International,/cfb/boxscores/2023-10-11-florida-international.html
+1.0,2023-09-03,N,Louisiana State,W (45-24),24,32,75.0,359,4,34,135,4.0,2,66,494,7.5,13,7,2,22,7,64,0,1,1,Florida State,/cfb/boxscores/2023-09-03-florida-state.html
+2.0,2023-09-09,,Southern Mississippi,W (66-13),18,32,56.3,248,4,37,306,8.3,4,69,554,8.0,12,12,2,26,3,45,0,0,0,Florida State,/cfb/boxscores/2023-09-09-florida-state.html
+3.0,2023-09-16,@,Boston College,W (31-29),15,24,62.5,222,2,34,128,3.8,2,58,350,6.0,9,7,4,20,5,45,2,0,2,Florida State,/cfb/boxscores/2023-09-16-boston-college.html
+4.0,2023-09-23,@,Clemson,W (31-24),21,37,56.8,289,2,20,22,1.1,1,57,311,5.5,10,5,1,16,7,60,0,0,0,Florida State,/cfb/boxscores/2023-09-23-clemson.html
+5.0,2023-10-07,,Virginia Tech,W (39-17),18,25,72.0,170,2,36,282,7.8,3,61,452,7.4,9,10,1,20,12,99,0,0,0,Florida State,/cfb/boxscores/2023-10-07-florida-state.html
+6.0,2023-10-14,,Syracuse,W (41-3),25,39,64.1,344,2,34,191,5.6,3,73,535,7.3,14,8,0,22,6,50,0,0,0,Florida State,/cfb/boxscores/2023-10-14-florida-state.html
+1.0,2023-09-02,@,Purdue,W (39-35),32,45,71.1,371,4,37,116,3.1,1,82,487,5.9,18,8,1,27,7,66,0,1,1,Fresno State,/cfb/boxscores/2023-09-02-purdue.html
+2.0,2023-09-09,,Eastern Washington,W (34-31),23,39,59.0,233,2,34,132,3.9,2,73,365,5.0,11,7,3,21,7,52,0,1,1,Fresno State,/cfb/boxscores/2023-09-09-fresno-state.html
+3.0,2023-09-16,@,Arizona State,W (29-0),32,49,65.3,281,2,34,69,2.0,0,83,350,4.2,16,6,2,24,9,53,0,0,0,Fresno State,/cfb/boxscores/2023-09-16-arizona-state.html
+4.0,2023-09-23,,Kent State,W (53-10),26,34,76.5,370,5,33,143,4.3,2,67,513,7.7,17,8,4,29,3,25,0,0,0,Fresno State,/cfb/boxscores/2023-09-23-fresno-state.html
+5.0,2023-09-30,,Nevada,W (27-9),26,34,76.5,269,2,25,141,5.6,1,59,410,6.9,12,6,1,19,3,35,0,2,2,Fresno State,/cfb/boxscores/2023-09-30-fresno-state.html
+6.0,2023-10-07,@,Wyoming,L (19-24),30,46,65.2,286,2,20,38,1.9,0,66,324,4.9,11,6,0,17,8,93,0,1,1,Fresno State,/cfb/boxscores/2023-10-07-wyoming.html
+7.0,2023-10-13,@,Utah State,W (37-32),23,40,57.5,310,2,40,151,3.8,3,80,461,5.8,15,10,2,27,5,50,0,0,0,Fresno State,/cfb/boxscores/2023-10-13-utah-state.html
+1.0,2023-09-02,,Tennessee-Martin,W (48-7),26,40,65.0,400,2,30,159,5.3,3,70,559,8.0,17,6,4,27,5,42,0,0,0,Georgia,/cfb/boxscores/2023-09-02-georgia.html
+2.0,2023-09-09,,Ball State,W (45-3),24,33,72.7,287,2,28,99,3.5,3,61,386,6.3,13,7,2,22,3,40,0,1,1,Georgia,/cfb/boxscores/2023-09-09-georgia.html
+3.0,2023-09-16,,South Carolina,W (24-14),27,35,77.1,269,0,44,190,4.3,3,79,459,5.8,13,14,2,29,6,45,0,0,0,Georgia,/cfb/boxscores/2023-09-16-georgia.html
+4.0,2023-09-23,,Alabama-Birmingham,W (49-21),28,40,70.0,394,3,36,188,5.2,4,76,582,7.7,18,11,2,31,5,40,2,1,3,Georgia,/cfb/boxscores/2023-09-23-georgia.html
+5.0,2023-09-30,@,Auburn,W (27-20),23,33,69.7,313,1,30,107,3.6,2,63,420,6.7,14,5,0,19,3,30,1,1,2,Georgia,/cfb/boxscores/2023-09-30-auburn.html
+6.0,2023-10-07,,Kentucky,W (51-13),33,42,78.6,435,5,31,173,5.6,1,73,608,8.3,22,10,2,34,6,59,0,1,1,Georgia,/cfb/boxscores/2023-10-07-georgia.html
+7.0,2023-10-14,@,Vanderbilt,W (37-20),29,39,74.4,261,1,39,291,7.5,3,78,552,7.1,13,13,0,26,4,39,1,1,2,Georgia,/cfb/boxscores/2023-10-14-vanderbilt.html
+1.0,2023-09-02,,The Citadel,W (34-0),31,40,77.5,273,2,34,200,5.9,2,74,473,6.4,14,13,2,29,9,95,1,1,2,Georgia Southern,/cfb/boxscores/2023-09-02-georgia-southern.html
+2.0,2023-09-09,,Alabama-Birmingham,W (49-35),39,48,81.3,344,3,25,118,4.7,3,73,462,6.3,18,7,2,27,6,55,1,1,2,Georgia Southern,/cfb/boxscores/2023-09-09-georgia-southern.html
+3.0,2023-09-16,@,Wisconsin,L (14-35),33,52,63.5,383,1,28,72,2.6,1,80,455,5.7,15,5,3,23,5,40,1,5,6,Georgia Southern,/cfb/boxscores/2023-09-16-wisconsin.html
+4.0,2023-09-23,@,Ball State,W (40-3),36,50,72.0,363,4,27,167,6.2,0,77,530,6.9,16,9,0,25,5,35,0,0,0,Georgia Southern,/cfb/boxscores/2023-09-23-ball-state.html
+5.0,2023-09-30,,Coastal Carolina,W (38-28),34,56,60.7,322,3,24,116,4.8,1,80,438,5.5,18,6,3,27,10,90,0,0,0,Georgia Southern,/cfb/boxscores/2023-09-30-georgia-southern.html
+6.0,2023-10-14,@,James Madison,L (13-41),35,59,59.3,304,0,29,64,2.2,1,88,368,4.2,20,5,0,25,3,30,0,3,3,Georgia Southern,/cfb/boxscores/2023-10-14-james-madison.html
+1.0,2023-08-31,,Rhode Island,W (42-35),16,20,80.0,193,2,38,231,6.1,3,58,424,7.3,7,12,1,20,5,65,0,0,0,Georgia State,/cfb/boxscores/2023-08-31-georgia-state.html
+2.0,2023-09-09,,Connecticut,W (35-14),15,26,57.7,144,1,45,250,5.6,4,71,394,5.5,8,9,2,19,2,23,1,0,1,Georgia State,/cfb/boxscores/2023-09-09-georgia-state.html
+3.0,2023-09-16,@,Charlotte,W (41-25),27,33,81.8,466,3,39,102,2.6,2,72,568,7.9,15,6,2,23,11,80,0,0,0,Georgia State,/cfb/boxscores/2023-09-16-charlotte.html
+4.0,2023-09-21,@,Coastal Carolina,W (30-17),15,27,55.6,191,1,43,182,4.2,2,70,373,5.3,11,9,4,24,9,66,1,0,1,Georgia State,/cfb/boxscores/2023-09-21-coastal-carolina.html
+5.0,2023-09-30,,Troy,L (7-28),19,29,65.5,193,0,31,105,3.4,1,60,298,5.0,7,9,0,16,5,36,1,2,3,Georgia State,/cfb/boxscores/2023-09-30-georgia-state.html
+6.0,2023-10-14,,Marshall,W (41-24),21,31,67.7,234,1,42,240,5.7,3,73,474,6.5,10,11,4,25,8,80,0,0,0,Georgia State,/cfb/boxscores/2023-10-14-georgia-state.html
+1.0,2023-09-01,,Louisville,L (34-39),19,32,59.4,313,3,38,175,4.6,2,70,488,7.0,10,11,2,23,2,20,1,1,2,Georgia Tech,/cfb/boxscores/2023-09-01-georgia-tech.html
+2.0,2023-09-09,,South Carolina State,W (48-13),24,34,70.6,310,4,33,268,8.1,2,67,578,8.6,12,14,2,28,3,45,1,1,2,Georgia Tech,/cfb/boxscores/2023-09-09-georgia-tech.html
+3.0,2023-09-16,@,Mississippi,L (23-48),28,42,66.7,307,2,47,167,3.6,1,89,474,5.3,16,10,0,26,0,0,0,0,0,Georgia Tech,/cfb/boxscores/2023-09-16-mississippi.html
+4.0,2023-09-23,@,Wake Forest,W (30-16),16,27,59.3,222,2,32,158,4.9,1,59,380,6.4,9,4,0,13,14,142,0,1,1,Georgia Tech,/cfb/boxscores/2023-09-23-wake-forest.html
+5.0,2023-09-30,,Bowling Green State,L (27-38),23,37,62.2,348,4,21,69,3.3,0,58,417,7.2,18,6,3,27,6,46,1,2,3,Georgia Tech,/cfb/boxscores/2023-09-30-georgia-tech.html
+6.0,2023-10-07,@,Miami (FL),W (23-20),12,26,46.2,151,1,27,99,3.7,2,53,250,4.7,4,6,3,13,11,67,0,2,2,Georgia Tech,/cfb/boxscores/2023-10-07-miami-fl.html
+1.0,2023-08-26,@,Vanderbilt,L (28-35),27,35,77.1,351,3,25,40,1.6,1,60,391,6.5,12,4,3,19,7,59,0,2,2,Hawaii,/cfb/boxscores/2023-08-26-vanderbilt.html
+2.0,2023-09-01,,Stanford,L (24-37),30,53,56.6,355,3,16,-5,-0.3,0,69,350,5.1,16,2,2,20,11,114,0,0,0,Hawaii,/cfb/boxscores/2023-09-01-hawaii.html
+3.0,2023-09-10,,Albany,W (31-20),23,40,57.5,266,4,37,113,3.1,0,77,379,4.9,9,7,3,19,11,100,0,3,3,Hawaii,/cfb/boxscores/2023-09-10-hawaii.html
+4.0,2023-09-16,@,Oregon,L (10-55),28,44,63.6,142,1,19,59,3.1,0,63,201,3.2,7,4,4,15,5,27,0,1,1,Hawaii,/cfb/boxscores/2023-09-16-oregon.html
+5.0,2023-09-24,,New Mexico State,W (20-17),26,37,70.3,245,1,30,98,3.3,1,67,343,5.1,12,7,2,21,4,25,1,0,1,Hawaii,/cfb/boxscores/2023-09-24-hawaii.html
+6.0,2023-09-30,@,Nevada-Las Vegas,L (20-44),22,35,62.9,313,2,26,46,1.8,0,61,359,5.9,12,5,3,20,6,65,1,1,2,Hawaii,/cfb/boxscores/2023-09-30-nevada-las-vegas.html
+7.0,2023-10-14,,San Diego State,L (34-41),29,48,60.4,427,3,14,53,3.8,1,62,480,7.7,14,4,1,19,2,11,3,1,4,Hawaii,/cfb/boxscores/2023-10-14-hawaii.html
+1.0,2023-09-02,,UTSA,W (17-14),22,34,64.7,233,2,38,101,2.7,0,72,334,4.6,10,6,3,19,3,25,0,0,0,Houston,/cfb/boxscores/2023-09-02-houston.html
+2.0,2023-09-09,@,Rice,L (41-43),24,43,55.8,260,2,38,183,4.8,4,81,443,5.5,14,11,2,27,6,44,0,1,1,Houston,/cfb/boxscores/2023-09-09-rice.html
+3.0,2023-09-16,,TCU,L (13-36),17,35,48.6,225,0,27,41,1.5,0,62,266,4.3,8,3,1,12,7,60,0,2,2,Houston,/cfb/boxscores/2023-09-16-houston.html
+4.0,2023-09-23,,Sam Houston,W (38-7),32,42,76.2,352,2,37,186,5.0,3,79,538,6.8,15,10,2,27,11,95,0,0,0,Houston,/cfb/boxscores/2023-09-23-houston.html
+5.0,2023-09-30,@,Texas Tech,L (28-49),30,42,71.4,336,4,34,153,4.5,0,76,489,6.4,16,10,0,26,4,47,0,0,0,Houston,/cfb/boxscores/2023-09-30-texas-tech.html
+6.0,2023-10-12,,West Virginia,W (41-39),21,27,77.8,253,4,26,140,5.4,1,53,393,7.4,13,4,3,20,7,70,0,0,0,Houston,/cfb/boxscores/2023-10-12-houston.html
+1.0,2023-09-02,,Toledo,W (30-28),18,26,69.2,206,2,35,168,4.8,1,61,374,6.1,10,10,1,21,10,100,0,1,1,Illinois,/cfb/boxscores/2023-09-02-illinois.html
+2.0,2023-09-08,@,Kansas,L (23-34),19,28,67.9,202,1,28,139,5.0,2,56,341,6.1,13,4,2,19,6,58,0,2,2,Illinois,/cfb/boxscores/2023-09-08-kansas.html
+3.0,2023-09-16,,Penn State,L (13-30),25,45,55.6,276,1,29,78,2.7,1,74,354,4.8,13,4,3,20,6,47,1,4,5,Illinois,/cfb/boxscores/2023-09-16-illinois.html
+4.0,2023-09-23,,Florida Atlantic,W (23-17),25,36,69.4,303,1,41,207,5.0,2,77,510,6.6,14,11,1,26,6,72,2,0,2,Illinois,/cfb/boxscores/2023-09-23-illinois.html
+5.0,2023-09-30,@,Purdue,L (19-44),18,32,56.3,226,1,34,149,4.4,1,66,375,5.7,10,7,0,17,9,83,1,0,1,Illinois,/cfb/boxscores/2023-09-30-purdue.html
+6.0,2023-10-06,,Nebraska,L (7-20),29,47,61.7,289,1,19,21,1.1,0,66,310,4.7,14,1,1,16,3,30,1,1,2,Illinois,/cfb/boxscores/2023-10-06-illinois.html
+7.0,2023-10-14,@,Maryland,W (27-24),16,28,57.1,206,2,39,131,3.4,1,67,337,5.0,10,8,4,22,5,45,0,1,1,Illinois,/cfb/boxscores/2023-10-14-maryland.html
+1.0,2023-09-02,,Ohio State,L (3-23),9,21,42.9,82,0,33,71,2.2,0,54,153,2.8,5,3,2,10,8,75,0,0,0,Indiana,/cfb/boxscores/2023-09-02-indiana.html
+2.0,2023-09-08,,Indiana State,W (41-7),27,37,73.0,344,0,42,214,5.1,5,79,558,7.1,18,12,3,33,7,60,1,0,1,Indiana,/cfb/boxscores/2023-09-09-indiana.html
+3.0,2023-09-16,N,Louisville,L (14-21),24,34,70.6,299,1,27,58,2.1,1,61,357,5.9,13,3,3,19,4,20,0,1,1,Indiana,/cfb/boxscores/2023-09-16-indiana.html
+4.0,2023-09-23,,Akron,W (29-27),11,26,42.3,190,1,34,92,2.7,1,60,282,4.7,11,2,1,14,5,50,1,1,2,Indiana,/cfb/boxscores/2023-09-23-indiana.html
+5.0,2023-09-30,@,Maryland,L (17-44),25,41,61.0,205,2,37,116,3.1,0,78,321,4.1,11,9,0,20,4,30,0,1,1,Indiana,/cfb/boxscores/2023-09-30-maryland.html
+6.0,2023-10-14,@,Michigan,L (7-52),14,29,48.3,140,1,33,92,2.8,0,62,232,3.7,6,9,0,15,5,47,2,2,4,Indiana,/cfb/boxscores/2023-10-14-michigan.html
+1.0,2023-09-02,,Utah State,W (24-14),18,33,54.5,196,2,36,88,2.4,1,69,284,4.1,9,4,5,18,7,50,0,0,0,Iowa,/cfb/boxscores/2023-09-02-iowa.html
+2.0,2023-09-09,@,Iowa State,W (20-13),12,22,54.5,123,0,29,112,3.9,1,51,235,4.6,4,4,1,9,0,0,0,1,1,Iowa,/cfb/boxscores/2023-09-09-iowa-state.html
+3.0,2023-09-16,,Western Michigan,W (41-10),11,22,50.0,133,2,43,254,5.9,3,65,387,6.0,5,13,1,19,1,5,0,2,2,Iowa,/cfb/boxscores/2023-09-16-iowa.html
+4.0,2023-09-23,@,Penn State,L (0-31),6,16,37.5,56,0,17,20,1.2,0,33,76,2.3,2,2,0,4,4,28,4,0,4,Iowa,/cfb/boxscores/2023-09-23-penn-state.html
+5.0,2023-09-30,,Michigan State,W (26-16),14,32,43.8,161,1,27,61,2.3,0,59,222,3.8,8,4,3,15,3,25,1,1,2,Iowa,/cfb/boxscores/2023-09-30-iowa.html
+6.0,2023-10-07,,Purdue,W (20-14),6,21,28.6,110,1,35,181,5.2,1,56,291,5.2,6,6,1,13,2,20,0,1,1,Iowa,/cfb/boxscores/2023-10-07-iowa.html
+7.0,2023-10-14,@,Wisconsin,W (15-6),6,14,42.9,37,0,48,200,4.2,1,62,237,3.8,2,7,0,9,5,55,0,0,0,Iowa,/cfb/boxscores/2023-10-14-wisconsin.html
+1.0,2023-09-02,,Northern Iowa,W (30-9),14,18,77.8,116,2,27,134,5.0,1,45,250,5.6,4,4,2,10,9,81,0,0,0,Iowa State,/cfb/boxscores/2023-09-02-iowa-state.html
+2.0,2023-09-09,,Iowa,L (13-20),23,44,52.3,203,1,31,87,2.8,0,75,290,3.9,12,7,0,19,2,24,0,1,1,Iowa State,/cfb/boxscores/2023-09-09-iowa-state.html
+3.0,2023-09-16,@,Ohio,L (7-10),17,24,70.8,233,1,23,38,1.7,0,47,271,5.8,8,4,1,13,5,50,0,2,2,Iowa State,/cfb/boxscores/2023-09-16-ohio.html
+4.0,2023-09-23,,Oklahoma State,W (34-27),27,38,71.1,348,3,34,74,2.2,1,72,422,5.9,17,2,1,20,5,40,0,0,0,Iowa State,/cfb/boxscores/2023-09-23-iowa-state.html
+5.0,2023-09-30,@,Oklahoma,L (20-50),19,37,51.4,202,2,27,150,5.6,0,64,352,5.5,7,9,0,16,6,41,0,2,2,Iowa State,/cfb/boxscores/2023-09-30-oklahoma.html
+6.0,2023-10-07,,TCU,W (27-14),16,28,57.1,138,1,37,215,5.8,2,65,353,5.4,8,6,2,16,1,15,0,0,0,Iowa State,/cfb/boxscores/2023-10-07-iowa-state.html
+7.0,2023-10-14,@,Cincinnati,W (30-10),15,25,60.0,241,2,38,123,3.2,1,63,364,5.8,7,8,2,17,5,55,0,0,0,Iowa State,/cfb/boxscores/2023-10-14-cincinnati.html
+1.0,2023-08-26,,UTEP,W (17-14),10,20,50.0,67,0,44,208,4.7,2,64,275,4.3,4,9,2,15,4,52,0,0,0,Jacksonville State,/cfb/boxscores/2023-08-26-jacksonville-state.html
+2.0,2023-09-02,,East Tennessee State,W (49-3),13,19,68.4,127,1,56,237,4.2,6,75,364,4.9,7,14,4,25,7,65,0,0,0,Jacksonville State,/cfb/boxscores/2023-09-02-jacksonville-state.html
+3.0,2023-09-09,@,Coastal Carolina,L (16-30),16,28,57.1,207,0,45,186,4.1,1,73,393,5.4,8,11,2,21,7,45,1,0,1,Jacksonville State,/cfb/boxscores/2023-09-09-coastal-carolina.html
+4.0,2023-09-23,,Eastern Michigan,W (21-0),9,19,47.4,93,1,55,295,5.4,2,74,388,5.2,5,17,1,23,4,35,0,0,0,Jacksonville State,/cfb/boxscores/2023-09-23-jacksonville-state.html
+5.0,2023-09-28,@,Sam Houston,W (35-28),16,33,48.5,197,3,33,196,5.9,2,66,393,6.0,8,10,2,20,6,43,2,1,3,Jacksonville State,/cfb/boxscores/2023-09-28-sam-houston-state.html
+6.0,2023-10-04,@,Middle Tennessee State,W (45-30),16,31,51.6,235,2,46,166,3.6,3,77,401,5.2,9,6,1,16,4,30,0,1,1,Jacksonville State,/cfb/boxscores/2023-10-04-middle-tennessee-state.html
+7.0,2023-10-10,,Liberty,L (13-31),14,31,45.2,184,0,39,140,3.6,1,70,324,4.6,10,9,1,20,7,65,0,2,2,Jacksonville State,/cfb/boxscores/2023-10-10-jacksonville-state.html
+1.0,2023-09-02,,Bucknell,W (38-3),12,24,50.0,175,2,41,261,6.4,3,65,436,6.7,8,11,3,22,4,25,0,1,1,James Madison,/cfb/boxscores/2023-09-02-james-madison.html
+2.0,2023-09-09,@,Virginia,W (36-35),21,32,65.6,228,2,34,167,4.9,2,66,395,6.0,8,7,3,18,7,56,0,0,0,James Madison,/cfb/boxscores/2023-09-09-virginia.html
+3.0,2023-09-16,@,Troy,W (16-14),18,26,69.2,200,1,39,90,2.3,0,65,290,4.5,8,5,0,13,6,40,0,0,0,James Madison,/cfb/boxscores/2023-09-16-troy.html
+4.0,2023-09-23,@,Utah State,W (45-38),23,34,67.6,364,4,39,148,3.8,2,73,512,7.0,12,8,3,23,6,35,3,2,5,James Madison,/cfb/boxscores/2023-09-23-utah-state.html
+5.0,2023-09-30,,South Alabama,W (31-23),12,22,54.5,241,3,44,136,3.1,0,66,377,5.7,6,7,2,15,10,108,0,1,1,James Madison,/cfb/boxscores/2023-09-30-james-madison.html
+6.0,2023-10-14,,Georgia Southern,W (41-13),20,31,64.5,259,3,23,125,5.4,2,54,384,7.1,13,6,1,20,3,20,0,0,0,James Madison,/cfb/boxscores/2023-10-14-james-madison.html
+1.0,2023-09-01,,Missouri State,W (48-17),22,28,78.6,276,2,38,245,6.4,4,66,521,7.9,13,12,2,27,3,35,1,0,1,Kansas,/cfb/boxscores/2023-09-01-kansas.html
+2.0,2023-09-08,,Illinois,W (34-23),21,29,72.4,277,2,44,262,6.0,2,73,539,7.4,12,12,3,27,4,34,1,1,2,Kansas,/cfb/boxscores/2023-09-08-kansas.html
+3.0,2023-09-16,@,Nevada,W (31-24),21,27,77.8,298,0,40,143,3.6,4,67,441,6.6,14,8,2,24,7,53,1,0,1,Kansas,/cfb/boxscores/2023-09-16-nevada.html
+4.0,2023-09-23,,Brigham Young,W (38-27),14,19,73.7,130,3,37,221,6.0,0,56,351,6.3,8,14,1,23,7,70,0,0,0,Kansas,/cfb/boxscores/2023-09-23-kansas.html
+5.0,2023-09-30,@,Texas,L (14-40),9,21,42.9,136,1,25,124,5.0,1,46,260,5.7,6,4,1,11,3,20,1,0,1,Kansas,/cfb/boxscores/2023-09-30-texas.html
+6.0,2023-10-07,,Central Florida,W (51-22),8,12,66.7,91,1,51,399,7.8,5,63,490,7.8,7,17,1,25,2,20,0,0,0,Kansas,/cfb/boxscores/2023-10-07-kansas.html
+7.0,2023-10-14,@,Oklahoma State,L (32-39),23,34,67.6,410,5,29,90,3.1,0,63,500,7.9,15,4,0,19,3,22,0,2,2,Kansas,/cfb/boxscores/2023-10-14-oklahoma-state.html
+1.0,2023-09-02,,Southeast Missouri State,W (45-0),22,31,71.0,360,3,40,228,5.7,3,71,588,8.3,16,11,1,28,4,36,0,1,1,Kansas State,/cfb/boxscores/2023-09-02-kansas-state.html
+2.0,2023-09-09,,Troy,W (42-13),21,32,65.6,250,3,38,147,3.9,3,70,397,5.7,10,9,1,20,5,45,0,1,1,Kansas State,/cfb/boxscores/2023-09-09-kansas-state.html
+3.0,2023-09-16,@,Missouri,L (27-30),25,39,64.1,270,3,35,138,3.9,0,74,408,5.5,11,7,1,19,7,65,0,1,1,Kansas State,/cfb/boxscores/2023-09-16-missouri.html
+4.0,2023-09-23,,Central Florida,W (44-31),27,42,64.3,255,0,40,281,7.0,6,82,536,6.5,16,12,4,32,5,63,0,1,1,Kansas State,/cfb/boxscores/2023-09-23-kansas-state.html
+5.0,2023-10-06,@,Oklahoma State,L (21-29),15,34,44.1,152,1,38,220,5.8,2,72,372,5.2,6,12,0,18,4,32,0,3,3,Kansas State,/cfb/boxscores/2023-10-06-oklahoma-state.html
+6.0,2023-10-14,@,Texas Tech,W (38-21),14,18,77.8,163,0,47,272,5.8,5,65,435,6.7,8,14,2,24,5,45,0,0,0,Kansas State,/cfb/boxscores/2023-10-14-texas-tech.html
+1.0,2023-08-31,@,Central Florida,L (6-56),12,32,37.5,145,0,36,94,2.6,0,68,239,3.5,8,5,2,15,4,30,0,1,1,Kent State,/cfb/boxscores/2023-08-31-central-florida.html
+2.0,2023-09-09,@,Arkansas,L (6-28),11,17,64.7,174,0,36,26,0.7,0,53,200,3.8,8,4,2,14,5,39,0,1,1,Kent State,/cfb/boxscores/2023-09-09-arkansas.html
+3.0,2023-09-16,,Central Connecticut State,W (38-10),12,16,75.0,172,1,54,295,5.5,4,70,467,6.7,6,14,0,20,7,64,0,1,1,Kent State,/cfb/boxscores/2023-09-16-kent-state.html
+4.0,2023-09-23,@,Fresno State,L (10-53),8,15,53.3,102,0,38,129,3.4,1,53,231,4.4,4,7,0,11,11,72,0,0,0,Kent State,/cfb/boxscores/2023-09-23-fresno-state.html
+5.0,2023-09-30,,Miami (OH),L (3-23),18,30,60.0,170,0,35,36,1.0,0,65,206,3.2,8,5,1,14,5,50,0,0,0,Kent State,/cfb/boxscores/2023-09-30-kent-state.html
+6.0,2023-10-07,@,Ohio,L (17-42),11,20,55.0,119,2,36,109,3.0,0,56,228,4.1,6,7,3,16,5,46,0,1,1,Kent State,/cfb/boxscores/2023-10-07-ohio.html
+7.0,2023-10-14,@,Eastern Michigan,L (14-28),14,36,38.9,180,2,43,163,3.8,0,79,343,4.3,9,8,0,17,6,60,3,0,3,Kent State,/cfb/boxscores/2023-10-14-eastern-michigan.html
+1.0,2023-09-02,,Ball State,W (44-14),18,31,58.1,241,1,20,113,5.7,2,51,354,6.9,10,5,2,17,7,51,0,1,1,Kentucky,/cfb/boxscores/2023-09-02-kentucky.html
+2.0,2023-09-09,,Eastern Kentucky,W (28-17),24,38,63.2,299,4,23,115,5.0,0,61,414,6.8,14,5,1,20,10,70,0,1,1,Kentucky,/cfb/boxscores/2023-09-09-kentucky.html
+3.0,2023-09-16,,Akron,W (35-3),16,26,61.5,315,3,22,135,6.1,2,48,450,9.4,9,7,2,18,5,45,2,1,3,Kentucky,/cfb/boxscores/2023-09-16-kentucky.html
+4.0,2023-09-23,@,Vanderbilt,W (45-28),15,29,51.7,205,1,31,160,5.2,3,60,365,6.1,9,7,3,19,10,106,0,2,2,Kentucky,/cfb/boxscores/2023-09-23-vanderbilt.html
+5.0,2023-09-30,,Florida,W (33-14),9,19,47.4,69,1,36,329,9.1,3,55,398,7.2,7,11,4,22,3,25,0,0,0,Kentucky,/cfb/boxscores/2023-09-30-kentucky.html
+6.0,2023-10-07,@,Georgia,L (13-51),10,26,38.5,128,2,24,55,2.3,0,50,183,3.7,7,4,1,12,5,60,0,0,0,Kentucky,/cfb/boxscores/2023-10-07-georgia.html
+7.0,2023-10-14,,Missouri,L (21-38),14,27,51.9,120,2,31,181,5.8,1,58,301,5.2,5,12,2,19,14,122,1,2,3,Kentucky,/cfb/boxscores/2023-10-14-kentucky.html
+1.0,2023-09-02,,Bowling Green State,W (34-24),11,20,55.0,143,2,49,246,5.0,1,69,389,5.6,9,12,1,22,4,51,1,0,1,Liberty,/cfb/boxscores/2023-09-02-liberty.html
+2.0,2023-09-09,,New Mexico State,W (33-17),15,25,60.0,276,2,52,250,4.8,2,77,526,6.8,9,15,2,26,7,82,1,0,1,Liberty,/cfb/boxscores/2023-09-09-liberty.html
+3.0,2023-09-16,@,Buffalo,W (55-27),16,29,55.2,344,5,36,225,6.3,2,65,569,8.8,9,9,2,20,10,90,0,0,0,Liberty,/cfb/boxscores/2023-09-16-buffalo.html
+4.0,2023-09-23,@,Florida International,W (38-6),11,21,52.4,156,2,44,364,8.3,3,65,520,8.0,5,17,0,22,4,49,2,1,3,Liberty,/cfb/boxscores/2023-09-23-florida-international.html
+5.0,2023-10-05,,Sam Houston,W (21-16),11,19,57.9,257,1,43,191,4.4,2,62,448,7.2,9,9,1,19,8,79,0,1,1,Liberty,/cfb/boxscores/2023-10-05-liberty.html
+6.0,2023-10-10,@,Jacksonville State,W (31-13),12,21,57.1,177,2,55,245,4.5,2,76,422,5.6,9,13,3,25,7,65,1,0,1,Liberty,/cfb/boxscores/2023-10-10-jacksonville-state.html
+1.0,2023-09-02,,Northwestern State,W (38-13),14,32,43.8,223,3,34,206,6.1,2,66,429,6.5,9,9,2,20,2,20,2,1,3,Louisiana,/cfb/boxscores/2023-09-02-louisiana-lafayette.html
+2.0,2023-09-09,@,Old Dominion,L (31-38),25,36,69.4,285,2,40,169,4.2,2,76,454,6.0,13,10,1,24,10,70,0,0,0,Louisiana,/cfb/boxscores/2023-09-09-old-dominion.html
+3.0,2023-09-16,@,Alabama-Birmingham,W (41-21),16,24,66.7,208,1,40,305,7.6,4,64,513,8.0,8,11,3,22,8,65,3,1,4,Louisiana,/cfb/boxscores/2023-09-16-alabama-birmingham.html
+4.0,2023-09-23,,Buffalo,W (45-38),22,29,75.9,249,1,38,269,7.1,4,67,518,7.7,13,9,2,24,5,32,1,2,3,Louisiana,/cfb/boxscores/2023-09-23-louisiana-lafayette.html
+5.0,2023-09-30,@,Minnesota,L (24-35),14,25,56.0,172,2,27,177,6.6,1,52,349,6.7,6,8,1,15,7,60,0,2,2,Louisiana,/cfb/boxscores/2023-09-30-minnesota.html
+6.0,2023-10-07,,Texas State,W (34-30),13,17,76.5,205,3,41,218,5.3,2,58,423,7.3,6,14,2,22,5,64,2,0,2,Louisiana,/cfb/boxscores/2023-10-07-louisiana-lafayette.html
+1.0,2023-08-26,,Florida International,W (22-17),34,44,77.3,333,1,39,114,2.9,1,83,447,5.4,19,7,2,28,5,47,1,1,2,Louisiana Tech,/cfb/boxscores/2023-08-26-louisiana-tech.html
+2.0,2023-09-02,@,Southern Methodist,L (14-38),21,33,63.6,241,1,24,28,1.2,1,57,269,4.7,8,1,2,11,5,54,0,1,1,Louisiana Tech,/cfb/boxscores/2023-09-02-southern-methodist.html
+3.0,2023-09-09,,Northwestern State,W (51-21),12,22,54.5,111,1,38,357,9.4,4,60,468,7.8,7,10,4,21,8,80,1,1,2,Louisiana Tech,/cfb/boxscores/2023-09-09-louisiana-tech.html
+4.0,2023-09-16,,North Texas,L (37-40),15,25,60.0,217,3,40,215,5.4,2,65,432,6.6,8,10,4,22,5,41,1,0,1,Louisiana Tech,/cfb/boxscores/2023-09-16-louisiana-tech.html
+5.0,2023-09-23,@,Nebraska,L (14-28),27,42,64.3,292,1,21,46,2.2,1,63,338,5.4,10,6,1,17,14,110,0,1,1,Louisiana Tech,/cfb/boxscores/2023-09-23-nebraska.html
+6.0,2023-09-29,@,UTEP,W (24-10),9,20,45.0,152,1,31,142,4.6,1,51,294,5.8,3,8,3,14,13,123,0,0,0,Louisiana Tech,/cfb/boxscores/2023-09-29-texas-el-paso.html
+7.0,2023-10-05,,Western Kentucky,L (28-35),21,41,51.2,259,1,38,138,3.6,3,79,397,5.0,12,6,1,19,7,55,0,2,2,Louisiana Tech,/cfb/boxscores/2023-10-05-louisiana-tech.html
+8.0,2023-10-10,@,Middle Tennessee State,L (23-31),30,47,63.8,340,2,26,79,3.0,1,73,419,5.7,17,5,4,26,7,48,0,1,1,Louisiana Tech,/cfb/boxscores/2023-10-10-middle-tennessee-state.html
+1.0,2023-09-02,,Army,W (17-13),15,31,48.4,91,1,32,207,6.5,1,63,298,4.7,5,9,1,15,5,35,0,2,2,Louisiana-Monroe,/cfb/boxscores/2023-09-02-louisiana-monroe.html
+2.0,2023-09-09,,Lamar,W (24-14),12,22,54.5,99,0,40,285,7.1,2,62,384,6.2,4,15,0,19,3,30,0,0,0,Louisiana-Monroe,/cfb/boxscores/2023-09-09-louisiana-monroe.html
+3.0,2023-09-16,@,Texas A&M,L (3-47),6,17,35.3,95,0,31,127,4.1,0,48,222,4.6,2,5,1,8,6,55,0,0,0,Louisiana-Monroe,/cfb/boxscores/2023-09-16-texas-am.html
+4.0,2023-09-30,,Appalachian State,L (40-41),18,27,66.7,268,4,40,203,5.1,2,67,471,7.0,10,10,2,22,5,57,1,1,2,Louisiana-Monroe,/cfb/boxscores/2023-09-30-louisiana-monroe.html
+5.0,2023-10-07,,South Alabama,L (7-55),13,28,46.4,112,1,32,138,4.3,0,60,250,4.2,6,5,2,13,2,15,0,2,2,Louisiana-Monroe,/cfb/boxscores/2023-10-07-louisiana-monroe.html
+6.0,2023-10-14,@,Texas State,L (20-21),14,22,63.6,150,1,35,135,3.9,0,57,285,5.0,6,7,1,14,3,30,0,0,0,Louisiana-Monroe,/cfb/boxscores/2023-10-14-texas-state.html
+1.0,2023-09-01,@,Georgia Tech,W (39-34),18,31,58.1,247,3,34,227,6.7,1,65,474,7.3,9,11,1,21,7,59,0,1,1,Louisville,/cfb/boxscores/2023-09-01-georgia-tech.html
+2.0,2023-09-07,,Murray State,W (56-0),25,34,73.5,346,2,44,344,7.8,6,78,690,8.8,12,15,2,29,7,44,0,2,2,Louisville,/cfb/boxscores/2023-09-07-louisville.html
+3.0,2023-09-16,N,Indiana,W (21-14),13,23,56.5,238,1,39,184,4.7,2,62,422,6.8,10,10,0,20,6,50,0,1,1,Louisville,/cfb/boxscores/2023-09-16-indiana.html
+4.0,2023-09-23,,Boston College,W (56-28),18,21,85.7,388,5,41,194,4.7,3,62,582,9.4,11,9,2,22,4,50,0,0,0,Louisville,/cfb/boxscores/2023-09-23-louisville.html
+5.0,2023-09-29,@,North Carolina State,W (13-10),21,35,60.0,286,1,29,20,0.7,0,64,306,4.8,11,4,3,18,10,81,1,2,3,Louisville,/cfb/boxscores/2023-09-29-north-carolina-state.html
+6.0,2023-10-07,,Notre Dame,W (33-20),17,24,70.8,145,1,40,185,4.6,2,64,330,5.2,6,10,1,17,6,35,1,0,1,Louisville,/cfb/boxscores/2023-10-07-louisville.html
+7.0,2023-10-14,@,Pittsburgh,L (21-38),29,52,55.8,350,1,33,80,2.4,2,85,430,5.1,18,5,5,28,5,25,1,2,3,Louisville,/cfb/boxscores/2023-10-14-pittsburgh.html
+1.0,2023-09-03,N,Florida State,L (24-45),22,37,59.5,346,1,27,113,4.2,2,64,459,7.2,13,6,4,23,2,30,1,1,2,LSU,/cfb/boxscores/2023-09-03-florida-state.html
+2.0,2023-09-09,,Grambling State,W (72-10),24,34,70.6,320,5,48,302,6.3,5,82,622,7.6,14,18,2,34,2,20,0,0,0,LSU,/cfb/boxscores/2023-09-09-louisiana-state.html
+3.0,2023-09-16,@,Mississippi State,W (41-14),31,37,83.8,367,2,39,163,4.2,3,76,530,7.0,15,9,3,27,6,50,0,0,0,LSU,/cfb/boxscores/2023-09-16-mississippi-state.html
+4.0,2023-09-23,,Arkansas,W (34-31),20,29,69.0,320,4,29,189,6.5,0,58,509,8.8,14,9,3,26,5,51,0,1,1,LSU,/cfb/boxscores/2023-09-23-louisiana-state.html
+5.0,2023-09-30,@,Mississippi,L (49-55),27,38,71.1,414,4,37,223,6.0,3,75,637,8.5,20,11,3,34,6,35,1,0,1,LSU,/cfb/boxscores/2023-09-30-mississippi.html
+6.0,2023-10-07,@,Missouri,W (49-39),15,23,65.2,259,3,43,274,6.4,2,66,533,8.1,10,11,4,25,11,83,0,0,0,LSU,/cfb/boxscores/2023-10-07-missouri.html
+7.0,2023-10-14,,Auburn,W (48-18),20,27,74.1,325,3,39,238,6.1,3,66,563,8.5,13,12,0,25,12,100,0,1,1,LSU,/cfb/boxscores/2023-10-14-louisiana-state.html
+1.0,2023-09-02,,Albany,W (21-17),28,35,80.0,268,1,26,145,5.6,2,61,413,6.8,13,7,1,21,5,54,0,1,1,Marshall,/cfb/boxscores/2023-09-02-marshall.html
+2.0,2023-09-09,@,East Carolina,W (31-13),17,30,56.7,261,1,38,131,3.4,3,68,392,5.8,9,7,6,22,4,39,1,0,1,Marshall,/cfb/boxscores/2023-09-09-east-carolina.html
+3.0,2023-09-23,,Virginia Tech,W (24-17),16,27,59.3,166,1,44,214,4.9,2,71,380,5.4,8,8,3,19,3,30,0,2,2,Marshall,/cfb/boxscores/2023-09-23-marshall.html
+4.0,2023-09-30,,Old Dominion,W (41-35),29,35,82.9,278,2,49,186,3.8,2,84,464,5.5,16,10,4,30,10,91,2,1,3,Marshall,/cfb/boxscores/2023-09-30-marshall.html
+5.0,2023-10-07,@,North Carolina State,L (41-48),29,52,55.8,315,2,38,104,2.7,2,90,419,4.7,15,6,1,22,6,54,2,1,3,Marshall,/cfb/boxscores/2023-10-07-north-carolina-state.html
+6.0,2023-10-14,@,Georgia State,L (24-41),27,34,79.4,301,1,34,156,4.6,2,68,457,6.7,14,6,3,23,8,77,1,0,1,Marshall,/cfb/boxscores/2023-10-14-georgia-state.html
+1.0,2023-09-02,,Towson,W (38-6),26,43,60.5,283,3,36,166,4.6,2,79,449,5.7,13,13,4,30,6,54,0,0,0,Maryland,/cfb/boxscores/2023-09-02-maryland.html
+2.0,2023-09-09,,Charlotte,W (38-20),25,36,69.4,287,1,34,243,7.1,3,70,530,7.6,11,15,2,28,4,50,0,2,2,Maryland,/cfb/boxscores/2023-09-09-maryland.html
+3.0,2023-09-15,,Virginia,W (42-14),19,30,63.3,342,1,31,119,3.8,4,61,461,7.6,13,6,1,20,7,80,0,0,0,Maryland,/cfb/boxscores/2023-09-15-maryland.html
+4.0,2023-09-23,@,Michigan State,W (31-9),21,36,58.3,223,3,31,139,4.5,1,67,362,5.4,10,6,2,18,4,50,0,1,1,Maryland,/cfb/boxscores/2023-09-23-michigan-state.html
+5.0,2023-09-30,,Indiana,W (44-17),24,34,70.6,352,5,23,120,5.2,1,57,472,8.3,13,7,0,20,4,15,0,0,0,Maryland,/cfb/boxscores/2023-09-30-maryland.html
+6.0,2023-10-07,@,Ohio State,L (17-37),21,41,51.2,196,1,35,106,3.0,1,76,302,4.0,10,8,2,20,4,50,0,2,2,Maryland,/cfb/boxscores/2023-10-07-ohio-state.html
+7.0,2023-10-14,,Illinois,L (24-27),28,40,70.0,287,2,29,93,3.2,1,69,380,5.5,16,5,1,22,5,60,1,0,1,Maryland,/cfb/boxscores/2023-10-14-maryland.html
+1.0,2023-08-26,@,New Mexico State,W (41-30),10,17,58.8,192,0,37,197,5.3,4,54,389,7.2,6,9,2,17,8,69,0,0,0,Massachusetts,/cfb/boxscores/2023-08-26-new-mexico-state.html
+2.0,2023-09-02,@,Auburn,L (14-59),14,24,58.3,161,1,27,140,5.2,1,51,301,5.9,5,6,0,11,9,73,1,1,2,Massachusetts,/cfb/boxscores/2023-09-02-auburn.html
+3.0,2023-09-09,,Miami (OH),L (28-41),22,35,62.9,244,3,30,62,2.1,0,65,306,4.7,9,7,2,18,7,82,1,1,2,Massachusetts,/cfb/boxscores/2023-09-09-massachusetts.html
+4.0,2023-09-16,@,Eastern Michigan,L (17-19),23,41,56.1,340,1,34,124,3.6,1,75,464,6.2,12,8,3,23,7,81,1,3,4,Massachusetts,/cfb/boxscores/2023-09-16-eastern-michigan.html
+5.0,2023-09-23,,New Mexico,L (31-34),16,25,64.0,298,2,45,197,4.4,1,70,495,7.1,9,10,2,21,11,75,0,0,0,Massachusetts,/cfb/boxscores/2023-09-23-massachusetts.html
+6.0,2023-09-30,,Arkansas State,L (28-52),29,38,76.3,269,1,25,112,4.5,2,63,381,6.0,12,6,4,22,12,127,0,1,1,Massachusetts,/cfb/boxscores/2023-09-30-massachusetts.html
+7.0,2023-10-07,,Toledo,L (24-41),20,31,64.5,272,2,32,167,5.2,1,63,439,7.0,10,8,1,19,6,35,0,1,1,Massachusetts,/cfb/boxscores/2023-10-07-massachusetts.html
+8.0,2023-10-14,@,Penn State,L (0-63),9,23,39.1,45,0,39,64,1.6,0,62,109,1.8,2,5,2,9,9,81,0,1,1,Massachusetts,/cfb/boxscores/2023-10-14-penn-state.html
+1.0,2023-09-02,,Bethune-Cookman,W (56-14),28,38,73.7,343,2,43,208,4.8,5,81,551,6.8,14,13,0,27,5,55,1,2,3,Memphis,/cfb/boxscores/2023-09-02-memphis.html
+2.0,2023-09-09,@,Arkansas State,W (37-3),21,29,72.4,239,2,41,150,3.7,2,70,389,5.6,9,7,2,18,3,40,0,0,0,Memphis,/cfb/boxscores/2023-09-09-arkansas-state.html
+3.0,2023-09-14,,Navy,W (28-24),23,35,65.7,218,1,31,190,6.1,3,66,408,6.2,11,7,1,19,3,26,1,1,2,Memphis,/cfb/boxscores/2023-09-14-memphis.html
+4.0,2023-09-23,N,Missouri,L (27-34),31,47,66.0,316,3,29,83,2.9,0,76,399,5.3,15,6,1,22,5,39,0,2,2,Memphis,/cfb/boxscores/2023-09-23-memphis.html
+5.0,2023-09-30,,Boise State,W (35-32),18,28,64.3,269,2,35,179,5.1,2,63,448,7.1,10,10,0,20,5,40,0,0,0,Memphis,/cfb/boxscores/2023-09-30-memphis.html
+6.0,2023-10-13,,Tulane,L (21-31),24,43,55.8,321,3,19,45,2.4,0,62,366,5.9,16,2,2,20,5,54,0,2,2,Memphis,/cfb/boxscores/2023-10-13-memphis.html
+1.0,2023-09-01,,Miami (OH),W (38-3),20,25,80.0,243,1,36,250,6.9,3,61,493,8.1,14,10,3,27,8,60,0,1,1,Miami (FL),/cfb/boxscores/2023-09-01-miami-fl.html
+2.0,2023-09-09,,Texas A&M,W (48-33),21,30,70.0,374,5,24,77,3.2,0,54,451,8.4,10,4,2,16,10,115,1,0,1,Miami (FL),/cfb/boxscores/2023-09-09-miami-fl.html
+3.0,2023-09-14,,Bethune-Cookman,W (48-7),28,34,82.4,349,2,36,240,6.7,5,70,589,8.4,15,17,0,32,5,34,1,0,1,Miami (FL),/cfb/boxscores/2023-09-14-miami-fl.html
+4.0,2023-09-23,@,Temple,W (41-7),17,25,68.0,220,3,42,323,7.7,2,67,543,8.1,10,14,0,24,7,65,0,0,0,Miami (FL),/cfb/boxscores/2023-09-23-temple.html
+5.0,2023-10-07,,Georgia Tech,L (20-23),24,36,66.7,288,1,47,165,3.5,1,83,453,5.5,12,10,1,23,6,80,2,3,5,Miami (FL),/cfb/boxscores/2023-10-07-miami-fl.html
+6.0,2023-10-14,@,North Carolina,L (31-41),31,49,63.3,391,4,27,91,3.4,0,76,482,6.3,20,3,5,28,7,69,2,2,4,Miami (FL),/cfb/boxscores/2023-10-14-north-carolina.html
+1.0,2023-09-01,@,Miami (FL),L (3-38),13,24,54.2,164,0,25,51,2.0,0,49,215,4.4,6,2,1,9,5,49,0,0,0,Miami (OH),/cfb/boxscores/2023-09-01-miami-fl.html
+2.0,2023-09-09,@,Massachusetts,W (41-28),12,22,54.5,302,4,35,144,4.1,0,57,446,7.8,8,8,1,17,8,70,1,2,3,Miami (OH),/cfb/boxscores/2023-09-09-massachusetts.html
+3.0,2023-09-16,@,Cincinnati,W (31-24),12,20,60.0,237,3,29,121,4.2,1,49,358,7.3,8,6,2,16,7,42,1,1,2,Miami (OH),/cfb/boxscores/2023-09-16-cincinnati.html
+4.0,2023-09-23,,Delaware State,W (62-20),15,21,71.4,180,2,43,466,10.8,6,64,646,10.1,9,16,3,28,4,45,0,0,0,Miami (OH),/cfb/boxscores/2023-09-23-miami-oh.html
+5.0,2023-09-30,@,Kent State,W (23-3),11,23,47.8,216,1,34,76,2.2,1,57,292,5.1,10,5,1,16,3,20,0,0,0,Miami (OH),/cfb/boxscores/2023-09-30-kent-state.html
+6.0,2023-10-07,,Bowling Green State,W (27-0),15,18,83.3,170,2,47,186,4.0,1,65,356,5.5,6,12,2,20,7,45,1,0,1,Miami (OH),/cfb/boxscores/2023-10-07-miami-oh.html
+7.0,2023-10-14,@,Western Michigan,W (34-21),20,35,57.1,223,2,31,92,3.0,2,66,315,4.8,11,4,2,17,5,30,1,1,2,Miami (OH),/cfb/boxscores/2023-10-14-western-michigan.html
+1.0,2023-09-02,,East Carolina,W (30-3),26,31,83.9,280,3,31,122,3.9,1,62,402,6.5,18,4,4,26,5,35,0,0,0,Michigan,/cfb/boxscores/2023-09-02-michigan.html
+2.0,2023-09-09,,Nevada-Las Vegas,W (35-7),23,28,82.1,313,2,33,179,5.4,3,61,492,8.1,14,8,1,23,4,30,0,1,1,Michigan,/cfb/boxscores/2023-09-09-michigan.html
+3.0,2023-09-16,,Bowling Green State,W (31-6),8,13,61.5,143,2,31,169,5.5,2,44,312,7.1,5,10,0,15,1,10,1,3,4,Michigan,/cfb/boxscores/2023-09-16-michigan.html
+4.0,2023-09-23,,Rutgers,W (31-7),15,21,71.4,214,1,40,201,5.0,2,61,415,6.8,9,11,0,20,3,18,0,0,0,Michigan,/cfb/boxscores/2023-09-23-michigan.html
+5.0,2023-09-30,@,Nebraska,W (45-7),16,23,69.6,187,3,51,249,4.9,3,74,436,5.9,10,15,1,26,0,0,0,0,0,Michigan,/cfb/boxscores/2023-09-30-nebraska.html
+6.0,2023-10-07,@,Minnesota,W (52-10),16,23,69.6,241,1,33,191,5.8,4,56,432,7.7,9,8,1,18,1,10,0,0,0,Michigan,/cfb/boxscores/2023-10-07-minnesota.html
+7.0,2023-10-14,,Indiana,W (52-7),19,22,86.4,244,4,42,163,3.9,3,64,407,6.4,13,9,1,23,2,20,0,0,0,Michigan,/cfb/boxscores/2023-10-14-michigan.html
+1.0,2023-09-01,,Central Michigan,W (31-7),18,33,54.5,279,2,31,127,4.1,2,64,406,6.3,11,6,3,20,8,66,0,0,0,Michigan State,/cfb/boxscores/2023-09-01-michigan-state.html
+2.0,2023-09-09,,Richmond,W (45-14),19,23,82.6,303,3,38,162,4.3,3,61,465,7.6,13,8,0,21,5,45,2,0,2,Michigan State,/cfb/boxscores/2023-09-09-michigan-state.html
+3.0,2023-09-16,,Washington,L (7-41),14,35,40.0,208,0,27,53,2.0,1,62,261,4.2,8,4,3,15,11,83,0,1,1,Michigan State,/cfb/boxscores/2023-09-16-michigan-state.html
+4.0,2023-09-23,,Maryland,L (9-31),26,44,59.1,274,1,31,102,3.3,0,75,376,5.0,12,11,3,26,6,70,2,3,5,Michigan State,/cfb/boxscores/2023-09-23-michigan-state.html
+5.0,2023-09-30,@,Iowa,L (16-26),25,44,56.8,193,0,32,156,4.9,0,76,349,4.6,8,10,2,20,10,94,1,3,4,Michigan State,/cfb/boxscores/2023-09-30-iowa.html
+6.0,2023-10-14,@,Rutgers,L (24-27),18,29,62.1,133,2,41,106,2.6,1,70,239,3.4,8,11,4,23,5,38,3,0,3,Michigan State,/cfb/boxscores/2023-10-14-rutgers.html
+1.0,2023-09-02,@,Alabama,L (7-56),24,35,68.6,133,1,26,78,3.0,0,61,211,3.5,7,5,1,13,9,84,1,1,2,Middle Tennessee State,/cfb/boxscores/2023-09-02-alabama.html
+2.0,2023-09-09,@,Missouri,L (19-23),22,36,61.1,219,2,29,66,2.3,0,65,285,4.4,10,5,1,16,6,42,0,0,0,Middle Tennessee State,/cfb/boxscores/2023-09-09-missouri.html
+3.0,2023-09-16,,Murray State,W (35-14),28,34,82.4,291,2,26,217,8.3,3,60,508,8.5,13,7,0,20,12,110,0,1,1,Middle Tennessee State,/cfb/boxscores/2023-09-16-middle-tennessee-state.html
+4.0,2023-09-23,,Colorado State,L (23-31),30,41,73.2,279,2,43,151,3.5,1,84,430,5.1,13,10,3,26,6,65,2,0,2,Middle Tennessee State,/cfb/boxscores/2023-09-23-middle-tennessee-state.html
+5.0,2023-09-28,@,Western Kentucky,L (10-31),27,45,60.0,252,0,28,121,4.3,1,73,373,5.1,11,6,3,20,7,40,1,2,3,Middle Tennessee State,/cfb/boxscores/2023-09-28-western-kentucky.html
+6.0,2023-10-04,,Jacksonville State,L (30-45),28,44,63.6,454,2,39,109,2.8,2,83,563,6.8,16,3,3,22,6,55,2,2,4,Middle Tennessee State,/cfb/boxscores/2023-10-04-middle-tennessee-state.html
+7.0,2023-10-10,,Louisiana Tech,W (31-23),23,29,79.3,248,2,37,105,2.8,2,66,353,5.3,9,8,2,19,7,63,0,0,0,Middle Tennessee State,/cfb/boxscores/2023-10-10-middle-tennessee-state.html
+1.0,2023-08-31,,Nebraska,W (13-10),24,44,54.5,196,1,25,55,2.2,0,69,251,3.6,13,5,2,20,3,25,0,1,1,Minnesota,/cfb/boxscores/2023-08-31-minnesota.html
+2.0,2023-09-09,,Eastern Michigan,W (25-6),10,15,66.7,117,0,56,296,5.3,2,71,413,5.8,7,18,3,28,2,17,1,1,2,Minnesota,/cfb/boxscores/2023-09-09-minnesota.html
+3.0,2023-09-16,@,North Carolina,L (13-31),11,30,36.7,133,0,31,170,5.5,1,61,303,5.0,7,10,2,19,3,25,0,2,2,Minnesota,/cfb/boxscores/2023-09-16-north-carolina.html
+4.0,2023-09-23,@,Northwestern,L (34-37),14,19,73.7,153,2,42,244,5.8,2,61,397,6.5,7,7,1,15,5,59,0,0,0,Minnesota,/cfb/boxscores/2023-09-23-northwestern.html
+5.0,2023-09-30,,Louisiana,W (35-24),12,14,85.7,146,2,51,201,3.9,3,65,347,5.3,7,16,3,26,1,15,0,1,1,Minnesota,/cfb/boxscores/2023-09-30-minnesota.html
+6.0,2023-10-07,,Michigan,L (10-52),5,16,31.3,52,1,39,117,3.0,0,55,169,3.1,3,7,0,10,4,36,0,2,2,Minnesota,/cfb/boxscores/2023-10-07-minnesota.html
+1.0,2023-09-02,,Southeastern Louisiana,W (48-7),20,29,69.0,227,2,39,298,7.6,3,68,525,7.7,13,10,0,23,1,15,0,0,0,Mississippi State,/cfb/boxscores/2023-09-02-mississippi-state.html
+2.0,2023-09-09,,Arizona,W (31-24),13,17,76.5,162,3,39,145,3.7,1,56,307,5.5,8,5,3,16,9,90,1,0,1,Mississippi State,/cfb/boxscores/2023-09-09-mississippi-state.html
+3.0,2023-09-16,,Louisiana State,L (14-41),12,29,41.4,107,1,21,94,4.5,1,50,201,4.0,6,4,0,10,4,41,0,0,0,Mississippi State,/cfb/boxscores/2023-09-16-mississippi-state.html
+4.0,2023-09-23,@,South Carolina,L (30-37),30,48,62.5,487,1,23,32,1.4,2,71,519,7.3,18,1,1,20,5,48,1,1,2,Mississippi State,/cfb/boxscores/2023-09-23-south-carolina.html
+5.0,2023-09-30,,Alabama,L (17-40),15,27,55.6,107,1,35,154,4.4,1,62,261,4.2,5,10,0,15,3,15,0,3,3,Mississippi State,/cfb/boxscores/2023-09-30-mississippi-state.html
+6.0,2023-10-07,,Western Michigan,W (41-28),23,32,71.9,246,3,33,194,5.9,2,65,440,6.8,13,9,3,25,6,65,1,0,1,Mississippi State,/cfb/boxscores/2023-10-07-mississippi-state.html
+1.0,2023-08-31,,South Dakota,W (35-10),20,26,76.9,226,2,40,221,5.5,3,66,447,6.8,9,11,2,22,7,56,0,1,1,Missouri,/cfb/boxscores/2023-08-31-missouri.html
+2.0,2023-09-09,,Middle Tennessee State,W (23-19),14,19,73.7,204,2,46,112,2.4,1,65,316,4.9,6,12,3,21,5,50,0,0,0,Missouri,/cfb/boxscores/2023-09-09-missouri.html
+3.0,2023-09-16,,Kansas State,W (30-27),23,36,63.9,356,2,28,74,2.6,1,64,430,6.7,15,3,2,20,6,40,0,0,0,Missouri,/cfb/boxscores/2023-09-16-missouri.html
+4.0,2023-09-23,N,Memphis,W (34-27),18,25,72.0,341,2,36,201,5.6,2,61,542,8.9,11,11,0,22,7,41,1,0,1,Missouri,/cfb/boxscores/2023-09-23-memphis.html
+5.0,2023-09-30,@,Vanderbilt,W (38-21),33,41,80.5,395,4,34,137,4.0,1,75,532,7.1,21,6,1,28,9,75,1,0,1,Missouri,/cfb/boxscores/2023-09-30-vanderbilt.html
+6.0,2023-10-07,,Louisiana State,L (39-49),30,47,63.8,411,2,21,116,5.5,3,68,527,7.8,17,6,0,23,11,63,0,2,2,Missouri,/cfb/boxscores/2023-10-07-missouri.html
+7.0,2023-10-14,@,Kentucky,W (38-21),20,30,66.7,214,2,38,118,3.1,2,68,332,4.9,11,6,4,21,6,65,0,1,1,Missouri,/cfb/boxscores/2023-10-14-kentucky.html
+1.0,2023-08-26,N,Notre Dame,L (3-42),3,7,42.9,43,0,48,126,2.6,0,55,169,3.1,1,11,0,12,3,26,0,0,0,Navy,/cfb/boxscores/2023-08-26-navy.html
+2.0,2023-09-09,,Wagner,W (24-0),11,18,61.1,163,1,44,245,5.6,2,62,408,6.6,6,12,0,18,4,35,0,0,0,Navy,/cfb/boxscores/2023-09-09-navy.html
+3.0,2023-09-14,@,Memphis,L (24-28),10,20,50.0,133,1,50,299,6.0,2,70,432,6.2,4,13,2,19,2,10,2,0,2,Navy,/cfb/boxscores/2023-09-14-memphis.html
+4.0,2023-09-30,,South Florida,L (30-44),5,11,45.5,90,2,48,240,5.0,2,59,330,5.6,1,10,0,11,8,70,1,0,1,Navy,/cfb/boxscores/2023-09-30-navy.html
+5.0,2023-10-07,,North Texas,W (27-24),4,10,40.0,75,1,58,331,5.7,3,68,406,6.0,2,19,0,21,7,41,0,0,0,Navy,/cfb/boxscores/2023-10-07-navy.html
+6.0,2023-10-14,@,Charlotte,W (14-0),6,15,40.0,92,1,40,173,4.3,1,55,265,4.8,1,9,0,10,6,40,0,0,0,Navy,/cfb/boxscores/2023-10-14-charlotte.html
+1.0,2023-08-31,@,Minnesota,L (10-13),11,19,57.9,114,1,37,181,4.9,0,56,295,5.3,6,11,1,18,7,55,1,3,4,Nebraska,/cfb/boxscores/2023-08-31-minnesota.html
+2.0,2023-09-09,@,Colorado,L (14-36),11,22,50.0,119,1,41,222,5.4,1,63,341,5.4,5,10,0,15,6,40,3,1,4,Nebraska,/cfb/boxscores/2023-09-09-colorado.html
+3.0,2023-09-16,,Northern Illinois,W (35-11),14,24,58.3,158,2,44,224,5.1,3,68,382,5.6,9,14,0,23,5,70,1,0,1,Nebraska,/cfb/boxscores/2023-09-16-nebraska.html
+4.0,2023-09-23,,Louisiana Tech,W (28-14),8,18,44.4,107,1,48,312,6.5,3,66,419,6.3,5,12,3,20,6,55,0,0,0,Nebraska,/cfb/boxscores/2023-09-23-nebraska.html
+5.0,2023-09-30,,Michigan,L (7-45),14,25,56.0,199,0,21,106,5.0,1,46,305,6.6,7,3,0,10,4,30,0,1,1,Nebraska,/cfb/boxscores/2023-09-30-nebraska.html
+6.0,2023-10-06,@,Illinois,W (20-7),12,24,50.0,154,0,49,158,3.2,2,73,312,4.3,8,9,1,18,10,70,2,1,3,Nebraska,/cfb/boxscores/2023-10-06-illinois.html
+1.0,2023-09-02,@,Southern California,L (14-66),22,34,64.7,311,1,38,49,1.3,1,72,360,5.0,8,2,2,12,4,49,1,0,1,Nevada,/cfb/boxscores/2023-09-02-southern-california.html
+2.0,2023-09-09,,Idaho,L (6-33),20,38,52.6,148,0,25,118,4.7,0,63,266,4.2,7,6,1,14,3,15,1,2,3,Nevada,/cfb/boxscores/2023-09-09-nevada.html
+3.0,2023-09-16,,Kansas,L (24-31),15,22,68.2,113,0,37,150,4.1,3,59,263,4.5,4,7,3,14,3,30,0,0,0,Nevada,/cfb/boxscores/2023-09-16-nevada.html
+4.0,2023-09-23,@,Texas State,L (24-35),22,33,66.7,194,0,37,159,4.3,2,70,353,5.0,8,9,3,20,3,35,2,1,3,Nevada,/cfb/boxscores/2023-09-23-texas-state.html
+5.0,2023-09-30,@,Fresno State,L (9-27),19,35,54.3,167,1,31,53,1.7,0,66,220,3.3,10,5,2,17,10,98,0,2,2,Nevada,/cfb/boxscores/2023-09-30-fresno-state.html
+6.0,2023-10-14,,Nevada-Las Vegas,L (27-45),16,31,51.6,287,2,37,187,5.1,2,68,474,7.0,7,9,3,19,6,49,1,2,3,Nevada,/cfb/boxscores/2023-10-14-nevada.html
+1.0,2023-09-02,,Bryant,W (44-14),15,24,62.5,126,0,40,268,6.7,5,64,394,6.2,9,9,2,20,6,45,1,1,2,Nevada-Las Vegas,/cfb/boxscores/2023-09-02-nevada-las-vegas.html
+2.0,2023-09-09,@,Michigan,L (7-35),15,26,57.7,168,0,31,61,2.0,1,57,229,4.0,9,5,1,15,3,35,0,0,0,Nevada-Las Vegas,/cfb/boxscores/2023-09-09-michigan.html
+3.0,2023-09-16,,Vanderbilt,W (40-37),21,37,56.8,276,1,40,127,3.2,2,77,403,5.2,12,8,1,21,10,64,0,2,2,Nevada-Las Vegas,/cfb/boxscores/2023-09-16-nevada-las-vegas.html
+4.0,2023-09-23,@,UTEP,W (45-28),15,27,55.6,190,0,48,307,6.4,6,75,497,6.6,9,11,3,23,10,96,0,1,1,Nevada-Las Vegas,/cfb/boxscores/2023-09-23-texas-el-paso.html
+5.0,2023-09-30,,Hawaii,W (44-20),11,21,52.4,142,2,47,307,6.5,3,68,449,6.6,7,16,4,27,8,75,0,0,0,Nevada-Las Vegas,/cfb/boxscores/2023-09-30-nevada-las-vegas.html
+6.0,2023-10-14,@,Nevada,W (45-27),20,25,80.0,257,2,48,259,5.4,4,73,516,7.1,11,9,2,22,7,63,0,0,0,Nevada-Las Vegas,/cfb/boxscores/2023-10-14-nevada.html
+1.0,2023-09-02,@,Texas A&M,L (10-52),16,28,57.1,131,0,32,91,2.8,1,60,222,3.7,8,6,4,18,10,114,0,1,1,New Mexico,/cfb/boxscores/2023-09-02-texas-am.html
+2.0,2023-09-09,,Tennessee Tech,W (56-10),15,20,75.0,291,4,36,296,8.2,4,56,587,10.5,11,10,3,24,11,95,0,2,2,New Mexico,/cfb/boxscores/2023-09-09-new-mexico.html
+3.0,2023-09-16,,New Mexico State,L (17-27),20,39,51.3,247,1,32,154,4.8,1,71,401,5.6,13,11,2,26,7,55,1,0,1,New Mexico,/cfb/boxscores/2023-09-16-new-mexico.html
+4.0,2023-09-23,@,Massachusetts,W (34-31),9,17,52.9,192,1,38,136,3.6,4,55,328,6.0,8,7,4,19,6,55,0,0,0,New Mexico,/cfb/boxscores/2023-09-23-massachusetts.html
+5.0,2023-09-30,@,Wyoming,L (26-35),18,36,50.0,192,3,31,225,7.3,0,67,417,6.2,13,9,3,25,10,90,1,1,2,New Mexico,/cfb/boxscores/2023-09-30-wyoming.html
+6.0,2023-10-14,,San Jose State,L (24-52),18,30,60.0,262,1,36,129,3.6,2,66,391,5.9,12,6,0,18,15,120,0,1,1,New Mexico,/cfb/boxscores/2023-10-14-new-mexico.html
+1.0,2023-08-26,,Massachusetts,L (30-41),16,27,59.3,248,3,37,210,5.7,1,64,458,7.2,10,7,4,21,3,40,1,2,3,New Mexico State,/cfb/boxscores/2023-08-26-new-mexico-state.html
+2.0,2023-09-02,,Western Illinois,W (58-21),17,22,77.3,380,3,42,270,6.4,5,64,650,10.2,13,12,3,28,6,75,0,0,0,New Mexico State,/cfb/boxscores/2023-09-02-new-mexico-state.html
+3.0,2023-09-09,@,Liberty,L (17-33),14,26,53.8,169,1,24,170,7.1,1,50,339,6.8,6,8,2,16,6,48,1,2,3,New Mexico State,/cfb/boxscores/2023-09-09-liberty.html
+4.0,2023-09-16,@,New Mexico,W (27-17),10,15,66.7,220,2,30,177,5.9,1,45,397,8.8,8,7,0,15,7,77,0,0,0,New Mexico State,/cfb/boxscores/2023-09-16-new-mexico.html
+5.0,2023-09-24,@,Hawaii,L (17-20),9,15,60.0,155,2,32,180,5.6,0,47,335,7.1,6,10,0,16,3,40,1,0,1,New Mexico State,/cfb/boxscores/2023-09-24-hawaii.html
+6.0,2023-10-04,,Florida International,W (34-17),20,31,64.5,256,2,31,183,5.9,2,62,439,7.1,13,8,0,21,4,40,0,1,1,New Mexico State,/cfb/boxscores/2023-10-04-new-mexico-state.html
+7.0,2023-10-11,,Sam Houston,W (27-13),20,36,55.6,286,2,34,172,5.1,1,70,458,6.5,11,9,1,21,8,85,0,0,0,New Mexico State,/cfb/boxscores/2023-10-11-new-mexico-state.html
+1.0,2023-09-02,N,South Carolina,W (31-17),24,32,75.0,269,2,39,168,4.3,2,71,437,6.2,12,9,0,21,7,49,0,2,2,North Carolina,/cfb/boxscores/2023-09-02-north-carolina.html
+2.0,2023-09-09,,Appalachian State,W (40-34),21,30,70.0,208,0,45,319,7.1,5,75,527,7.0,7,18,2,27,5,60,0,0,0,North Carolina,/cfb/boxscores/2023-09-09-north-carolina.html
+3.0,2023-09-16,,Minnesota,W (31-13),29,40,72.5,414,2,37,105,2.8,2,77,519,6.7,17,8,1,26,5,47,0,2,2,North Carolina,/cfb/boxscores/2023-09-16-north-carolina.html
+4.0,2023-09-23,@,Pittsburgh,W (41-24),22,30,73.3,296,1,39,77,2.0,3,69,373,5.4,14,4,4,22,3,29,0,0,0,North Carolina,/cfb/boxscores/2023-09-23-pittsburgh.html
+5.0,2023-10-07,,Syracuse,W (40-7),33,49,67.3,442,3,48,202,4.2,1,97,644,6.6,15,16,2,33,5,55,1,0,1,North Carolina,/cfb/boxscores/2023-10-07-north-carolina.html
+6.0,2023-10-14,,Miami (FL),W (41-31),17,33,51.5,273,4,43,235,5.5,1,76,508,6.7,7,13,4,24,14,147,0,0,0,North Carolina,/cfb/boxscores/2023-10-14-north-carolina.html
+1.0,2023-08-31,@,Connecticut,W (24-14),17,26,65.4,155,0,46,209,4.5,3,72,364,5.1,10,11,2,23,1,5,0,0,0,North Carolina State,/cfb/boxscores/2023-08-31-connecticut.html
+2.0,2023-09-09,,Notre Dame,L (24-45),22,48,45.8,260,2,30,84,2.8,1,78,344,4.4,10,5,5,20,8,54,0,3,3,North Carolina State,/cfb/boxscores/2023-09-09-north-carolina-state.html
+3.0,2023-09-16,,Virginia Military Institute,W (45-7),27,32,84.4,264,1,45,234,5.2,3,77,498,6.5,13,13,0,26,6,61,0,0,0,North Carolina State,/cfb/boxscores/2023-09-16-north-carolina-state.html
+4.0,2023-09-22,@,Virginia,W (24-21),15,31,48.4,180,2,36,139,3.9,1,67,319,4.8,7,13,1,21,7,62,0,1,1,North Carolina State,/cfb/boxscores/2023-09-22-virginia.html
+5.0,2023-09-29,,Louisville,L (10-13),13,25,52.0,112,0,31,89,2.9,1,56,201,3.6,5,2,2,9,10,88,1,2,3,North Carolina State,/cfb/boxscores/2023-09-29-north-carolina-state.html
+6.0,2023-10-07,,Marshall,W (48-41),17,32,53.1,265,4,34,136,4.0,2,66,401,6.1,7,8,1,16,6,55,0,3,3,North Carolina State,/cfb/boxscores/2023-10-07-north-carolina-state.html
+7.0,2023-10-14,@,Duke,L (3-24),24,40,60.0,193,0,30,112,3.7,0,70,305,4.4,11,7,0,18,11,87,0,1,1,North Carolina State,/cfb/boxscores/2023-10-14-duke.html
+1.0,2023-09-02,,California,L (21-58),15,26,57.7,184,3,27,41,1.5,0,53,225,4.2,5,4,0,9,2,20,0,3,3,North Texas,/cfb/boxscores/2023-09-02-north-texas.html
+2.0,2023-09-09,@,Florida International,L (39-46),21,35,60.0,301,3,47,247,5.3,2,82,548,6.7,12,13,1,26,3,35,1,2,3,North Texas,/cfb/boxscores/2023-09-09-florida-international.html
+3.0,2023-09-16,@,Louisiana Tech,W (40-37),24,41,58.5,313,2,47,249,5.3,2,88,562,6.4,12,19,1,32,9,115,1,0,1,North Texas,/cfb/boxscores/2023-09-16-louisiana-tech.html
+4.0,2023-09-30,,Abilene Christian,W (45-31),23,36,63.9,321,3,40,209,5.2,3,76,530,7.0,13,13,1,27,6,65,0,0,0,North Texas,/cfb/boxscores/2023-09-30-north-texas.html
+5.0,2023-10-07,@,Navy,L (24-27),22,33,66.7,267,1,36,206,5.7,2,69,473,6.9,14,8,1,23,0,0,2,0,2,North Texas,/cfb/boxscores/2023-10-07-navy.html
+6.0,2023-10-14,,Temple,W (45-14),25,39,64.1,307,4,37,220,5.9,2,76,527,6.9,16,12,0,28,3,25,0,0,0,North Texas,/cfb/boxscores/2023-10-14-north-texas.html
+1.0,2023-09-02,@,Boston College,W (27-24),14,29,48.3,172,1,48,166,3.5,3,77,338,4.4,11,7,3,21,4,35,1,0,1,Northern Illinois,/cfb/boxscores/2023-09-02-boston-college.html
+2.0,2023-09-09,,Southern Illinois,L (11-14),23,38,60.5,297,1,34,63,1.9,0,72,360,5.0,13,5,1,19,7,70,0,3,3,Northern Illinois,/cfb/boxscores/2023-09-09-northern-illinois.html
+3.0,2023-09-16,@,Nebraska,L (11-35),17,36,47.2,123,1,22,26,1.2,0,58,149,2.6,7,3,2,12,2,10,0,1,1,Northern Illinois,/cfb/boxscores/2023-09-16-nebraska.html
+4.0,2023-09-23,,Tulsa,L (14-22),17,29,58.6,128,1,41,167,4.1,1,70,295,4.2,6,11,1,18,5,38,1,2,3,Northern Illinois,/cfb/boxscores/2023-09-23-northern-illinois.html
+5.0,2023-09-30,@,Toledo,L (33-35),21,31,67.7,258,2,32,186,5.8,1,63,444,7.0,15,6,1,22,5,40,1,0,1,Northern Illinois,/cfb/boxscores/2023-09-30-toledo.html
+6.0,2023-10-07,@,Akron,W (55-14),10,17,58.8,191,2,35,380,10.9,6,52,571,11.0,6,11,0,17,5,60,0,0,0,Northern Illinois,/cfb/boxscores/2023-10-07-akron.html
+7.0,2023-10-14,,Ohio,W (23-13),15,23,65.2,172,1,34,130,3.8,1,57,302,5.3,5,7,2,14,1,15,0,0,0,Northern Illinois,/cfb/boxscores/2023-10-14-northern-illinois.html
+1.0,2023-09-03,@,Rutgers,L (7-24),24,41,58.5,189,1,22,12,0.5,0,63,201,3.2,7,5,1,13,3,30,0,2,2,Northwestern,/cfb/boxscores/2023-09-03-rutgers.html
+2.0,2023-09-09,,UTEP,W (38-7),13,20,65.0,207,2,39,184,4.7,3,59,391,6.6,6,10,1,17,4,33,0,0,0,Northwestern,/cfb/boxscores/2023-09-09-northwestern.html
+3.0,2023-09-16,@,Duke,L (14-38),22,40,55.0,163,1,30,104,3.5,1,70,267,3.8,10,9,1,20,1,8,0,1,1,Northwestern,/cfb/boxscores/2023-09-16-duke.html
+4.0,2023-09-23,,Minnesota,W (37-34),34,51,66.7,400,4,29,92,3.2,1,80,492,6.2,17,5,3,25,8,87,1,0,1,Northwestern,/cfb/boxscores/2023-09-23-northwestern.html
+5.0,2023-09-30,,Penn State,L (13-41),16,31,51.6,130,0,32,45,1.4,1,63,175,2.8,6,5,1,12,4,18,0,1,1,Northwestern,/cfb/boxscores/2023-09-30-northwestern.html
+6.0,2023-10-07,,Howard,W (23-20),13,18,72.2,131,2,46,181,3.9,1,64,312,4.9,8,10,3,21,8,46,0,0,0,Northwestern,/cfb/boxscores/2023-10-07-northwestern.html
+1.0,2023-08-26,N,Navy,W (42-3),20,25,80.0,253,4,32,191,6.0,2,57,444,7.8,13,13,1,27,1,10,0,0,0,Notre Dame,/cfb/boxscores/2023-08-26-navy.html
+2.0,2023-09-02,,Tennessee State,W (56-3),24,30,80.0,336,4,33,221,6.7,3,63,557,8.8,15,10,1,26,4,36,1,0,1,Notre Dame,/cfb/boxscores/2023-09-02-notre-dame.html
+3.0,2023-09-09,@,North Carolina State,W (45-24),15,24,62.5,286,4,37,170,4.6,2,61,456,7.5,10,6,0,16,10,82,1,0,1,Notre Dame,/cfb/boxscores/2023-09-09-north-carolina-state.html
+4.0,2023-09-16,,Central Michigan,W (41-17),17,28,60.7,342,3,37,236,6.4,2,65,578,8.9,10,13,0,23,8,72,0,0,0,Notre Dame,/cfb/boxscores/2023-09-16-notre-dame.html
+5.0,2023-09-23,,Ohio State,L (14-17),17,25,68.0,175,1,39,176,4.5,1,64,351,5.5,11,10,1,22,4,50,0,0,0,Notre Dame,/cfb/boxscores/2023-09-23-notre-dame.html
+6.0,2023-09-30,@,Duke,W (21-14),15,31,48.4,222,0,32,159,5.0,2,63,381,6.0,8,6,2,16,12,70,0,0,0,Notre Dame,/cfb/boxscores/2023-09-30-duke.html
+7.0,2023-10-07,@,Louisville,L (20-33),22,38,57.9,254,2,28,44,1.6,0,66,298,4.5,10,5,2,17,3,35,2,3,5,Notre Dame,/cfb/boxscores/2023-10-07-louisville.html
+8.0,2023-10-14,,Southern California,W (48-20),13,20,65.0,126,2,29,125,4.3,2,49,251,5.1,6,7,0,13,5,54,0,0,0,Notre Dame,/cfb/boxscores/2023-10-14-notre-dame.html
+1.0,2023-08-26,@,San Diego State,L (13-20),26,51,51.0,279,1,31,111,3.6,0,82,390,4.8,16,7,2,25,6,55,0,3,3,Ohio,/cfb/boxscores/2023-08-26-san-diego-state.html
+2.0,2023-09-02,,Long Island,W (27-10),12,15,80.0,104,3,45,199,4.4,0,60,303,5.1,4,13,1,18,3,30,1,1,2,Ohio,/cfb/boxscores/2023-09-02-ohio.html
+3.0,2023-09-09,@,Florida Atlantic,W (17-10),18,29,62.1,203,1,45,151,3.4,1,74,354,4.8,12,8,3,23,1,10,1,2,3,Ohio,/cfb/boxscores/2023-09-09-florida-atlantic.html
+4.0,2023-09-16,,Iowa State,W (10-7),16,32,50.0,135,1,37,112,3.0,0,69,247,3.6,8,8,2,18,1,15,0,0,0,Ohio,/cfb/boxscores/2023-09-16-ohio.html
+5.0,2023-09-23,@,Bowling Green State,W (38-7),16,19,84.2,201,3,37,127,3.4,0,56,328,5.9,9,7,3,19,8,65,1,0,1,Ohio,/cfb/boxscores/2023-09-23-bowling-green-state.html
+6.0,2023-10-07,,Kent State,W (42-17),20,32,62.5,300,3,35,166,4.7,3,67,466,7.0,14,8,2,24,7,70,0,0,0,Ohio,/cfb/boxscores/2023-10-07-ohio.html
+7.0,2023-10-14,@,Northern Illinois,L (13-23),22,36,61.1,159,0,26,95,3.7,1,62,254,4.1,5,10,1,16,7,70,0,3,3,Ohio,/cfb/boxscores/2023-10-14-northern-illinois.html
+1.0,2023-09-02,@,Indiana,W (23-3),21,36,58.3,237,0,31,143,4.6,2,67,380,5.7,12,8,2,22,5,41,0,1,1,Ohio State,/cfb/boxscores/2023-09-02-indiana.html
+2.0,2023-09-09,,Youngstown State,W (35-7),21,33,63.6,359,3,27,123,4.6,2,60,482,8.0,14,6,3,23,6,65,0,0,0,Ohio State,/cfb/boxscores/2023-09-09-ohio-state.html
+3.0,2023-09-16,,Western Kentucky,W (63-10),22,27,81.5,358,4,33,204,6.2,3,60,562,9.4,15,9,0,24,5,40,1,1,2,Ohio State,/cfb/boxscores/2023-09-16-ohio-state.html
+4.0,2023-09-23,@,Notre Dame,W (17-14),21,38,55.3,240,0,27,126,4.7,2,65,366,5.6,14,2,3,19,5,35,0,0,0,Ohio State,/cfb/boxscores/2023-09-23-notre-dame.html
+5.0,2023-10-07,,Maryland,W (37-17),19,29,65.5,320,2,33,62,1.9,1,62,382,6.2,15,3,3,21,10,81,0,0,0,Ohio State,/cfb/boxscores/2023-10-07-ohio-state.html
+6.0,2023-10-14,@,Purdue,W (41-7),17,30,56.7,334,4,39,152,3.9,2,69,486,7.0,12,10,2,24,9,51,2,0,2,Ohio State,/cfb/boxscores/2023-10-14-purdue.html
+1.0,2023-09-02,,Arkansas State,W (73-0),30,33,90.9,422,3,49,220,4.5,6,82,642,7.8,18,13,5,36,6,65,0,0,0,Oklahoma,/cfb/boxscores/2023-09-02-oklahoma.html
+2.0,2023-09-09,,Southern Methodist,W (28-11),19,27,70.4,176,4,47,189,4.0,0,74,365,4.9,11,11,0,22,9,93,0,0,0,Oklahoma,/cfb/boxscores/2023-09-09-oklahoma.html
+3.0,2023-09-16,@,Tulsa,W (66-17),30,35,85.7,476,6,28,119,4.3,2,63,595,9.4,18,7,2,27,7,65,1,1,2,Oklahoma,/cfb/boxscores/2023-09-16-tulsa.html
+4.0,2023-09-23,@,Cincinnati,W (20-6),26,38,68.4,322,1,34,103,3.0,1,72,425,5.9,16,4,1,21,8,53,1,0,1,Oklahoma,/cfb/boxscores/2023-09-23-cincinnati.html
+5.0,2023-09-30,,Iowa State,W (50-20),26,39,66.7,366,3,41,157,3.8,2,80,523,6.5,13,13,4,30,5,35,0,1,1,Oklahoma,/cfb/boxscores/2023-09-30-oklahoma.html
+6.0,2023-10-07,N,Texas,W (34-30),23,38,60.5,285,1,43,201,4.7,3,81,486,6.0,14,11,3,28,4,30,0,0,0,Oklahoma,/cfb/boxscores/2023-10-07-oklahoma.html
+1.0,2023-09-02,,Central Arkansas,W (27-13),30,48,62.5,304,1,31,149,4.8,2,79,453,5.7,15,8,1,24,5,41,0,1,1,Oklahoma State,/cfb/boxscores/2023-09-02-oklahoma-state.html
+2.0,2023-09-09,@,Arizona State,W (27-15),22,32,68.8,191,2,31,113,3.6,1,63,304,4.8,6,8,2,16,9,62,0,0,0,Oklahoma State,/cfb/boxscores/2023-09-09-arizona-state.html
+3.0,2023-09-16,,South Alabama,L (7-33),16,35,45.7,114,0,29,94,3.2,1,64,208,3.3,8,6,0,14,7,64,1,1,2,Oklahoma State,/cfb/boxscores/2023-09-16-oklahoma-state.html
+4.0,2023-09-23,@,Iowa State,L (27-34),23,48,47.9,278,2,24,131,5.5,1,72,409,5.7,12,6,0,18,3,25,0,2,2,Oklahoma State,/cfb/boxscores/2023-09-23-iowa-state.html
+5.0,2023-10-06,,Kansas State,W (29-21),20,36,55.6,238,0,40,174,4.4,1,76,412,5.4,13,7,0,20,5,45,0,0,0,Oklahoma State,/cfb/boxscores/2023-10-06-oklahoma-state.html
+6.0,2023-10-14,,Kansas,W (39-32),28,41,68.3,336,2,38,218,5.7,2,79,554,7.0,16,11,0,27,3,12,0,0,0,Oklahoma State,/cfb/boxscores/2023-10-14-oklahoma-state.html
+1.0,2023-09-02,@,Virginia Tech,L (17-36),13,25,52.0,94,2,43,201,4.7,0,68,295,4.3,3,14,2,19,4,36,2,1,3,Old Dominion,/cfb/boxscores/2023-09-02-virginia-tech.html
+2.0,2023-09-09,,Louisiana,W (38-31),13,19,68.4,247,4,35,145,4.1,1,54,392,7.3,8,10,2,20,3,25,0,0,0,Old Dominion,/cfb/boxscores/2023-09-09-old-dominion.html
+3.0,2023-09-16,,Wake Forest,L (24-27),11,27,40.7,233,1,36,67,1.9,0,63,300,4.8,7,6,1,14,5,35,1,1,2,Old Dominion,/cfb/boxscores/2023-09-16-old-dominion.html
+4.0,2023-09-23,,Texas A&M-Commerce,W (10-9),19,31,61.3,328,1,30,15,0.5,0,61,343,5.6,12,1,2,15,7,88,2,3,5,Old Dominion,/cfb/boxscores/2023-09-23-old-dominion.html
+5.0,2023-09-30,@,Marshall,L (35-41),11,23,47.8,95,1,31,339,10.9,4,54,434,8.0,3,6,2,11,9,82,0,3,3,Old Dominion,/cfb/boxscores/2023-09-30-marshall.html
+6.0,2023-10-07,@,Southern Mississippi,W (17-13),8,22,36.4,194,0,36,143,4.0,2,58,337,5.8,5,8,0,13,5,35,0,0,0,Old Dominion,/cfb/boxscores/2023-10-07-southern-mississippi.html
+1.0,2023-09-02,,Mercer,W (73-7),29,41,70.7,524,6,33,143,4.3,3,74,667,9.0,20,11,1,32,7,65,1,0,1,Ole Miss,/cfb/boxscores/2023-09-02-mississippi.html
+2.0,2023-09-09,@,Tulane,W (37-20),18,28,64.3,274,2,35,89,2.5,1,63,363,5.8,12,6,0,18,5,51,0,1,1,Ole Miss,/cfb/boxscores/2023-09-09-tulane.html
+3.0,2023-09-16,,Georgia Tech,W (48-23),10,19,52.6,251,1,37,299,8.1,5,56,550,9.8,8,11,0,19,5,40,0,0,0,Ole Miss,/cfb/boxscores/2023-09-16-mississippi.html
+4.0,2023-09-23,@,Alabama,L (10-24),21,36,58.3,245,0,29,56,1.9,1,65,301,4.6,12,4,1,17,8,69,0,1,1,Ole Miss,/cfb/boxscores/2023-09-23-alabama.html
+5.0,2023-09-30,,Louisiana State,W (55-49),26,39,66.7,389,4,49,317,6.5,3,88,706,8.0,16,16,0,32,11,121,0,0,0,Ole Miss,/cfb/boxscores/2023-09-30-mississippi.html
+6.0,2023-10-07,,Arkansas,W (27-20),16,25,64.0,153,1,45,196,4.4,2,70,349,5.0,7,11,3,21,5,44,0,0,0,Ole Miss,/cfb/boxscores/2023-10-07-mississippi.html
+1.0,2023-09-02,,Portland State,W (81-7),33,38,86.8,381,4,34,338,9.9,7,72,719,10.0,21,14,3,38,2,20,0,0,0,Oregon,/cfb/boxscores/2023-09-02-oregon.html
+2.0,2023-09-09,@,Texas Tech,W (38-30),32,44,72.7,359,2,31,113,3.6,1,75,472,6.3,13,7,1,21,14,124,0,0,0,Oregon,/cfb/boxscores/2023-09-09-texas-tech.html
+3.0,2023-09-16,,Hawaii,W (55-10),26,34,76.5,333,4,30,227,7.6,3,64,560,8.8,12,13,0,25,9,76,0,0,0,Oregon,/cfb/boxscores/2023-09-16-oregon.html
+4.0,2023-09-23,,Colorado,W (42-6),30,35,85.7,282,3,38,240,6.3,3,73,522,7.2,13,13,4,30,9,80,0,1,1,Oregon,/cfb/boxscores/2023-09-23-oregon.html
+5.0,2023-09-30,@,Stanford,W (42-6),28,33,84.8,298,4,28,208,7.4,2,61,506,8.3,13,13,0,26,2,20,0,0,0,Oregon,/cfb/boxscores/2023-09-30-stanford.html
+6.0,2023-10-14,@,Washington,L (33-36),33,44,75.0,337,2,40,204,5.1,2,84,541,6.4,17,12,3,32,5,55,0,0,0,Oregon,/cfb/boxscores/2023-10-14-washington.html
+1.0,2023-09-03,@,San Jose State,W (42-17),22,28,78.6,276,3,35,197,5.6,3,63,473,7.5,14,12,1,27,9,76,0,0,0,Oregon State,/cfb/boxscores/2023-09-03-san-jose-state.html
+2.0,2023-09-09,,California-Davis,W (55-7),17,26,65.4,181,3,37,269,7.3,3,63,450,7.1,9,13,1,23,2,25,0,0,0,Oregon State,/cfb/boxscores/2023-09-09-oregon-state.html
+3.0,2023-09-16,,San Diego State,W (26-9),14,30,46.7,284,1,32,191,6.0,2,62,475,7.7,10,10,0,20,4,40,0,2,2,Oregon State,/cfb/boxscores/2023-09-16-oregon-state.html
+4.0,2023-09-23,@,Washington State,L (35-38),17,34,50.0,198,1,39,242,6.2,4,73,440,6.0,9,12,4,25,5,31,0,1,1,Oregon State,/cfb/boxscores/2023-09-23-washington-state.html
+5.0,2023-09-29,,Utah,W (21-7),15,26,57.7,227,1,36,131,3.6,2,62,358,5.8,10,5,0,15,11,100,0,1,1,Oregon State,/cfb/boxscores/2023-09-29-oregon-state.html
+6.0,2023-10-07,@,California,W (52-40),21,28,75.0,296,6,43,203,4.7,1,71,499,7.0,10,14,0,24,5,55,1,0,1,Oregon State,/cfb/boxscores/2023-10-07-california.html
+7.0,2023-10-14,,UCLA,W (36-24),16,26,61.5,282,3,28,133,4.8,0,54,415,7.7,12,6,1,19,11,95,1,0,1,Oregon State,/cfb/boxscores/2023-10-14-oregon-state.html
+1.0,2023-09-02,,West Virginia,W (38-15),22,30,73.3,332,3,35,146,4.2,2,65,478,7.4,16,9,2,27,1,5,0,0,0,Penn State,/cfb/boxscores/2023-09-02-penn-state.html
+2.0,2023-09-09,,Delaware,W (63-7),25,31,80.6,226,2,60,315,5.3,6,91,541,5.9,12,19,3,34,7,55,0,0,0,Penn State,/cfb/boxscores/2023-09-09-penn-state.html
+3.0,2023-09-16,@,Illinois,W (30-13),17,37,45.9,219,1,40,164,4.1,2,77,383,5.0,12,7,1,20,7,70,0,0,0,Penn State,/cfb/boxscores/2023-09-16-illinois.html
+4.0,2023-09-23,,Iowa,W (31-0),26,40,65.0,182,4,57,215,3.8,0,97,397,4.1,10,16,2,28,4,45,0,0,0,Penn State,/cfb/boxscores/2023-09-23-penn-state.html
+5.0,2023-09-30,@,Northwestern,W (41-13),19,34,55.9,219,2,39,134,3.4,3,73,353,4.8,10,8,1,19,6,45,1,0,1,Penn State,/cfb/boxscores/2023-09-30-northwestern.html
+6.0,2023-10-14,,Massachusetts,W (63-0),16,23,69.6,162,3,37,246,6.6,4,60,408,6.8,7,17,4,28,6,60,2,0,2,Penn State,/cfb/boxscores/2023-10-14-penn-state.html
+1.0,2023-09-02,,Wofford,W (45-7),22,32,68.8,274,2,45,217,4.8,4,77,491,6.4,14,15,1,30,7,62,0,0,0,Pitt,/cfb/boxscores/2023-09-02-pittsburgh.html
+2.0,2023-09-09,,Cincinnati,L (21-27),10,32,31.3,179,3,29,83,2.9,0,61,262,4.3,6,6,6,18,5,35,1,0,1,Pitt,/cfb/boxscores/2023-09-09-pittsburgh.html
+3.0,2023-09-16,@,West Virginia,L (6-17),8,20,40.0,81,0,36,130,3.6,0,56,211,3.8,3,8,1,12,9,65,0,3,3,Pitt,/cfb/boxscores/2023-09-16-west-virginia.html
+4.0,2023-09-23,,North Carolina,L (24-41),18,33,54.5,194,0,27,110,4.1,2,60,304,5.1,11,6,1,18,11,84,1,2,3,Pitt,/cfb/boxscores/2023-09-23-pittsburgh.html
+5.0,2023-09-30,@,Virginia Tech,L (21-38),11,22,50.0,235,2,24,38,1.6,0,46,273,5.9,6,2,1,9,9,68,1,0,1,Pitt,/cfb/boxscores/2023-09-30-virginia-tech.html
+6.0,2023-10-14,,Louisville,W (38-21),12,26,46.2,200,2,33,88,2.7,2,59,288,4.9,8,4,1,13,8,87,0,0,0,Pitt,/cfb/boxscores/2023-10-14-pittsburgh.html
+1.0,2023-09-02,,Fresno State,L (35-39),17,30,56.7,254,2,30,109,3.6,2,60,363,6.1,9,7,3,19,4,35,0,0,0,Purdue,/cfb/boxscores/2023-09-02-purdue.html
+2.0,2023-09-09,@,Virginia Tech,W (24-17),23,34,67.6,248,0,46,179,3.9,3,80,427,5.3,13,9,0,22,7,48,0,0,0,Purdue,/cfb/boxscores/2023-09-09-virginia-tech.html
+3.0,2023-09-16,,Syracuse,L (20-35),32,46,69.6,323,1,32,80,2.5,2,78,403,5.2,18,5,6,29,11,127,3,1,4,Purdue,/cfb/boxscores/2023-09-16-purdue.html
+4.0,2023-09-22,,Wisconsin,L (17-38),21,38,55.3,202,0,31,198,6.4,2,69,400,5.8,13,9,1,23,7,73,1,2,3,Purdue,/cfb/boxscores/2023-09-22-purdue.html
+5.0,2023-09-30,,Illinois,W (44-19),18,26,69.2,217,2,45,189,4.2,3,71,406,5.7,11,11,4,26,3,15,1,0,1,Purdue,/cfb/boxscores/2023-09-30-purdue.html
+6.0,2023-10-07,@,Iowa,L (14-20),25,40,62.5,247,1,40,96,2.4,1,80,343,4.3,12,8,1,21,6,45,0,2,2,Purdue,/cfb/boxscores/2023-10-07-iowa.html
+7.0,2023-10-14,,Ohio State,L (7-41),14,35,40.0,134,1,35,123,3.5,0,70,257,3.7,3,10,2,15,5,41,0,0,0,Purdue,/cfb/boxscores/2023-10-14-purdue.html
+1.0,2023-09-02,@,Texas,L (10-37),14,26,53.8,149,1,25,27,1.1,0,51,176,3.5,5,3,0,8,5,25,1,2,3,Rice,/cfb/boxscores/2023-09-02-texas.html
+2.0,2023-09-09,,Houston,W (43-41),28,42,66.7,401,3,31,69,2.2,3,73,470,6.4,17,5,2,24,3,30,1,1,2,Rice,/cfb/boxscores/2023-09-09-rice.html
+3.0,2023-09-16,,Texas Southern,W (59-7),12,18,66.7,254,4,51,231,4.5,4,69,485,7.0,7,14,4,25,6,60,0,0,0,Rice,/cfb/boxscores/2023-09-16-rice.html
+4.0,2023-09-23,@,South Florida,L (29-42),34,50,68.0,491,4,20,1,0.1,0,70,492,7.0,16,2,1,19,6,41,0,0,0,Rice,/cfb/boxscores/2023-09-23-south-florida.html
+5.0,2023-09-30,,East Carolina,W (24-17),19,34,55.9,240,2,20,37,1.9,1,54,277,5.1,9,2,3,14,10,68,0,1,1,Rice,/cfb/boxscores/2023-09-30-rice.html
+6.0,2023-10-07,,Connecticut,L (31-38),33,49,67.3,362,2,22,112,5.1,2,71,474,6.7,17,6,3,26,6,42,3,1,4,Rice,/cfb/boxscores/2023-10-07-rice.html
+1.0,2023-09-03,,Northwestern,W (24-7),17,29,58.6,163,1,44,122,2.8,2,73,285,3.9,8,11,1,20,2,19,1,0,1,Rutgers,/cfb/boxscores/2023-09-03-rutgers.html
+2.0,2023-09-09,,Temple,W (36-7),10,21,47.6,198,1,52,254,4.9,3,73,452,6.2,7,12,1,20,5,56,1,0,1,Rutgers,/cfb/boxscores/2023-09-09-rutgers.html
+3.0,2023-09-16,,Virginia Tech,W (35-16),7,16,43.8,46,1,34,256,7.5,4,50,302,6.0,1,11,2,14,4,35,0,0,0,Rutgers,/cfb/boxscores/2023-09-16-rutgers.html
+4.0,2023-09-23,@,Michigan,L (7-31),11,21,52.4,180,1,23,77,3.3,0,44,257,5.8,6,3,1,10,5,30,0,1,1,Rutgers,/cfb/boxscores/2023-09-23-michigan.html
+5.0,2023-09-30,,Wagner,W (52-3),14,21,66.7,169,1,52,267,5.1,6,73,436,6.0,10,17,1,28,4,30,0,0,0,Rutgers,/cfb/boxscores/2023-09-30-rutgers.html
+6.0,2023-10-07,@,Wisconsin,L (13-24),18,38,47.4,211,2,22,64,2.9,0,60,275,4.6,11,4,1,16,4,36,0,1,1,Rutgers,/cfb/boxscores/2023-10-07-wisconsin.html
+7.0,2023-10-14,,Michigan State,W (27-24),13,28,46.4,181,1,37,114,3.1,1,65,295,4.5,7,13,0,20,6,70,1,2,3,Rutgers,/cfb/boxscores/2023-10-14-rutgers.html
+1.0,2023-09-02,@,Brigham Young,L (0-14),18,33,54.5,147,0,24,38,1.6,0,57,185,3.2,8,1,1,10,7,47,0,3,3,Sam Houston,/cfb/boxscores/2023-09-02-brigham-young.html
+2.0,2023-09-09,N,Air Force,L (3-13),8,14,57.1,44,0,30,36,1.2,0,44,80,1.8,0,6,0,6,2,25,0,0,0,Sam Houston,/cfb/boxscores/2023-09-09-sam-houston-state.html
+3.0,2023-09-23,@,Houston,L (7-38),15,23,65.2,126,0,25,52,2.1,1,48,178,3.7,3,4,1,8,10,91,1,1,2,Sam Houston,/cfb/boxscores/2023-09-23-houston.html
+4.0,2023-09-28,,Jacksonville State,L (28-35),23,39,59.0,299,2,55,136,2.5,2,94,435,4.6,15,7,3,25,8,85,0,1,1,Sam Houston,/cfb/boxscores/2023-09-28-sam-houston-state.html
+5.0,2023-10-05,@,Liberty,L (16-21),27,42,64.3,255,2,22,72,3.3,0,64,327,5.1,12,4,3,19,3,25,0,1,1,Sam Houston,/cfb/boxscores/2023-10-05-liberty.html
+6.0,2023-10-11,@,New Mexico State,L (13-27),32,49,65.3,285,2,19,82,4.3,0,68,367,5.4,13,5,1,19,3,23,0,0,0,Sam Houston,/cfb/boxscores/2023-10-11-new-mexico-state.html
+1.0,2023-08-26,,Ohio,W (20-13),18,28,64.3,164,2,31,154,5.0,0,59,318,5.4,9,6,1,16,6,57,1,0,1,San Diego State,/cfb/boxscores/2023-08-26-san-diego-state.html
+2.0,2023-09-02,,Idaho State,W (36-28),13,20,65.0,85,0,47,304,6.5,4,67,389,5.8,4,13,1,18,14,125,2,1,3,San Diego State,/cfb/boxscores/2023-09-02-san-diego-state.html
+3.0,2023-09-09,,UCLA,L (10-35),20,38,52.6,196,1,33,63,1.9,0,71,259,3.6,11,4,2,17,4,40,0,3,3,San Diego State,/cfb/boxscores/2023-09-09-san-diego-state.html
+4.0,2023-09-16,@,Oregon State,L (9-26),20,32,62.5,256,0,34,70,2.1,1,66,326,4.9,9,8,1,18,1,5,0,1,1,San Diego State,/cfb/boxscores/2023-09-16-oregon-state.html
+5.0,2023-09-22,,Boise State,L (31-34),17,23,73.9,273,1,40,166,4.2,3,63,439,7.0,11,10,1,22,5,23,2,0,2,San Diego State,/cfb/boxscores/2023-09-22-san-diego-state.html
+6.0,2023-09-30,@,Air Force,L (10-49),13,25,52.0,122,1,30,105,3.5,0,55,227,4.1,6,8,0,14,5,34,0,1,1,San Diego State,/cfb/boxscores/2023-09-30-air-force.html
+7.0,2023-10-14,@,Hawaii,W (41-34),18,24,75.0,221,1,43,157,3.7,3,67,378,5.6,7,10,0,17,1,15,0,1,1,San Diego State,/cfb/boxscores/2023-10-14-hawaii.html
+1.0,2023-08-26,@,Southern California,L (28-56),21,39,53.8,198,3,27,198,7.3,1,66,396,6.0,9,10,4,23,3,21,0,0,0,San Jose State,/cfb/boxscores/2023-08-26-southern-california.html
+2.0,2023-09-03,,Oregon State,L (17-42),25,42,59.5,232,1,22,56,2.5,1,64,288,4.5,10,6,4,20,5,40,1,0,1,San Jose State,/cfb/boxscores/2023-09-03-san-jose-state.html
+3.0,2023-09-09,,Cal Poly,W (59-3),15,23,65.2,205,2,43,267,6.2,5,66,472,7.2,11,12,1,24,6,55,0,0,0,San Jose State,/cfb/boxscores/2023-09-09-san-jose-state.html
+4.0,2023-09-16,@,Toledo,L (17-21),24,41,58.5,228,1,29,40,1.4,1,70,268,3.8,12,3,3,18,4,31,0,1,1,San Jose State,/cfb/boxscores/2023-09-16-toledo.html
+5.0,2023-09-22,,Air Force,L (20-45),24,35,68.6,239,0,17,115,6.8,3,52,354,6.8,11,6,1,18,6,48,0,1,1,San Jose State,/cfb/boxscores/2023-09-22-san-jose-state.html
+6.0,2023-10-07,@,Boise State,L (27-35),23,38,60.5,325,0,26,104,4.0,3,64,429,6.7,10,9,0,19,7,55,0,1,1,San Jose State,/cfb/boxscores/2023-10-07-boise-state.html
+7.0,2023-10-14,@,New Mexico,W (52-24),8,17,47.1,272,2,32,259,8.1,4,49,531,10.8,6,9,3,18,11,86,0,0,0,San Jose State,/cfb/boxscores/2023-10-14-new-mexico.html
+1.0,2023-09-02,,Louisiana Tech,W (38-14),23,38,60.5,248,3,41,209,5.1,1,79,457,5.8,11,9,4,24,6,42,0,0,0,SMU,/cfb/boxscores/2023-09-02-southern-methodist.html
+2.0,2023-09-09,@,Oklahoma,L (11-28),26,45,57.8,250,1,34,116,3.4,0,79,366,4.6,13,4,5,22,2,15,1,1,2,SMU,/cfb/boxscores/2023-09-09-oklahoma.html
+3.0,2023-09-16,,Prairie View A&M,W (69-0),20,26,76.9,389,7,39,177,4.5,2,65,566,8.7,12,10,6,28,7,68,0,1,1,SMU,/cfb/boxscores/2023-09-16-southern-methodist.html
+4.0,2023-09-23,@,TCU,L (17-34),16,35,45.7,258,0,39,158,4.1,2,74,416,5.6,10,10,1,21,4,20,0,2,2,SMU,/cfb/boxscores/2023-09-23-texas-christian.html
+5.0,2023-09-30,,Charlotte,W (34-16),14,23,60.9,135,2,38,228,6.0,2,61,363,6.0,7,11,2,20,8,77,0,1,1,SMU,/cfb/boxscores/2023-09-30-southern-methodist.html
+6.0,2023-10-12,@,East Carolina,W (31-10),19,38,50.0,276,3,23,58,2.5,0,61,334,5.5,11,2,1,14,2,20,0,0,0,SMU,/cfb/boxscores/2023-10-12-east-carolina.html
+1.0,2023-09-02,@,Tulane,L (17-37),23,30,76.7,190,1,32,75,2.3,1,62,265,4.3,7,8,3,18,7,60,3,2,5,South Alabama,/cfb/boxscores/2023-09-02-tulane.html
+2.0,2023-09-09,,Southeastern Louisiana,W (35-17),20,27,74.1,261,1,35,248,7.1,4,62,509,8.2,11,12,0,23,6,80,0,1,1,South Alabama,/cfb/boxscores/2023-09-09-south-alabama.html
+3.0,2023-09-16,@,Oklahoma State,W (33-7),10,16,62.5,152,2,47,243,5.2,2,63,395,6.3,6,11,1,18,8,40,0,0,0,South Alabama,/cfb/boxscores/2023-09-16-oklahoma-state.html
+4.0,2023-09-23,,Central Michigan,L (30-34),17,27,63.0,254,2,33,151,4.6,2,60,405,6.8,10,8,1,19,5,49,0,0,0,South Alabama,/cfb/boxscores/2023-09-23-south-alabama.html
+5.0,2023-09-30,@,James Madison,L (23-31),28,50,56.0,299,2,24,27,1.1,1,74,326,4.4,12,3,5,20,5,50,0,2,2,South Alabama,/cfb/boxscores/2023-09-30-james-madison.html
+6.0,2023-10-07,@,Louisiana-Monroe,W (55-7),27,39,69.2,387,4,42,202,4.8,3,81,589,7.3,18,14,0,32,9,64,0,0,0,South Alabama,/cfb/boxscores/2023-10-07-louisiana-monroe.html
+1.0,2023-09-02,N,North Carolina,L (17-31),30,39,76.9,353,0,31,-2,-0.1,2,70,351,5.0,14,4,2,20,6,35,0,0,0,South Carolina,/cfb/boxscores/2023-09-02-north-carolina.html
+2.0,2023-09-09,,Furman,W (47-21),32,38,84.2,463,5,39,108,2.8,2,77,571,7.4,19,4,2,25,8,60,1,0,1,South Carolina,/cfb/boxscores/2023-09-09-south-carolina.html
+3.0,2023-09-16,@,Georgia,L (14-24),22,42,52.4,256,1,16,53,3.3,1,58,309,5.3,12,4,1,17,11,73,0,2,2,South Carolina,/cfb/boxscores/2023-09-16-georgia.html
+4.0,2023-09-23,,Mississippi State,W (37-30),18,20,90.0,288,3,47,144,3.1,2,67,432,6.4,9,8,2,19,4,35,1,0,1,South Carolina,/cfb/boxscores/2023-09-23-south-carolina.html
+5.0,2023-09-30,@,Tennessee,L (20-41),25,36,69.4,201,0,27,132,4.9,2,63,333,5.3,5,5,1,11,5,35,0,1,1,South Carolina,/cfb/boxscores/2023-09-30-tennessee.html
+6.0,2023-10-14,,Florida,L (39-41),23,30,76.7,313,4,33,152,4.6,1,63,465,7.4,13,8,2,23,9,82,1,1,2,South Carolina,/cfb/boxscores/2023-10-14-south-carolina.html
+1.0,2023-09-02,@,Western Kentucky,L (24-41),15,34,44.1,166,1,61,374,6.1,2,95,540,5.7,4,21,1,26,11,100,1,2,3,South Florida,/cfb/boxscores/2023-09-02-western-kentucky.html
+2.0,2023-09-09,,Florida A&M,W (38-24),22,37,59.5,234,3,44,108,2.5,2,81,342,4.2,11,7,6,24,14,114,0,0,0,South Florida,/cfb/boxscores/2023-09-09-south-florida.html
+3.0,2023-09-16,,Alabama,L (3-17),14,28,50.0,87,0,46,171,3.7,0,74,258,3.5,4,10,0,14,5,40,1,1,2,South Florida,/cfb/boxscores/2023-09-16-south-florida.html
+4.0,2023-09-23,,Rice,W (42-29),22,29,75.9,435,2,41,162,4.0,3,70,597,8.5,15,8,2,25,9,89,1,0,1,South Florida,/cfb/boxscores/2023-09-23-south-florida.html
+5.0,2023-09-30,@,Navy,W (44-30),26,34,76.5,338,3,44,97,2.2,2,78,435,5.6,10,11,3,24,1,12,3,0,3,South Florida,/cfb/boxscores/2023-09-30-navy.html
+6.0,2023-10-07,@,Alabama-Birmingham,L (35-56),24,44,54.5,260,2,37,211,5.7,3,81,471,5.8,9,13,2,24,9,86,1,2,3,South Florida,/cfb/boxscores/2023-10-07-alabama-birmingham.html
+7.0,2023-10-14,,Florida Atlantic,L (14-56),20,34,58.8,250,1,38,138,3.6,1,72,388,5.4,9,10,2,21,5,40,1,0,1,South Florida,/cfb/boxscores/2023-10-14-south-florida.html
+1.0,2023-09-02,,Alcorn State,W (40-14),24,31,77.4,296,3,38,145,3.8,1,69,441,6.4,14,6,5,25,5,35,0,1,1,Southern Mississippi,/cfb/boxscores/2023-09-02-southern-mississippi.html
+2.0,2023-09-09,@,Florida State,L (13-66),11,34,32.4,154,0,28,104,3.7,1,62,258,4.2,8,8,2,18,13,90,0,1,1,Southern Mississippi,/cfb/boxscores/2023-09-09-florida-state.html
+3.0,2023-09-16,,Tulane,L (3-21),19,34,55.9,177,0,30,25,0.8,0,64,202,3.2,9,5,1,15,6,60,0,0,0,Southern Mississippi,/cfb/boxscores/2023-09-16-southern-mississippi.html
+4.0,2023-09-23,@,Arkansas State,L (37-44),20,36,55.6,215,2,34,234,6.9,2,70,449,6.4,9,10,1,20,5,45,0,2,2,Southern Mississippi,/cfb/boxscores/2023-09-23-arkansas-state.html
+5.0,2023-09-30,,Texas State,L (36-50),21,44,47.7,275,2,45,235,5.2,3,89,510,5.7,11,12,5,28,7,30,1,1,2,Southern Mississippi,/cfb/boxscores/2023-09-30-southern-mississippi.html
+6.0,2023-10-07,,Old Dominion,L (13-17),15,26,57.7,166,0,44,110,2.5,0,70,276,3.9,8,8,1,17,4,23,1,0,1,Southern Mississippi,/cfb/boxscores/2023-10-07-southern-mississippi.html
+1.0,2023-09-01,@,Hawaii,W (37-24),25,36,69.4,248,2,34,158,4.6,2,70,406,5.8,13,6,6,25,9,81,0,0,0,Stanford,/cfb/boxscores/2023-09-01-hawaii.html
+2.0,2023-09-09,@,Southern California,L (10-56),10,25,40.0,140,0,41,209,5.1,1,66,349,5.3,7,9,4,20,5,40,2,1,3,Stanford,/cfb/boxscores/2023-09-09-southern-california.html
+3.0,2023-09-16,,Sacramento State,L (23-30),11,24,45.8,207,1,42,180,4.3,1,66,387,5.9,8,10,0,18,8,65,0,2,2,Stanford,/cfb/boxscores/2023-09-16-stanford.html
+4.0,2023-09-23,,Arizona,L (20-21),18,32,56.3,246,0,34,108,3.2,2,66,354,5.4,11,6,1,18,6,45,0,0,0,Stanford,/cfb/boxscores/2023-09-23-stanford.html
+5.0,2023-09-30,,Oregon,L (6-42),14,24,58.3,133,0,46,89,1.9,0,70,222,3.2,6,9,1,16,4,25,0,0,0,Stanford,/cfb/boxscores/2023-09-30-stanford.html
+6.0,2023-10-13,@,Colorado,W (46-43),28,49,57.1,399,4,39,124,3.2,2,88,523,5.9,17,9,4,30,7,74,0,0,0,Stanford,/cfb/boxscores/2023-10-13-colorado.html
+1.0,2023-09-02,,Colgate,W (65-0),28,37,75.7,406,7,52,271,5.2,1,89,677,7.6,20,14,0,34,7,60,2,1,3,Syracuse,/cfb/boxscores/2023-09-02-syracuse.html
+2.0,2023-09-09,,Western Michigan,W (48-7),24,39,61.5,343,1,37,153,4.1,4,76,496,6.5,13,7,6,26,9,72,0,0,0,Syracuse,/cfb/boxscores/2023-09-09-syracuse.html
+3.0,2023-09-16,@,Purdue,W (35-20),14,28,50.0,184,0,44,271,6.2,5,72,455,6.3,7,14,7,28,9,105,0,1,1,Syracuse,/cfb/boxscores/2023-09-16-purdue.html
+4.0,2023-09-23,,Army,W (29-16),21,26,80.8,245,1,37,158,4.3,2,63,403,6.4,13,7,0,20,6,65,0,1,1,Syracuse,/cfb/boxscores/2023-09-23-syracuse.html
+5.0,2023-09-30,,Clemson,L (14-31),16,31,51.6,181,2,34,100,2.9,0,65,281,4.3,5,7,2,14,9,92,2,1,3,Syracuse,/cfb/boxscores/2023-09-30-syracuse.html
+6.0,2023-10-07,@,North Carolina,L (7-40),16,23,69.6,129,0,28,92,3.3,1,51,221,4.3,6,4,1,11,7,53,0,2,2,Syracuse,/cfb/boxscores/2023-10-07-north-carolina.html
+7.0,2023-10-14,@,Florida State,L (3-41),12,31,38.7,137,0,36,124,3.4,0,67,261,3.9,7,5,0,12,2,8,1,1,2,Syracuse,/cfb/boxscores/2023-10-14-florida-state.html
+1.0,2023-09-02,,Akron,W (24-21),28,49,57.1,292,2,28,61,2.2,1,77,353,4.6,13,2,5,20,3,15,0,0,0,Temple,/cfb/boxscores/2023-09-02-temple.html
+2.0,2023-09-09,@,Rutgers,L (7-36),20,47,42.6,230,1,24,68,2.8,0,71,298,4.2,12,5,3,20,7,51,0,2,2,Temple,/cfb/boxscores/2023-09-09-rutgers.html
+3.0,2023-09-16,,Norfolk State,W (41-9),15,23,65.2,242,1,41,290,7.1,4,64,532,8.3,11,14,2,27,9,70,1,0,1,Temple,/cfb/boxscores/2023-09-16-temple.html
+4.0,2023-09-23,,Miami (FL),L (7-41),23,42,54.8,268,1,16,11,0.7,0,58,279,4.8,11,1,1,13,6,37,1,2,3,Temple,/cfb/boxscores/2023-09-23-temple.html
+5.0,2023-09-28,@,Tulsa,L (26-48),27,49,55.1,269,2,21,44,2.1,0,70,313,4.5,14,1,0,15,3,15,1,1,2,Temple,/cfb/boxscores/2023-09-28-tulsa.html
+6.0,2023-10-07,,UTSA,L (34-49),42,65,64.6,472,5,29,70,2.4,0,94,542,5.8,26,4,2,32,2,30,2,0,2,Temple,/cfb/boxscores/2023-10-07-temple.html
+7.0,2023-10-14,@,North Texas,L (14-45),12,30,40.0,105,0,50,242,4.8,2,80,347,4.3,8,15,1,24,3,10,0,3,3,Temple,/cfb/boxscores/2023-10-14-north-texas.html
+1.0,2023-09-02,N,Virginia,W (49-13),23,33,69.7,212,2,52,287,5.5,5,85,499,5.9,11,18,0,29,4,35,1,0,1,Tennessee,/cfb/boxscores/2023-09-02-tennessee.html
+2.0,2023-09-09,,Austin Peay,W (30-13),21,33,63.6,228,2,32,228,7.1,1,65,456,7.0,7,9,1,17,10,88,1,0,1,Tennessee,/cfb/boxscores/2023-09-09-tennessee.html
+3.0,2023-09-16,@,Florida,L (16-29),20,34,58.8,287,2,30,100,3.3,0,64,387,6.0,11,6,0,17,10,79,0,1,1,Tennessee,/cfb/boxscores/2023-09-16-florida.html
+4.0,2023-09-23,,UTSA,W (45-14),18,33,54.5,209,2,33,303,9.2,4,66,512,7.8,12,8,1,21,5,40,1,0,1,Tennessee,/cfb/boxscores/2023-09-23-tennessee.html
+5.0,2023-09-30,,South Carolina,W (41-20),21,32,65.6,239,1,40,238,6.0,3,72,477,6.6,11,13,0,24,7,58,0,2,2,Tennessee,/cfb/boxscores/2023-09-30-tennessee.html
+6.0,2023-10-14,,Texas A&M,W (20-13),11,22,50.0,100,1,49,232,4.7,0,71,332,4.7,7,10,3,20,12,115,0,1,1,Tennessee,/cfb/boxscores/2023-10-14-tennessee.html
+1.0,2023-09-02,,Rice,W (37-10),22,36,61.1,300,3,39,158,4.1,1,75,458,6.1,16,7,1,24,5,40,0,0,0,Texas,/cfb/boxscores/2023-09-02-texas.html
+2.0,2023-09-09,@,Alabama,W (34-24),24,38,63.2,349,3,37,105,2.8,1,75,454,6.1,12,7,4,23,4,40,0,0,0,Texas,/cfb/boxscores/2023-09-09-alabama.html
+3.0,2023-09-16,,Wyoming,W (31-10),11,21,52.4,131,2,31,185,6.0,1,52,316,6.1,6,7,0,13,6,40,1,0,1,Texas,/cfb/boxscores/2023-09-16-texas.html
+4.0,2023-09-23,@,Baylor,W (38-6),19,25,76.0,328,1,34,175,5.1,4,59,503,8.5,15,8,1,24,2,20,2,0,2,Texas,/cfb/boxscores/2023-09-23-baylor.html
+5.0,2023-09-30,,Kansas,W (40-14),25,35,71.4,325,1,51,336,6.6,4,86,661,7.7,19,14,0,33,4,34,0,1,1,Texas,/cfb/boxscores/2023-09-30-texas.html
+6.0,2023-10-07,N,Oklahoma,L (30-34),32,38,84.2,371,1,40,156,3.9,1,78,527,6.8,15,9,1,25,9,70,1,2,3,Texas,/cfb/boxscores/2023-10-07-oklahoma.html
+1.0,2023-09-02,,New Mexico,W (52-10),24,34,70.6,277,6,29,134,4.6,1,63,411,6.5,13,9,5,27,9,88,0,0,0,Texas A&M,/cfb/boxscores/2023-09-02-texas-am.html
+2.0,2023-09-09,@,Miami (FL),L (33-48),31,53,58.5,336,2,29,97,3.3,2,82,433,5.3,14,7,5,26,7,55,1,2,3,Texas A&M,/cfb/boxscores/2023-09-09-miami-fl.html
+3.0,2023-09-16,,Louisiana-Monroe,W (47-3),32,40,80.0,399,2,33,158,4.8,3,73,557,7.6,21,6,1,28,8,50,0,0,0,Texas A&M,/cfb/boxscores/2023-09-16-texas-am.html
+4.0,2023-09-23,,Auburn,W (27-10),15,25,60.0,193,2,33,209,6.3,1,58,402,6.9,7,9,0,16,7,50,1,0,1,Texas A&M,/cfb/boxscores/2023-09-23-texas-am.html
+5.0,2023-09-30,N,Arkansas,W (34-22),17,28,60.7,210,2,39,204,5.2,0,67,414,6.2,9,10,0,19,6,40,2,1,3,Texas A&M,/cfb/boxscores/2023-09-30-arkansas.html
+6.0,2023-10-07,,Alabama,L (20-26),14,25,56.0,239,1,35,67,1.9,1,60,306,5.1,8,5,3,16,4,20,0,1,1,Texas A&M,/cfb/boxscores/2023-10-07-texas-am.html
+7.0,2023-10-14,@,Tennessee,L (13-20),16,34,47.1,223,0,28,54,1.9,1,62,277,4.5,9,4,4,17,11,90,0,2,2,Texas A&M,/cfb/boxscores/2023-10-14-tennessee.html
+1.0,2023-09-02,,Colorado,L (42-45),24,42,57.1,279,2,37,262,7.1,4,79,541,6.8,15,11,1,27,10,78,0,2,2,Texas Christian,/cfb/boxscores/2023-09-02-texas-christian.html
+2.0,2023-09-09,,Nicholls State,W (41-6),28,33,84.8,313,3,37,129,3.5,1,70,442,6.3,13,9,0,22,5,50,1,1,2,Texas Christian,/cfb/boxscores/2023-09-09-texas-christian.html
+3.0,2023-09-16,@,Houston,W (36-13),24,37,64.9,314,2,51,250,4.9,2,88,564,6.4,15,18,2,35,7,75,1,1,2,Texas Christian,/cfb/boxscores/2023-09-16-houston.html
+4.0,2023-09-23,,Southern Methodist,W (34-17),24,33,72.7,265,3,44,192,4.4,1,77,457,5.9,12,13,0,25,6,48,0,0,0,Texas Christian,/cfb/boxscores/2023-09-23-texas-christian.html
+5.0,2023-09-30,,West Virginia,L (21-24),23,41,56.1,298,2,38,135,3.6,1,79,433,5.5,11,12,0,23,7,39,0,0,0,Texas Christian,/cfb/boxscores/2023-09-30-texas-christian.html
+6.0,2023-10-07,@,Iowa State,L (14-27),21,36,58.3,213,2,37,185,5.0,0,73,398,5.5,13,10,0,23,6,52,0,4,4,Texas Christian,/cfb/boxscores/2023-10-07-iowa-state.html
+7.0,2023-10-14,,Brigham Young,W (44-11),38,59,64.4,447,4,27,137,5.1,0,86,584,6.8,23,6,1,30,7,59,0,2,2,Texas Christian,/cfb/boxscores/2023-10-14-texas-christian.html
+1.0,2023-09-02,@,Baylor,W (42-31),22,30,73.3,298,3,39,143,3.7,3,69,441,6.4,15,5,0,20,4,31,2,0,2,Texas State,/cfb/boxscores/2023-09-02-baylor.html
+2.0,2023-09-09,@,UTSA,L (13-20),16,30,53.3,211,0,29,31,1.1,1,59,242,4.1,7,6,0,13,6,40,0,0,0,Texas State,/cfb/boxscores/2023-09-09-texas-san-antonio.html
+3.0,2023-09-16,,Jackson State,W (77-34),19,25,76.0,285,3,41,399,9.7,8,66,684,10.4,14,17,3,34,10,100,0,1,1,Texas State,/cfb/boxscores/2023-09-16-texas-state.html
+4.0,2023-09-23,,Nevada,W (35-24),26,32,81.3,298,2,34,264,7.8,3,66,562,8.5,12,10,2,24,9,79,2,1,3,Texas State,/cfb/boxscores/2023-09-23-texas-state.html
+5.0,2023-09-30,@,Southern Mississippi,W (50-36),19,24,79.2,338,2,34,178,5.2,4,58,516,8.9,11,11,0,22,8,87,3,0,3,Texas State,/cfb/boxscores/2023-09-30-southern-mississippi.html
+6.0,2023-10-07,@,Louisiana,L (30-34),30,40,75.0,326,2,47,204,4.3,1,87,530,6.1,12,15,3,30,3,40,1,1,2,Texas State,/cfb/boxscores/2023-10-07-louisiana-lafayette.html
+7.0,2023-10-14,,Louisiana-Monroe,W (21-20),24,46,52.2,222,2,54,230,4.3,0,100,452,4.5,12,17,0,29,6,46,0,1,1,Texas State,/cfb/boxscores/2023-10-14-texas-state.html
+1.0,2023-09-02,@,Wyoming,L (33-35),31,47,66.0,338,3,33,93,2.8,1,80,431,5.4,19,7,0,26,7,69,0,1,1,Texas Tech,/cfb/boxscores/2023-09-02-wyoming.html
+2.0,2023-09-09,,Oregon,L (30-38),24,38,63.2,282,3,32,174,5.4,1,70,456,6.5,13,8,6,27,6,65,1,3,4,Texas Tech,/cfb/boxscores/2023-09-09-texas-tech.html
+3.0,2023-09-16,,Tarleton State,W (41-3),18,33,54.5,195,3,39,221,5.7,1,72,416,5.8,9,15,2,26,2,24,0,1,1,Texas Tech,/cfb/boxscores/2023-09-16-texas-tech.html
+4.0,2023-09-23,@,West Virginia,L (13-20),15,43,34.9,161,1,38,160,4.2,0,81,321,4.0,7,11,0,18,9,96,0,0,0,Texas Tech,/cfb/boxscores/2023-09-23-west-virginia.html
+5.0,2023-09-30,,Houston,W (49-28),14,22,63.6,161,2,37,239,6.5,3,59,400,6.8,9,11,1,21,1,5,0,0,0,Texas Tech,/cfb/boxscores/2023-09-30-texas-tech.html
+6.0,2023-10-07,@,Baylor,W (39-14),19,26,73.1,180,3,42,186,4.4,2,68,366,5.4,7,11,1,19,4,40,1,1,2,Texas Tech,/cfb/boxscores/2023-10-07-baylor.html
+7.0,2023-10-14,,Kansas State,L (21-38),30,49,61.2,298,1,30,182,6.1,2,79,480,6.1,14,8,2,24,5,45,0,3,3,Texas Tech,/cfb/boxscores/2023-10-14-texas-tech.html
+1.0,2023-09-02,@,Illinois,L (28-30),20,37,54.1,230,2,42,186,4.4,1,79,416,5.3,11,11,5,27,7,40,0,1,1,Toledo,/cfb/boxscores/2023-09-02-illinois.html
+2.0,2023-09-09,,Texas Southern,W (71-3),27,32,84.4,377,5,43,172,4.0,5,75,549,7.3,20,9,5,34,4,43,0,0,0,Toledo,/cfb/boxscores/2023-09-09-toledo.html
+3.0,2023-09-16,,San Jose State,W (21-17),13,23,56.5,92,1,36,229,6.4,1,59,321,5.4,5,11,0,16,8,73,2,1,3,Toledo,/cfb/boxscores/2023-09-16-toledo.html
+4.0,2023-09-23,,Western Michigan,W (49-31),14,24,58.3,228,4,44,269,6.1,3,68,497,7.3,12,11,0,23,11,95,2,2,4,Toledo,/cfb/boxscores/2023-09-23-toledo.html
+5.0,2023-09-30,,Northern Illinois,W (35-33),16,20,80.0,281,2,43,261,6.1,3,63,542,8.6,9,13,1,23,8,77,1,0,1,Toledo,/cfb/boxscores/2023-09-30-toledo.html
+6.0,2023-10-07,@,Massachusetts,W (41-24),15,23,65.2,139,2,39,375,9.6,3,62,514,8.3,7,11,1,19,7,55,0,1,1,Toledo,/cfb/boxscores/2023-10-07-massachusetts.html
+7.0,2023-10-14,@,Ball State,W (13-6),15,27,55.6,166,0,46,210,4.6,1,73,376,5.2,10,9,1,20,5,56,1,0,1,Toledo,/cfb/boxscores/2023-10-14-ball-state.html
+1.0,2023-09-02,,Stephen F. Austin,W (48-30),14,22,63.6,198,4,42,342,8.1,1,64,540,8.4,9,14,2,25,5,43,3,1,4,Troy,/cfb/boxscores/2023-09-02-troy.html
+2.0,2023-09-09,@,Kansas State,L (13-42),22,38,57.9,216,1,28,70,2.5,0,66,286,4.3,10,2,3,15,3,22,1,1,2,Troy,/cfb/boxscores/2023-09-09-kansas-state.html
+3.0,2023-09-16,,James Madison,L (14-16),25,46,54.3,333,2,19,-12,-0.6,0,65,321,4.9,15,1,2,18,6,40,0,1,1,Troy,/cfb/boxscores/2023-09-16-troy.html
+4.0,2023-09-23,,Western Kentucky,W (27-24),22,35,62.9,349,1,47,172,3.7,2,82,521,6.4,13,10,1,24,7,71,3,0,3,Troy,/cfb/boxscores/2023-09-23-troy.html
+5.0,2023-09-30,@,Georgia State,W (28-7),23,30,76.7,256,1,35,154,4.4,2,65,410,6.3,12,8,1,21,4,35,0,1,1,Troy,/cfb/boxscores/2023-09-30-georgia-state.html
+6.0,2023-10-07,,Arkansas State,W (37-3),12,21,57.1,236,1,50,351,7.0,3,71,587,8.3,5,13,2,20,8,75,1,0,1,Troy,/cfb/boxscores/2023-10-07-troy.html
+7.0,2023-10-14,@,Army,W (19-0),10,21,47.6,227,1,39,222,5.7,0,60,449,7.5,5,10,0,15,9,80,1,0,1,Troy,/cfb/boxscores/2023-10-14-army.html
+1.0,2023-09-02,,South Alabama,W (37-17),14,15,93.3,294,4,38,142,3.7,0,53,436,8.2,10,6,0,16,7,70,3,0,3,Tulane,/cfb/boxscores/2023-09-02-tulane.html
+2.0,2023-09-09,,Mississippi,L (20-37),15,37,40.5,231,1,45,111,2.5,1,82,342,4.2,10,7,2,19,2,10,1,1,2,Tulane,/cfb/boxscores/2023-09-09-tulane.html
+3.0,2023-09-16,@,Southern Mississippi,W (21-3),12,19,63.2,186,2,37,128,3.5,1,56,314,5.6,9,8,2,19,4,35,0,0,0,Tulane,/cfb/boxscores/2023-09-16-southern-mississippi.html
+4.0,2023-09-23,,Nicholls State,W (36-7),22,30,73.3,258,2,28,150,5.4,1,58,408,7.0,11,8,0,19,9,90,1,2,3,Tulane,/cfb/boxscores/2023-09-23-tulane.html
+5.0,2023-09-30,,Alabama-Birmingham,W (35-23),14,23,60.9,184,2,41,264,6.4,3,64,448,7.0,8,15,1,24,5,37,2,0,2,Tulane,/cfb/boxscores/2023-09-30-tulane.html
+6.0,2023-10-13,@,Memphis,W (31-21),19,31,61.3,259,1,39,144,3.7,3,70,403,5.8,10,8,2,20,7,82,0,0,0,Tulane,/cfb/boxscores/2023-10-13-memphis.html
+1.0,2023-08-31,,Arkansas-Pine Bluff,W (42-7),16,20,80.0,257,4,49,260,5.3,2,69,517,7.5,9,15,2,26,4,44,1,2,3,Tulsa,/cfb/boxscores/2023-08-31-tulsa.html
+2.0,2023-09-09,@,Washington,L (10-43),18,32,56.3,150,1,40,168,4.2,0,72,318,4.4,9,9,4,22,7,65,0,1,1,Tulsa,/cfb/boxscores/2023-09-09-washington.html
+3.0,2023-09-16,,Oklahoma,L (17-66),17,27,63.0,217,2,46,71,1.5,0,73,288,3.9,9,8,0,17,7,33,0,5,5,Tulsa,/cfb/boxscores/2023-09-16-tulsa.html
+4.0,2023-09-23,@,Northern Illinois,W (22-14),8,20,40.0,102,0,48,179,3.7,2,68,281,4.1,7,10,0,17,3,29,1,2,3,Tulsa,/cfb/boxscores/2023-09-23-northern-illinois.html
+5.0,2023-09-28,,Temple,W (48-26),14,17,82.4,244,3,53,289,5.5,3,70,533,7.6,9,14,1,24,2,15,0,0,0,Tulsa,/cfb/boxscores/2023-09-28-tulsa.html
+6.0,2023-10-07,@,Florida Atlantic,L (17-20),13,28,46.4,182,1,43,194,4.5,1,71,376,5.3,8,8,0,16,5,48,0,2,2,Tulsa,/cfb/boxscores/2023-10-07-florida-atlantic.html
+1.0,2023-08-31,,North Carolina A&T,W (35-6),38,41,92.7,291,3,30,167,5.6,2,71,458,6.5,14,17,0,31,5,45,1,0,1,UAB,/cfb/boxscores/2023-08-31-alabama-birmingham.html
+2.0,2023-09-09,@,Georgia Southern,L (35-49),33,43,76.7,385,2,29,92,3.2,3,72,477,6.6,17,5,1,23,4,45,2,1,3,UAB,/cfb/boxscores/2023-09-09-georgia-southern.html
+3.0,2023-09-16,,Louisiana,L (21-41),27,38,71.1,280,1,35,116,3.3,2,73,396,5.4,12,7,2,21,9,98,0,2,2,UAB,/cfb/boxscores/2023-09-16-alabama-birmingham.html
+4.0,2023-09-23,@,Georgia,L (21-49),32,51,62.7,250,2,26,86,3.3,1,77,336,4.4,13,7,0,20,4,29,0,1,1,UAB,/cfb/boxscores/2023-09-23-georgia.html
+5.0,2023-09-30,@,Tulane,L (23-35),28,36,77.8,264,0,38,170,4.5,2,74,434,5.9,14,9,2,25,3,12,1,0,1,UAB,/cfb/boxscores/2023-09-30-tulane.html
+6.0,2023-10-07,,South Florida,W (56-35),20,29,69.0,355,4,48,253,5.3,4,77,608,7.9,10,16,3,29,11,74,0,1,1,UAB,/cfb/boxscores/2023-10-07-alabama-birmingham.html
+7.0,2023-10-14,@,UTSA,L (20-41),22,35,62.9,233,0,36,131,3.6,2,71,364,5.1,9,7,3,19,11,85,1,2,3,UAB,/cfb/boxscores/2023-10-14-texas-san-antonio.html
+1.0,2023-08-31,,Kent State,W (56-6),25,35,71.4,334,3,46,389,8.5,5,81,723,8.9,13,17,2,32,7,70,1,2,3,UCF,/cfb/boxscores/2023-08-31-central-florida.html
+2.0,2023-09-09,@,Boise State,W (18-16),16,24,66.7,272,0,41,258,6.3,1,65,530,8.2,9,12,2,23,4,25,0,2,2,UCF,/cfb/boxscores/2023-09-09-boise-state.html
+3.0,2023-09-16,,Villanova,W (48-14),24,33,72.7,349,2,54,251,4.6,4,87,600,6.9,14,17,0,31,7,43,0,0,0,UCF,/cfb/boxscores/2023-09-16-central-florida.html
+4.0,2023-09-23,@,Kansas State,L (31-44),14,25,56.0,264,3,34,143,4.2,1,59,407,6.9,10,6,3,19,10,80,1,1,2,UCF,/cfb/boxscores/2023-09-23-kansas-state.html
+5.0,2023-09-30,,Baylor,L (35-36),13,26,50.0,234,2,35,235,6.7,2,61,469,7.7,8,9,1,18,7,74,1,1,2,UCF,/cfb/boxscores/2023-09-30-central-florida.html
+6.0,2023-10-07,@,Kansas,L (22-51),15,23,65.2,169,2,38,202,5.3,1,61,371,6.1,8,13,0,21,5,40,1,0,1,UCF,/cfb/boxscores/2023-10-07-kansas.html
+1.0,2023-09-02,,Coastal Carolina,W (27-13),17,29,58.6,264,3,31,153,4.9,0,60,417,7.0,11,7,2,20,8,55,0,3,3,UCLA,/cfb/boxscores/2023-09-02-ucla.html
+2.0,2023-09-09,@,San Diego State,W (35-10),18,29,62.1,296,3,39,254,6.5,2,68,550,8.1,12,12,2,26,7,89,2,0,2,UCLA,/cfb/boxscores/2023-09-09-san-diego-state.html
+3.0,2023-09-16,,North Carolina Central,W (59-7),10,17,58.8,210,2,39,404,10.4,6,56,614,11.0,8,14,0,22,3,20,0,1,1,UCLA,/cfb/boxscores/2023-09-16-ucla.html
+4.0,2023-09-23,@,Utah,L (7-14),15,35,42.9,234,1,32,9,0.3,0,67,243,3.6,7,2,2,11,6,36,1,1,2,UCLA,/cfb/boxscores/2023-09-23-utah.html
+5.0,2023-10-07,,Washington State,W (25-17),22,44,50.0,290,1,53,181,3.4,2,97,471,4.9,13,11,0,24,8,60,0,2,2,UCLA,/cfb/boxscores/2023-10-07-ucla.html
+6.0,2023-10-14,@,Oregon State,L (24-36),15,34,44.1,166,1,51,287,5.6,2,85,453,5.3,9,16,2,27,9,60,0,3,3,UCLA,/cfb/boxscores/2023-10-14-oregon-state.html
+1.0,2023-08-26,,San Jose State,W (56-28),24,35,68.6,341,4,34,160,4.7,3,69,501,7.3,15,10,0,25,8,57,0,0,0,USC,/cfb/boxscores/2023-08-26-southern-california.html
+2.0,2023-09-02,,Nevada,W (66-14),25,34,73.5,453,6,20,215,10.8,2,54,668,12.4,19,7,2,28,8,75,1,0,1,USC,/cfb/boxscores/2023-09-02-southern-california.html
+3.0,2023-09-09,,Stanford,W (56-10),30,36,83.3,393,3,28,180,6.4,4,64,573,9.0,18,9,0,27,11,130,0,0,0,USC,/cfb/boxscores/2023-09-09-southern-california.html
+4.0,2023-09-23,@,Arizona State,W (42-28),20,31,64.5,322,3,29,213,7.3,2,60,535,8.9,13,8,1,22,10,85,1,0,1,USC,/cfb/boxscores/2023-09-23-arizona-state.html
+5.0,2023-09-30,@,Colorado,W (48-41),30,40,75.0,403,6,25,95,3.8,1,65,498,7.7,20,5,1,26,6,53,0,1,1,USC,/cfb/boxscores/2023-09-30-colorado.html
+6.0,2023-10-07,,Arizona,W (43-41),14,25,56.0,219,1,33,146,4.4,5,58,365,6.3,7,8,8,23,8,72,1,0,1,USC,/cfb/boxscores/2023-10-07-southern-california.html
+7.0,2023-10-14,@,Notre Dame,L (20-48),23,37,62.2,199,1,37,103,2.8,1,74,302,4.1,13,6,4,23,9,75,2,3,5,USC,/cfb/boxscores/2023-10-14-notre-dame.html
+1.0,2023-08-31,,Florida,W (24-11),15,23,65.2,165,1,30,105,3.5,2,53,270,5.1,5,7,1,13,5,37,0,0,0,Utah,/cfb/boxscores/2023-08-31-utah.html
+2.0,2023-09-09,@,Baylor,W (20-13),12,26,46.2,153,0,47,224,4.8,2,73,377,5.2,9,11,0,20,7,59,0,1,1,Utah,/cfb/boxscores/2023-09-09-baylor.html
+3.0,2023-09-16,,Weber State,W (31-7),13,21,61.9,193,1,52,231,4.4,2,73,424,5.8,7,15,1,23,5,35,0,0,0,Utah,/cfb/boxscores/2023-09-16-utah.html
+4.0,2023-09-23,,UCLA,W (14-7),9,17,52.9,117,1,48,102,2.1,0,65,219,3.4,7,6,0,13,4,30,1,0,1,Utah,/cfb/boxscores/2023-09-23-utah.html
+5.0,2023-09-29,@,Oregon State,L (7-21),13,31,41.9,141,1,32,57,1.8,0,63,198,3.1,5,5,4,14,4,20,0,1,1,Utah,/cfb/boxscores/2023-09-29-oregon-state.html
+6.0,2023-10-14,,California,W (34-14),15,22,68.2,128,0,53,317,6.0,4,75,445,5.9,5,15,1,21,3,38,0,0,0,Utah,/cfb/boxscores/2023-10-14-utah.html
+1.0,2023-09-02,@,Iowa,L (14-24),32,48,66.7,213,1,24,116,4.8,0,72,329,4.6,12,5,2,19,10,91,0,1,1,Utah State,/cfb/boxscores/2023-09-02-iowa.html
+2.0,2023-09-09,,Idaho State,W (78-28),22,28,78.6,211,4,41,380,9.3,5,69,591,8.6,7,16,0,23,4,35,0,0,0,Utah State,/cfb/boxscores/2023-09-09-utah-state.html
+3.0,2023-09-15,@,Air Force,L (21-39),20,35,57.1,248,3,26,54,2.1,0,61,302,5.0,11,5,4,20,4,17,1,1,2,Utah State,/cfb/boxscores/2023-09-15-air-force.html
+4.0,2023-09-23,,James Madison,L (38-45),27,49,55.1,402,4,31,98,3.2,1,80,500,6.3,15,6,0,21,9,80,0,3,3,Utah State,/cfb/boxscores/2023-09-23-utah-state.html
+5.0,2023-09-30,@,Connecticut,W (34-33),17,24,70.8,315,4,32,101,3.2,0,56,416,7.4,11,6,4,21,7,67,0,2,2,Utah State,/cfb/boxscores/2023-09-30-connecticut.html
+6.0,2023-10-07,,Colorado State,W (44-24),19,29,65.5,387,4,55,252,4.6,2,84,639,7.6,13,14,1,28,7,70,2,2,4,Utah State,/cfb/boxscores/2023-10-07-utah-state.html
+7.0,2023-10-13,,Fresno State,L (32-37),23,40,57.5,363,3,42,205,4.9,1,82,568,6.9,16,12,2,30,8,74,0,2,2,Utah State,/cfb/boxscores/2023-10-13-utah-state.html

@@ -1,0 +1,39 @@
+[2023-10-16T21:04:22.648-0400] {processor.py:157} INFO - Started process (PID=20386) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:04:22.651-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-10-16T21:04:22.651-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.651-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:04:22.669-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:04:22.961-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.960-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:22.965-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.965-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:22.967-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.967-0400] {manager.py:499} INFO - Created Permission View: %s
+[2023-10-16T21:04:22.967-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.967-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:04:22.972-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.972-0400] {dag.py:2963} INFO - Creating ORM DAG for example_sensors
+[2023-10-16T21:04:22.972-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:04:22.972-0400] {dag.py:3722} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-10-16T21:04:22.981-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.333 seconds
+[2023-10-16T21:05:47.006-0400] {processor.py:157} INFO - Started process (PID=20478) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:05:47.008-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-10-16T21:05:47.008-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:47.008-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:05:47.024-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:05:47.121-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:47.121-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:05:47.125-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:05:47.125-0400] {dag.py:3722} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-10-16T21:05:47.134-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.129 seconds
+[2023-10-16T21:07:20.930-0400] {processor.py:157} INFO - Started process (PID=20583) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:07:20.933-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-10-16T21:07:20.934-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:20.934-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:07:20.955-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:07:21.068-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:21.067-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:07:21.072-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:07:21.072-0400] {dag.py:3722} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-10-16T21:07:21.083-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.154 seconds
+[2023-10-16T21:10:53.932-0400] {processor.py:157} INFO - Started process (PID=20790) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:10:53.934-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-10-16T21:10:53.934-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:53.934-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:10:53.951-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:10:54.047-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:54.047-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:10:54.052-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:10:54.052-0400] {dag.py:3722} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-10-16T21:10:54.061-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.130 seconds
+[2023-10-16T21:12:15.773-0400] {processor.py:157} INFO - Started process (PID=20847) to work on /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:12:15.775-0400] {processor.py:829} INFO - Processing file /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2023-10-16T21:12:15.775-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:15.775-0400] {dagbag.py:536} INFO - Filling up the DagBag from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:12:15.792-0400] {processor.py:839} INFO - DAG(s) dict_keys(['example_sensors']) retrieved from /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py
+[2023-10-16T21:12:15.889-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:15.889-0400] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-10-16T21:12:15.893-0400] {logging_mixin.py:151} INFO - [2023-10-16T21:12:15.893-0400] {dag.py:3722} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2023-10-16T21:12:15.903-0400] {processor.py:179} INFO - Processing /Users/kniu91/opt/anaconda3/envs/fftool_conda/lib/python3.11/site-packages/airflow/example_dags/example_sensors.py took 0.130 seconds
