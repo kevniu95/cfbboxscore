@@ -1,6 +1,6 @@
 import logging
 
-def setup_logger(name="cfbboxscore"):
+def setup_logger(name):
     formatter = logging.Formatter(fmt='%(asctime)s - %(levelname)s - %(module)s - %(message)s')
 
     # Setting up the console handler

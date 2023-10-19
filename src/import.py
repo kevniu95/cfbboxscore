@@ -2,6 +2,7 @@ import os
 import pathlib
 import time
 import requests
+import json
 from requests import Session, Request
 from typing import Dict, Any, List
 from bs4 import BeautifulSoup
@@ -9,46 +10,18 @@ import pandas as pd
 from datetime import date
 from dateutil.relativedelta import relativedelta
 from util.logger_config import setup_logger
+from util.constants import GAMELOG_TABLE_COLUMNS
+from util.config import Config
 
-logger = setup_logger()
-
-base_site = 'https://www.sports-reference.com'
-cfb_schools_suffix = '/cfb/schools'
-request_params = None
-GAMELOG_TABLE_COLUMNS = ['Rank', 
-                    'Date', 
-                    'Location',
-                    'Opponent',
-                    'Result',
-                    'Cmp', 
-                    'PassAtt', 
-                    'PassPct',
-                    'PassYds',
-                    'PassTD',
-                    'RushAtt',
-                    'RushYds',
-                    'RushAvg',
-                    'RushTD',
-                    'Plays',
-                    'Yards',
-                    'YardsPerPlay',
-                    'PassFirstDowns',
-                    'RushFirstDowns',
-                    'PenFirstDowns',
-                    'TotalFirstDowns',
-                    'Penalties',
-                    'PenaltyYards',
-                    'Fumbles',
-                    'Interceptions',
-                    'Turnovers']
+logger = setup_logger(__name__)
 
 def send_get_request(url : str, params : Dict[str, Any] = None) -> requests.Response:
     try:
         s = Session()
-        req = Request('GET', url , params = request_params).prepare()
+        req = Request('GET', url , params = params).prepare()
         r = s.send(req)
     except Exception as e:
-        logger.error(f"Failed to create or send request: {e}")
+        logger.exception(f"Failed to create or send request: {e}")
     if not r.ok:
         logger.error(f"Response returned from {url} was not OK")
     return r
@@ -133,16 +106,33 @@ def load_game_data(gamelog_links : Dict[str, str], path : str, filename : str = 
     final_df = pd.concat(all_dfs)
     final_df.columns = GAMELOG_TABLE_COLUMNS
     final_df.to_csv(f'{path}/{filename}', index = False)
-        
+
+def get_gamelog_links(path : str) -> Dict[str, str]:
+    if os.path.exists(path):
+        with open(path, 'r') as read_content:
+            logger.info(f"Found and retrieving gamelog links from file path: {path}")
+            return json.load(read_content)
+    else:
+        logger.info(f"Couldn't find gamelog links at file path: {path}. Re-scraping to get them...")
+        resp = send_get_request(base_site + cfb_schools_suffix, None)
+        team_links = get_team_links(resp)
+        gamelog_links = get_all_gamelog_links(team_links)
+        if gamelog_links:
+            logger.info(f"Obtained game links and saving at file path: {path}")
+            with open(path, 'w') as write_file:
+                json.dump(team_links, write_file)
+        else:
+            logger.error(f"Couldn't scrape game log links")
+            return {}
 
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
-    os.chdir(path)  
+    os.chdir(path)
 
-    resp = send_get_request(base_site + cfb_schools_suffix, request_params)
-    team_links = get_team_links(resp)
-    gamelog_links = get_all_gamelog_links(team_links)
-    print(gamelog_links)
-    current_path = '../data/'
-    load_game_data(gamelog_links, current_path, modBy = 15)
-    
+    sr_config = Config().parse_section('sportsReference')
+    base_site = sr_config['base_url']
+    cfb_schools_suffix = sr_config['schools_suffix']
+
+    get_gamelog_links('../data/gamelog_links.json')
+    # save_path = '../data/'
+    # load_game_data(gamelog_links, save_path, modBy = 15)
