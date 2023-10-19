@@ -21,35 +21,35 @@ Logger.exception() will propogate stacktrace, you can just use logger.exception(
 logger = setup_logger(__name__)
 
 class GameDataLoader():
-    def __init__(self, config : Config):
+    def __init__(self, config : Config = Config()):
         self.config = config
         self._processConfig()
     
     def _processConfig(self) -> None:
         try:
-            sr_config = config.parse_section('sportsReference')
+            sr_config = self.config.parse_section('sportsReference')
         except:
             logger.exception("Encountered error while parsing configuration in GameDataLoader initialization")
         self.base_site = sr_config['base_url']
         self.cfb_schools_suffix = sr_config['schools_suffix']
     
-    def get_gamelog_links(self, path : str) -> Dict[str, str]:
+    def get_gamelog_links(self, path : str, year : int = 2023) -> Dict[str, str]:
+        team_links = None
         if os.path.exists(path):
             with open(path, 'r') as read_content:
-                return json.load(read_content)
+                team_links = json.load(read_content)
         else:
-            logger.info(f"Couldn't find gamelog links at file path: {path}. Re-scraping to get them...")
+            logger.info(f"Couldn't find team links at file path: {path}. Re-scraping to get them...")
             resp = send_get_request(self.base_site + self.cfb_schools_suffix, None)
             team_links = self._get_team_links(resp)
-            gamelog_links = self._get_all_gamelog_links(team_links)
-            if gamelog_links:
-                logger.info(f"Obtained game links and saving at file path: {path}")
-                with open(path, 'w') as write_file:
-                    json.dump(team_links, write_file)
-                return gamelog_links
-            else:
-                logger.error(f"Couldn't scrape game log links")
-                return {}
+            with open(path, 'w') as write_file:
+                logger.info(f"Obtained team links and saving at file path: {path}")
+                json.dump(team_links, write_file)
+                
+        gamelog_links = self._get_all_gamelog_links(team_links, year)
+        if not gamelog_links:
+            logger.error(f"Couldn't obtain game log links")
+        return gamelog_links
 
     def _get_team_links(self, resp : requests.Response, max_year : int = None) -> Dict[str, str]:
         data = {}
@@ -96,7 +96,7 @@ class GameDataLoader():
             soup = BeautifulSoup(resp.text, 'html.parser')
             off_table = soup.find_all('table', id = 'offense')
             if not off_table:
-                logger.error(f"In load_game_data, couldn't find game log table for team {k}, skipping for now")
+                logger.info(f"In load_game_data, couldn't find game log table for team {k}, skipping for now")
                 continue
 
             rows = off_table[0].find_all('tr')
@@ -113,7 +113,7 @@ class GameDataLoader():
             try:
                 tab['game_id'] = pd.Series(data)
             except:
-                logger.error(f"In load_game_data, game_id assignments don't match dataframe size, skipping this table for now")
+                logger.info(f"In load_game_data, game_id assignments don't match dataframe size, skipping this table for now")
                 continue
             curr_list_of_dfs.append(tab)
             
@@ -134,7 +134,6 @@ if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
 
-    config = Config()
-    gameDataLoader = GameDataLoader(config)
-    gameLogLinks = gameDataLoader.get_gamelog_links('../data/gamelog_links.json')
+    gameDataLoader = GameDataLoader()
+    gameLogLinks = gameDataLoader.get_gamelog_links('../data/gamelog_links.json', 2021)
     gameDataLoader.load_game_data(gameLogLinks, path = '../data/')
