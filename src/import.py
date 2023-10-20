@@ -2,6 +2,7 @@ import os
 import pathlib
 import time
 import requests
+import argparse
 import json
 from typing import Dict, Any, List
 from bs4 import BeautifulSoup
@@ -87,7 +88,13 @@ class GameDataLoader():
             logger.error("Function get_all_gamelog_links() is returning an empty dictionary")
         return newDict
 
-    def load_game_data(self, gamelog_links : Dict[str, str], path : str, filename : str = 'gameResults.csv', modBy : int = 17) -> None:
+    def load_game_data(self, year : int, path : str, filename : str = 'gameResults.csv', modBy : int = 17) -> None:
+        gamelog_links : Dict[str, str] = self.get_gamelog_links('../data/gamelogs/gamelog_links.json', year)
+        filename_parts = filename.split('.')
+        newFileName = f'{filename_parts[0]}_{year}.{filename_parts[1]}'
+        self._load_game_data(gamelog_links, path = '../data/gamelogs', filename = newFileName, modBy = modBy)
+    
+    def _load_game_data(self, gamelog_links : Dict[str, str], path : str, filename : str = 'gameResults.csv', modBy : int = 17) -> None:
         ctr = 0
         all_dfs = []
         curr_list_of_dfs = []
@@ -134,6 +141,9 @@ if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
 
+    parser = argparse.ArgumentParser(description="Process a year argument.")
+    parser.add_argument("year", type=int, help="Specify the year.")
+    args = parser.parse_args()
+
     gameDataLoader = GameDataLoader()
-    gameLogLinks = gameDataLoader.get_gamelog_links('../data/gamelog_links.json', 2021)
-    gameDataLoader.load_game_data(gameLogLinks, path = '../data/')
+    gameDataLoader.load_game_data(year = args.year, path = '../data/gamelogs/')
