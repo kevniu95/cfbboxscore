@@ -3,7 +3,11 @@ import pathlib
 from typing import Dict, List, Any
 
 import pandas as pd
+import numpy as np
 from .combine import process_years
+from util.logger_config import setup_logger
+
+logger = setup_logger(__name__)
 # Elo by winloss
 # Elo by PF/PA
 # Elo by YPP + Succcess Rate
@@ -57,24 +61,34 @@ class EloYearRater():
             current_df = self.base_df[(self.base_df['Date'] <= date) &
                          (self.base_df['Date'] >= last_date)].copy()
             last_date = date
-            EloWeekRater(current_df, self.currentRatings)
+            EloWeekRater(current_df, self.currentRatings, date)
 
 class EloWeekRater():
-    def __init__(self, base_df : pd.DataFrame, ratings : pd.DataFrame):
+    def __init__(self, base_df : pd.DataFrame, ratings : pd.DataFrame, date : pd.Timestamp, c : float = 400, k : float = 32):
         self.base_df = base_df
         self.ratings = ratings
-        # print(base_df.head())
-        # print(ratings.head())
-    
+        self.date = date
+        self.c = c
+        self.k = k
         self._createInitTable()
         
-    
-    def _createInitTable(self):
-        print(len(self.base_df))
-        self.base_df = self.base_df.merge(self.ratings, on = 'Team', how = 'left', indicator = 'tm1')
-        self.base_df = self.base_df.merge(self.ratings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2')
-        print(self.base_df.head())
-        print(self.ratings)
+    def _createInitTable(self) -> None:
+        df = self.base_df.copy()
+        df = df.merge(self.ratings, on = 'Team', how = 'left', indicator = 'tm1')
+        df = df.merge(self.ratings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2')
+        df['tm1'] = np.where(df['tm1'] == 'both', 1, 0)
+        df['tm2'] = np.where(df['tm2'] == 'both', 1, 0)
+        if len(df) > df['tm1'].sum() or len(df) > df['tm2'].sum():
+            logger.error(f"Error processing elo for week {self.date}. Not all teams got rating, check names.")
+            raise Exception("Error in EloWeekRater class - not all teams have ratings ")
+        
+        df['qx'] = 10 ** (df['Rating_x'] / self.c)
+        df['qy'] = 10 ** (df['Rating_y'] / self.c)
+        df['ex'] = df['qx'] / (df['qx'] + df['qy'])
+        df['Rating_x_new'] = df['Rating_x'] + self.k * (df['Win'] - df['ex'])
+
+        print(df.head())
+        # print(self.ratings)
         
 
 
@@ -86,10 +100,9 @@ if __name__ == '__main__':
     os.chdir(path)
     
     df = process_years(2016, 2023)
-    tm_list = list(df['Team'].unique())
-    opp_list = list(df['Opponent'].unique())
-    big_list = list(set(tm_list + opp_list))
-    big_list.sort()
-    [print(i) for i in big_list]
-    # er = EloYearRater(df, 2016)
-    # er.beginRating()
+    # tm_list = list(df['Team'].unique())
+    # opp_list = list(df['Opponent'].unique())
+    # big_list = list(set(tm_list + opp_list))
+    # big_list.sort()
+    er = EloYearRater(df, 2016)
+    er.beginRating()

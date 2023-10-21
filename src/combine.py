@@ -67,6 +67,8 @@ def process_years(start_year : int, end_year : int, process_fx : Callable = proc
     df = pd.concat(game_results).reset_index(drop = True)
     loc_dict = {'@' : 1, np.nan : 0, 'N' : 0.5}
     df['Location'] = df['Location'].replace(loc_dict)
+    df['PF'] = pd.to_numeric(df['PF'])
+    df['PA'] = pd.to_numeric(df['PA'])
     df['Win'] = np.where(df['PF'] > df['PA'], 1, 0)
     df['Date'] = pd.to_datetime(df['Date'])
     df['Season'] = (df['Date'] - DateOffset(months = 3)).dt.year
@@ -81,15 +83,15 @@ def adjustTeamNames(df : pd.DataFrame, path : str = '../data/gamelogs', file : s
     with open(path, 'r') as read_content:
         team_links = json.load(read_content)
     df['Opponent'] = df['Opponent'].replace(team_links)    
-    df['Team'] = df['Team'].replace(team_links)    
+    df['Team'] = df['Team'].replace(team_links)
     return df
     
-
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
 
     df = process_years(2016, 2023)
+    # print(df[df['Team'] == 'Alabama'])
     # adjustTeamNames()
     
     # print(df.head())
