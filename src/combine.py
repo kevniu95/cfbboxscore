@@ -1,11 +1,20 @@
 import os
 import pathlib
+import json
 import pandas as pd
+from pandas.tseries.offsets import DateOffset
 import numpy as np 
 from typing import Callable
+from util.logger_config import setup_logger
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.expand_frame_repr', False)
+
+logger = setup_logger(__name__)
+
+"""
+TODO: Make this generalized as we find more ways to combine and process data
+"""
 
 def combine(year : int, path : str = '../data/gamelogs/', filename = 'gameResults'):
     """
@@ -46,7 +55,6 @@ def process(df : pd.DataFrame):
     df1['SuccessRate_x'] = (df1['TotalFirstDowns_x'] + df1['TD_x']) / df1['Plays_x']
     df1['SuccessRate_y'] = (df1['TotalFirstDowns_y'] + df1['TD_y']) / df1['Plays_y']
     return_cols = ['Date', 'game_id', 'Team','Location','Opponent','PF','PA','YPP_x','YPP_y','SuccessRate_x','SuccessRate_y','Turnovers_x','Turnovers_y', 'Plays_x','Plays_y']
-    
     return df1[return_cols]
 
 def process_years(start_year : int, end_year : int, process_fx : Callable = process, combine_fx : Callable = combine) -> pd.DataFrame:
@@ -56,24 +64,35 @@ def process_years(start_year : int, end_year : int, process_fx : Callable = proc
         df = process_fx(combine_fx(year))
         game_results.append(df)
     
-    df = pd.concat(game_results)
+    df = pd.concat(game_results).reset_index(drop = True)
     loc_dict = {'@' : 1, np.nan : 0, 'N' : 0.5}
     df['Location'] = df['Location'].replace(loc_dict)
     df['Win'] = np.where(df['PF'] > df['PA'], 1, 0)
+    df['Date'] = pd.to_datetime(df['Date'])
+    df['Season'] = (df['Date'] - DateOffset(months = 3)).dt.year
+    df['Opponent'] = df['Opponent'].str.rstrip('*')
+    return adjustTeamNames(df)
+
+def adjustTeamNames(df : pd.DataFrame, path : str = '../data/gamelogs', file : str = 'teamNames.json') -> pd.DataFrame:
+    path = os.path.join(path, file)
+    if not os.path.exists(path):
+        logger.error(f"Couldn't find file {path}")
+        return df
+    with open(path, 'r') as read_content:
+        team_links = json.load(read_content)
+    df['Opponent'] = df['Opponent'].replace(team_links)    
+    df['Team'] = df['Team'].replace(team_links)    
     return df
-
-
-# Elo by winloss
-# Elo by PF/PA
-# Elo by YPP + Succcess Rate
-# Home-field advantage
+    
 
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
 
     df = process_years(2016, 2023)
-    print(df.head())
+    # adjustTeamNames()
+    
+    # print(df.head())
     # sub_df = df[['Date','game_id','Team','Location','Opponent','PF','PA','Win']].copy()
     # sub_2016 = sub_df[pd.to_datetime(sub_df['Date']).dt.year == 2016].copy()
     # print(sub_2016.groupby('Date').count())

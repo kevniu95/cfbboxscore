@@ -1,7 +1,7 @@
 from typing import Dict, Any, List
 import requests
 from requests import Session, Request
-from datetime import date
+from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
 
 from util.logger_config import setup_logger

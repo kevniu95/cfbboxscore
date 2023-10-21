@@ -29,7 +29,7 @@ def try_model(X, y, polys = 2, regressor = LASSO_CV_REGRESSOR):
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
-
+    
     df = process_years(2016, 2023)
     reg_train, reg_test = train_test_split(df, test_size = 0.2)
     x_vars = ['YPP_x','SuccessRate_x', 'Plays_x', 'Plays_y', 'Turnovers_x','Turnovers_y']

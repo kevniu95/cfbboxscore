@@ -16,7 +16,6 @@ from util.util import send_get_request, get_max_year
 Have a logger for each individual module, have centralized logger config
 Logger.exception() will propogate stacktrace, you can just use logger.exception() with an except:
    or other error-handling place
-
 '''
 
 logger = setup_logger(__name__)
