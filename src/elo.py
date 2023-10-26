@@ -18,51 +18,121 @@ logger = setup_logger(__name__)
 
 class ScoreUpdate(ABC):
     def __init__(self):
-        self.df = df
+        pass
     
     @abstractmethod
-    def getSa(self) -> pd.Series:
+    def _getSa(self, df) -> pd.Series:
         pass
 
-class ScoreUpdateWinLoss(ABC):
     def getSa(self, df) -> pd.Series:
-        return df['Win']
+        self.df = df
+        if not self.isReady():
+            logger.error(f"{self.__class__.__name__} class is not ready!")
+            raise Exception("Error in ScoreUpdate function, class is not ready!")
+        return self._getSa(df)
 
-class ScoreUpdateRawPointsExp(ABC):
-    def __init__(self, exp : float):
-        self.exp = exp
+    def isReady(self) -> bool:
+        if isinstance(df, pd.DataFrame):
+            return True
+        return False
+
+    def __str__(self):
+        return self.__class__.__name__
+
+    def __repr__(self):
+        return self.__class__.__name__
+
+class ScoreUpdateWinLoss(ScoreUpdate):
+    def _getSa(self, df) -> pd.Series:
+        return df['Win']
     
-    def getSa(self, df) -> pd.Series:
+    def isReady(self) -> bool:
+        if super().isReady() and 'Win' in self.df.columns:
+            return True
+        return False
+    
+class ScoreUpdateRawPointsExp(ScoreUpdate):
+    def __init__(self, exp : float = None):
+        self.exp = exp
+
+    def _getSa(self, df) -> pd.Series:
         sa = (df['PF'] ** self.exp) / ((df['PF'] ** self.exp) + (df['PA'] ** self.exp))
         return sa
-        
+
+    def isReady(self) -> bool:
+        if super().isReady() and 'PF' in self.df.columns and 'PA' in self.df.columns and self.exp is not None:
+            return True
+        return False
+            
 class ScoreUpdateRawPointsLinear(ABC):
-    def getSa(self, df) -> pd.Series:
+    def _getSa(self, df) -> pd.Series:
         diff = df['PF'] - df['PA']
         sa = 0.0319 * diff + 0.5
         sa = np.where(sa < 0, 0, sa)
         sa = np.where(sa > 1, 1, sa)
         return sa
     
-class EloRater():
-    def __init__(self, base_df : pd.DataFrame, base_season : int = None):
-        self.base_df = base_df
-        self.base_season = base_season
-        if not self.base_season:
-            self.base_season = self.base_df['Season'].min()
-        self._initYearOne()
+    def isReady(self) -> bool:
+        if super().isReady() and 'PF' in self.df.columns and 'PA' in self.df.columns:
+            return True
+        return False
     
-    def _initYearOne(self):
-        base_df = self.base_df.loc[self.base_df['Season'] == self.base_season, keep_cols].copy()
-        EloYearRater(base_df)
+class EloRatingConfig():
+    def __init__(self, **kwargs):
+        self.dictForm = kwargs
+        self.c = kwargs.get('c', 400)
+        self.k = kwargs.get('k', 35)
+        self.scoreUpdate = kwargs.get('scoreUpdate', ScoreUpdateWinLoss())
+        self.hfa = kwargs.get('hfa', 115)
+        self.exp = None
+        if isinstance(self.scoreUpdate, ScoreUpdateRawPointsExp):
+            self.exp = kwargs.get('exp', 10)
+            self.scoreUpdate.exp = self.exp
+    
+class EloRater():
+    def __init__(self, base_df : pd.DataFrame, eloRatingConfig : EloRatingConfig, min_season : int = None, max_season : int = None):
+        self.base_df = base_df
+        self.eloRatingConfig = eloRatingConfig
+
+        self.min_season = min_season
+        if not self.min_season:
+            self.min_season = self.base_df['Season'].min()
+        self.max_season = max_season
+        if not self.max_season:
+            self.max_season = self.base_df['Season'].max()
         
+        self.lossResultsContainer : Dict[int, Dict[str, pd.DataFrame]] = {}
+    
+    def beginRating(self):
+        for year in range(self.min_season, self.max_season + 1):
+            er = EloYearRater(self.base_df, year, self.eloRatingConfig)
+            er.beginRating()
+            self.lossResultsContainer[year] = er.lossResults
+    
+    def getLossCalcColumns(self) -> pd.DataFrame:
+        res = []
+        for year, results in self.lossResultsContainer.items():
+            a = pd.concat(list(results.values()))
+            res.append(a)
+        return pd.concat(res)
+        
+    def getResults(self, save : bool = False, savePath : str = None) -> float:
+        lossCalcColumns = self.getLossCalcColumns()
+        results = log_loss(lossCalcColumns['Win'], lossCalcColumns['ex'])
+        if save:
+            df = pd.DataFrame.from_dict({k : [v] for k, v in eloRatingConfig.dictForm.items()})
+            df['min_season'] = self.min_season
+            df['max_season'] = self.max_season
+            df['samples'] = len(lossCalcColumns)
+            df['score'] = results
+            df.to_csv(savePath, mode = 'a', index = False)
+        return results
+    
 class EloYearRater():
-    def __init__(self, base_df : pd.DataFrame, year : int, currentRatings : pd.DataFrame = None, scoreUpdate : ScoreUpdate = None):
-        self.year = year
-        self.scoreUpdate = scoreUpdate
-        if not self.scoreUpdate:
-            self.scoreUpdate = ScoreUpdateWinLoss()
+    def __init__(self, base_df : pd.DataFrame, year : int, eloRatingConfig : EloRatingConfig, currentRatings : pd.DataFrame = None):
+        self.year = year        
         self.base_df = self._limitFrame(base_df)
+        self.eloRatingConfig = eloRatingConfig
         self.dateList = self._getDateList()
         teamList = list(self.base_df['Team'].unique())
         self.currentRatings = self._initRatings(currentRatings, teamList)
@@ -89,11 +159,11 @@ class EloYearRater():
         return date
 
     def _getDateList(self) -> List[Any]:
-        print(self.base_df.head())
         min_date = self.base_df['Date'].min()
         first_date = self._nextSaturday(min_date)
         max_date = self.base_df['Date'].max()
         start, end = sorted([first_date, max_date])
+        
         # Create the list of dates incremented by one week
         date_list = []
         while start <= end:
@@ -103,13 +173,14 @@ class EloYearRater():
         return date_list
 
     def beginRating(self):
+        print(f"Beginning ratings for year {self.year}")
         last_date : pd.Timestamp = pd.Timestamp(self.year, 1, 1, 0)
-        print(self.dateList)
         for date in self.dateList:
             print(date)
             current_df = self.base_df[(self.base_df['Date'] <= date) &
                          (self.base_df['Date'] > last_date)].copy()
             max_min_day_diff = (current_df['Date'].max() - current_df['Date'].min()).days
+            
             if current_df['Date'].min() <= last_date or max_min_day_diff > 13:
                 logger.error("EloYearRater Error: while creating weekly dataframe, minimum date is less than or equal to last week's value")
                 raise Exception("EloYearRater Error: while creating weekly dataframe, minimum date is less than or equal to last week's value")
@@ -117,30 +188,34 @@ class EloYearRater():
                 logger.error("EloYearRater Error: while creating weekly dataframe, found duplicates by team")
                 print(current_df[current_df['Team'].duplicated(keep=False)])
                 raise Exception("EloYearRater Error: while creating weekly dataframe, found duplicates by team")
+            
             last_date = date
-            weekRatings = EloWeekRater(current_df, self.currentRatings, date, scoreUpdate = self.scoreUpdate)
+            weekRatings = EloWeekRater(current_df, self.currentRatings, date, config = self.eloRatingConfig)
             self.weekDict[date] = weekRatings
             self.currentRatings = weekRatings.getNewRatings()
-            print(self.currentRatings.sort_values('Rating',ascending = False).head(5))
-            print(self.currentRatings.shape)
+            # print(self.currentRatings.sort_values('Rating',ascending = False).head(5))
+            # print(self.currentRatings.shape)
             self.lossResults[date] = weekRatings.getNewLogLossResults()
-            
+
 class EloWeekRater():
     def __init__(self, base_df : pd.DataFrame, 
                  ratings : pd.DataFrame, 
                  date : pd.Timestamp, 
-                 c : float = 400, 
-                 k : float = 35,
-                 scoreUpdate : ScoreUpdate = None):
+                 config : EloRatingConfig
+                ):
         self.base_df = base_df
         self.initRatings = ratings
         self.date = date
-        self.c = c
-        self.k = k
-        self.scoreUpdate = scoreUpdate
-        if not self.scoreUpdate:
-            self.scoreUpdate = ScoreUpdateWinLoss()
+        self.config = config
+        self._loadConfig()
         self.df = self._generateNewRatings()
+    
+    def _loadConfig(self):
+        self.c = self.config.c
+        self.k = self.config.k
+        self.scoreUpdate = self.config.scoreUpdate
+        self.hfa = self.config.hfa
+        self.exp = self.config.exp
         
     def _generateNewRatings(self) -> pd.DataFrame:
         df = self.base_df.copy()
@@ -152,13 +227,12 @@ class EloWeekRater():
             logger.error(f"Error processing elo for week {self.date}. Not all teams got rating, check names.")
             raise Exception("Error in EloWeekRater class - not all teams have ratings ")
         
-        df['Rating_x_hfa'] = df['Rating_x'] + (0.5 - df['Location']) * 115
+        df['Rating_x_hfa'] = df['Rating_x'] + (0.5 - df['Location']) * self.hfa
         df['qx'] = 10 ** (df['Rating_x_hfa'] / self.c)
         df['qy'] = 10 ** (df['Rating_y'] / self.c)
         df['ex'] = df['qx'] / (df['qx'] + df['qy'])
         df['sa'] = self.scoreUpdate.getSa(df)
         df['Rating_x_new'] = df['Rating_x'] + self.k * (self.scoreUpdate.getSa(df) - df['ex'])
-        print(df[df['Team_x'] == 'Western Kentucky'])
         return df
     
     def getNewRatings(self) -> pd.DataFrame:
@@ -176,30 +250,8 @@ if __name__ == '__main__':
     os.chdir(path)
     
     df = process_years(2016, 2024)
-    # tm_list = list(df['Team'].unique())
-    # opp_list = list(df['Opponent'].unique())
-    # big_list = list(set(tm_list + opp_list))
-    # big_list.sort()
-    er = EloYearRater(df, 2023, scoreUpdate = ScoreUpdateRawPointsExp(10))
-    # Re-adjust so that each week you start from scratch and do X number of iterations over ratings
-    # Iterative method seemingly wworks
-    # But we need a way to rigorously implement and test it 
+    ratingConfig = {'c' : 400, 'k' : 35, 'scoreUpdate' : ScoreUpdateWinLoss(), 'hfa' : 115, 'exp' : 10}
+    eloRatingConfig = EloRatingConfig(**ratingConfig)
+    er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
     er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    er.beginRating()
-    
-    last_date = er.dateList[-1]
-    a = er.weekDict[last_date].newRatings.sort_values('Rating', ascending = False)
-    a['Rank'] = a['Rating'].rank(ascending = False)
-    print(a)
-    a = pd.concat(list(er.lossResults.values()))
-    print(log_loss(a['Win'],a['ex']))
+    print(er.getResults(save = True, savePath = '../data/models/eloModelResults.csv'))
