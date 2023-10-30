@@ -64,7 +64,7 @@ class ScoreUpdateRawPointsExp(ScoreUpdate):
             return True
         return False
             
-class ScoreUpdateRawPointsLinear(ABC):
+class ScoreUpdateRawPointsLinear(ScoreUpdate):
     def _getSa(self, df) -> pd.Series:
         diff = df['PF'] - df['PA']
         sa = 0.0319 * diff + 0.5
@@ -76,10 +76,22 @@ class ScoreUpdateRawPointsLinear(ABC):
         if super().isReady() and 'PF' in self.df.columns and 'PA' in self.df.columns:
             return True
         return False
+
+class ScoreUpdateRawPointsLinearNCAA(ScoreUpdate):
+    def _getSa(self, df) -> pd.Series:
+        diff = df['PF'] - df['PA']
+        sa = 0.0255 * diff + 0.5
+        sa = np.where(sa < 0, 0, sa)
+        sa = np.where(sa > 1, 1, sa)
+        return sa
+
+    def isReady(self) -> bool:
+        if super().isReady() and 'PF' in self.df.columns and 'PA' in self.df.columns:
+            return True
+        return False
     
 class EloRatingConfig():
     def __init__(self, **kwargs):
-        self.dictForm = kwargs
         self.c = kwargs.get('c', 400)
         self.k = kwargs.get('k', 35)
         self.scoreUpdate = kwargs.get('scoreUpdate', ScoreUpdateWinLoss())
@@ -88,6 +100,12 @@ class EloRatingConfig():
         if isinstance(self.scoreUpdate, ScoreUpdateRawPointsExp):
             self.exp = kwargs.get('exp', 10)
             self.scoreUpdate.exp = self.exp
+
+    @property
+    def dictForm(self) -> Dict[str, Any]:
+        keys = ['c', 'k', 'scoreUpdate', 'hfa', 'exp']
+        vals = [self.c, self.k, self.scoreUpdate, self.hfa, self.exp]
+        return dict(zip(keys, vals))
     
 class EloRater():
     def __init__(self, base_df : pd.DataFrame, eloRatingConfig : EloRatingConfig, min_season : int = None, max_season : int = None):
@@ -125,7 +143,10 @@ class EloRater():
             df['max_season'] = self.max_season
             df['samples'] = len(lossCalcColumns)
             df['score'] = results
-            df.to_csv(savePath, mode = 'a', index = False)
+            headerFlag = True
+            if os.path.exists(savePath):
+                headerFlag = False
+            df.to_csv(savePath, mode = 'a', index = False, header = headerFlag)
         return results
     
 class EloYearRater():
@@ -176,7 +197,6 @@ class EloYearRater():
         print(f"Beginning ratings for year {self.year}")
         last_date : pd.Timestamp = pd.Timestamp(self.year, 1, 1, 0)
         for date in self.dateList:
-            print(date)
             current_df = self.base_df[(self.base_df['Date'] <= date) &
                          (self.base_df['Date'] > last_date)].copy()
             max_min_day_diff = (current_df['Date'].max() - current_df['Date'].min()).days
@@ -228,6 +248,7 @@ class EloWeekRater():
             raise Exception("Error in EloWeekRater class - not all teams have ratings ")
         
         df['Rating_x_hfa'] = df['Rating_x'] + (0.5 - df['Location']) * self.hfa
+        df['Rating_y_hfa'] = df['Rating_y'] + (0.5 - (1 - df['Location'])) * self.hfa
         df['qx'] = 10 ** (df['Rating_x_hfa'] / self.c)
         df['qy'] = 10 ** (df['Rating_y'] / self.c)
         df['ex'] = df['qx'] / (df['qx'] + df['qy'])
@@ -244,14 +265,48 @@ class EloWeekRater():
 
     def getNewLogLossResults(self) -> pd.DataFrame:
         return self.df[['Win', 'ex']]
-    
+
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
-    
+
     df = process_years(2016, 2024)
-    ratingConfig = {'c' : 400, 'k' : 35, 'scoreUpdate' : ScoreUpdateWinLoss(), 'hfa' : 115, 'exp' : 10}
+    
+    c = 200
+    k = 80
+    scoreUpdate = ScoreUpdateRawPointsLinearNCAA()
+    exp = None
+    hfa = 50
+    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp}
     eloRatingConfig = EloRatingConfig(**ratingConfig)
-    er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
-    er.beginRating()
-    print(er.getResults(save = True, savePath = '../data/models/eloModelResults.csv'))
+    # er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
+    # er.beginRating()
+    
+    eyr = EloYearRater(df, 2023, eloRatingConfig)
+    eyr.beginRating()
+    eyr.beginRating()
+    eyr.beginRating()
+    eyr.beginRating()
+    eyr.beginRating()
+    eyr.beginRating()
+    eyr.beginRating()
+    print(eyr.currentRatings.sort_values('Rating', ascending = False))
+
+    
+    # 150 already done
+    # for c in [162, 175, 187, 200]:
+    #     for k in [70, 80, 90]:
+    #         for hfa in [30, 40, 50, 60, 70]:
+    #             for scoreUpdate in [ScoreUpdateRawPointsLinear(), ScoreUpdateRawPointsLinearNCAA()]:
+    #                 exp_list = [None]
+    #                 if isinstance(scoreUpdate, ScoreUpdateRawPointsExp):
+    #                     exp_list = [2, 5, 7.5, 10]
+    #                 for exp in exp_list:
+    #                     if exp is None and isinstance(scoreUpdate, ScoreUpdateRawPointsExp):
+    #                         continue
+    #                     ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp}
+    #                     print(ratingConfig)
+    #                     eloRatingConfig = EloRatingConfig(**ratingConfig)
+    #                     er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
+    #                     er.beginRating()
+    #                     er.getResults(save = True, savePath = '../data/models/eloModelResults.csv')

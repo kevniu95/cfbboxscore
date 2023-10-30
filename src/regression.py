@@ -1,6 +1,7 @@
 import os
 import pathlib
 import numpy as np
+from joblib import dump, load
 from .combine import process_years
 from typing import Tuple
 import pandas as pd
@@ -14,7 +15,7 @@ from sklearn.model_selection import train_test_split
 
 LASSO_CV_REGRESSOR = LassoCV(cv = 5, random_state = 0, max_iter = 500000)
 
-def try_model(X, y, polys = 2, regressor = LASSO_CV_REGRESSOR):
+def try_model(X, y, polys = 2, regressor = LASSO_CV_REGRESSOR, save : bool = False, savePath : str = None):
     X_train, X_test  = X
     y_train, y_test = y
     X_train = X_train.reset_index().drop('index', axis = 1)
@@ -24,6 +25,8 @@ def try_model(X, y, polys = 2, regressor = LASSO_CV_REGRESSOR):
     print(f"R^2 score on training data {model.score(X_train, y_train)}")
     print(f"R^2 score on test data {model.score(X_test, y_test)}")
     print()
+    if save:
+        dump(model, savePath)
     return model
 
 if __name__ == '__main__':
@@ -32,9 +35,10 @@ if __name__ == '__main__':
     
     df = process_years(2016, 2023)
     reg_train, reg_test = train_test_split(df, test_size = 0.2)
-    x_vars = ['YPP_x','SuccessRate_x', 'Plays_x', 'Plays_y', 'Turnovers_x','Turnovers_y']
+    x_vars = ['YPP_x','SuccessRate_x', 'Plays_x', 'Plays_y']
     y_var = 'PF'
     base_x : Tuple[pd.DataFrame, pd.DataFrame] = (reg_train[x_vars].copy(), reg_test[x_vars].copy())
     y_pts : Tuple[pd.DataFrame, pd.DataFrame] = (reg_train[y_var].copy(), reg_test[y_var].copy())
 
-    try_model(base_x, y_pts, polys = 3)
+    savePath = '../data/models/regression/PF_reg.joblib'
+    model = try_model(base_x, y_pts, polys = 2, save = True, savePath = savePath)
