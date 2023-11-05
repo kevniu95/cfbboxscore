@@ -2,11 +2,13 @@ import os
 import pathlib
 from typing import Dict, List, Any
 from abc import ABC, abstractmethod
+from joblib import load
 
 import pandas as pd
 import numpy as np
 from .combine import process_years
 from util.logger_config import setup_logger
+import sklearn
 from sklearn.metrics import log_loss
 
 logger = setup_logger(__name__)
@@ -18,8 +20,11 @@ logger = setup_logger(__name__)
 
 class ScoreUpdate(ABC):
     def __init__(self):
-        pass
+        self.keep_cols = ['Date','Season', 'game_id','Team','Location','Opponent','Win', 'PF', 'PA']
     
+    def getKeepCols(self) -> List[str]:
+        return self.keep_cols
+
     @abstractmethod
     def _getSa(self, df) -> pd.Series:
         pass
@@ -32,7 +37,7 @@ class ScoreUpdate(ABC):
         return self._getSa(df)
 
     def isReady(self) -> bool:
-        if isinstance(df, pd.DataFrame):
+        if isinstance(self.df, pd.DataFrame):
             return True
         return False
 
@@ -89,6 +94,60 @@ class ScoreUpdateRawPointsLinearNCAA(ScoreUpdate):
         if super().isReady() and 'PF' in self.df.columns and 'PA' in self.df.columns:
             return True
         return False
+
+class ScoreUpdateExpectedPoints(ScoreUpdate):
+    def __init__(self, regModelPath : str):
+        super().__init__()
+        self.keep_cols.extend(['YPP_x','YPP_y','SuccessRate_x','SuccessRate_y','Plays_x','Plays_y'])
+        self.regModel : sklearn.pipeline.Pipeline = self._loadRegression(regModelPath)
+    
+    def _loadRegression(self, regModelPath : str):
+        try:
+            return load(regModelPath)
+        except:
+            logger.error("ScoreUpdateExpectedPoints Error: Error loading regression model into ScoreUpdate by expected points regression")
+            raise Exception("ScoreUpdateExpectedPoints Error: Error loading regression model into ScoreUpdate by expected points regression")
+            
+    def _getExpectedDiff(self, df):
+        df_copy = df.copy()
+        reg_cols = ['YPP_x','SuccessRate_x', 'YPP_y','SuccessRate_y', 'Plays_x', 'Plays_y']
+        df_copy['PF_exp'] = self.regModel.predict(df[reg_cols])
+        
+        df_copy[['YPP_x', 'YPP_y']] = df_copy[['YPP_y', 'YPP_x']]
+        df_copy[['SuccessRate_x', 'SuccessRate_y']] = df_copy[['SuccessRate_y', 'SuccessRate_x']]
+        df_copy[['Plays_x', 'Plays_y']] = df_copy[['Plays_y', 'Plays_x']]
+        df_copy['PA_exp'] = self.regModel.predict(df_copy[reg_cols])
+        diff = df_copy['PF_exp'] - df_copy['PA_exp']
+        return diff
+    
+    def _getSa(self, df) -> pd.Series:
+        # logger.info("Generating new sa for expected points ScoreUpdate")
+        diff = self._getExpectedDiff(df)
+        sa = 0.0255 * diff + 0.5
+        sa = np.where(sa < 0, 0, sa)
+        sa = np.where(sa > 1, 1, sa)
+        return sa
+    
+    def isReady(self) -> bool:
+        reg_cols = ['YPP_x','SuccessRate_x', 'YPP_y','SuccessRate_y', 'Plays_x', 'Plays_y']
+        if super().isReady() and set(reg_cols).issubset(self.df.columns):
+            return True
+        return False
+
+class ScoreUpdateExpectedPointsMerge(ScoreUpdateExpectedPoints):
+    def __init__(self, regModelPath : str, regWeight : float):
+        self.regWeight = regWeight
+        super().__init__(regModelPath)
+    
+    def _getSa(self, df) -> pd.Series:
+        temp_sa = super()._getSa(df)
+        og_diff = df['PF'] - df['PA']
+        diff = (temp_sa * (self.regWeight)) + (og_diff * (1 - self.regWeight))
+        sa = 0.0319 * diff + 0.5
+        sa = np.where(sa < 0, 0, sa)
+        sa = np.where(sa > 1, 1, sa)
+        return sa
+
     
 class EloRatingConfig():
     def __init__(self, **kwargs):
@@ -97,14 +156,17 @@ class EloRatingConfig():
         self.scoreUpdate = kwargs.get('scoreUpdate', ScoreUpdateWinLoss())
         self.hfa = kwargs.get('hfa', 115)
         self.exp = None
+        self.regWeight = kwargs.get('regWeight', None)
         if isinstance(self.scoreUpdate, ScoreUpdateRawPointsExp):
             self.exp = kwargs.get('exp', 10)
             self.scoreUpdate.exp = self.exp
 
     @property
     def dictForm(self) -> Dict[str, Any]:
-        keys = ['c', 'k', 'scoreUpdate', 'hfa', 'exp']
-        vals = [self.c, self.k, self.scoreUpdate, self.hfa, self.exp]
+        keys = ['c', 'k', 'scoreUpdate', 'hfa', 'exp', 'regWeight']
+        vals = [self.c, self.k, self.scoreUpdate, self.hfa, self.exp, self.regWeight]
+        print(keys)
+        print(vals)
         return dict(zip(keys, vals))
     
 class EloRater():
@@ -136,9 +198,11 @@ class EloRater():
         
     def getResults(self, save : bool = False, savePath : str = None) -> float:
         lossCalcColumns = self.getLossCalcColumns()
-        results = log_loss(lossCalcColumns['Win'], lossCalcColumns['ex'])
+        a = pd.to_numeric(lossCalcColumns['Win'], errors = 'coerce')
+        b = pd.to_numeric(lossCalcColumns['ex'], errors = 'coerce')
+        results = log_loss(a, b)
         if save:
-            df = pd.DataFrame.from_dict({k : [v] for k, v in eloRatingConfig.dictForm.items()})
+            df = pd.DataFrame.from_dict({k : [v] for k, v in self.eloRatingConfig.dictForm.items()})
             df['min_season'] = self.min_season
             df['max_season'] = self.max_season
             df['samples'] = len(lossCalcColumns)
@@ -152,8 +216,8 @@ class EloRater():
 class EloYearRater():
     def __init__(self, base_df : pd.DataFrame, year : int, eloRatingConfig : EloRatingConfig, currentRatings : pd.DataFrame = None):
         self.year = year        
-        self.base_df = self._limitFrame(base_df)
         self.eloRatingConfig = eloRatingConfig
+        self.base_df = self._limitFrame(base_df)
         self.dateList = self._getDateList()
         teamList = list(self.base_df['Team'].unique())
         self.currentRatings = self._initRatings(currentRatings, teamList)
@@ -167,7 +231,7 @@ class EloYearRater():
         return currentRatings
     
     def _limitFrame(self, base_df) -> pd.DataFrame:
-        keep_cols = ['Date','Season', 'game_id','Team','Location','Opponent','Win', 'PF', 'PA']
+        keep_cols = self.eloRatingConfig.scoreUpdate.getKeepCols()
         return_df = base_df.loc[base_df['Season'] == self.year, keep_cols].copy()
         if len(return_df) == 0:
             logger.error("EloYearRater Error: Limiting dataframe yielded empty dataset. Re-check base dataset")
@@ -192,6 +256,11 @@ class EloYearRater():
             start += pd.Timedelta(weeks=1)
         date_list.append(start)
         return date_list
+
+    def beginRatings(self, times : int):
+        for i in range(times):
+            self.beginRating()
+
 
     def beginRating(self):
         print(f"Beginning ratings for year {self.year}")
@@ -239,6 +308,8 @@ class EloWeekRater():
         
     def _generateNewRatings(self) -> pd.DataFrame:
         df = self.base_df.copy()
+        if len(df) == 0:
+            return pd.DataFrame(columns = ['Team_x','Rating_x_new', 'Win','ex'])
         df = df.merge(self.initRatings, on = 'Team', how = 'left', indicator = 'tm1')
         df = df.merge(self.initRatings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2')
         df['tm1'] = np.where(df['tm1'] == 'both', 1, 0)
@@ -270,17 +341,23 @@ if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
     os.chdir(path)
 
+    reg_path =  '../data/models/regression/PF_reg.joblib'
+    
+    # ScoreUpdateExpectedPoints('../data/models/regression/PF_reg.joblib')
+
     df = process_years(2016, 2024)
     
-    c = 200
-    k = 80
-    scoreUpdate = ScoreUpdateRawPointsLinearNCAA()
+    c = 225
+    k = 112.5
+    # scoreUpdate = ScoreUpdateExpectedPoints(reg_path)
+    scoreUpdate = ScoreUpdateExpectedPointsMerge(reg_path, 0.375)
     exp = None
-    hfa = 50
-    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp}
+    hfa = 60
+    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 'regWeight' : .375}
     eloRatingConfig = EloRatingConfig(**ratingConfig)
     # er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
     # er.beginRating()
+    # print(er.getResults())
     
     eyr = EloYearRater(df, 2023, eloRatingConfig)
     eyr.beginRating()
@@ -293,18 +370,35 @@ if __name__ == '__main__':
     print(eyr.currentRatings.sort_values('Rating', ascending = False))
 
     
-    # 150 already done
-    # for c in [162, 175, 187, 200]:
-    #     for k in [70, 80, 90]:
+    # # 150 already done
+    # for c in [200, 225, 250]:
+    #     for k in [100, 125, 150]:
     #         for hfa in [30, 40, 50, 60, 70]:
-    #             for scoreUpdate in [ScoreUpdateRawPointsLinear(), ScoreUpdateRawPointsLinearNCAA()]:
+    #             for scoreUpdate in [ScoreUpdateExpectedPointsMerge(reg_path, 0.5)]: #[ScoreUpdateRawPointsLinear(), ScoreUpdateRawPointsLinearNCAA()]:
     #                 exp_list = [None]
+    #                 weight_list = [None]
     #                 if isinstance(scoreUpdate, ScoreUpdateRawPointsExp):
     #                     exp_list = [2, 5, 7.5, 10]
     #                 for exp in exp_list:
     #                     if exp is None and isinstance(scoreUpdate, ScoreUpdateRawPointsExp):
     #                         continue
     #                     ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp}
+    #                     print(ratingConfig)
+    #                     eloRatingConfig = EloRatingConfig(**ratingConfig)
+    #                     er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
+    #                     er.beginRating()
+    #                     er.getResults(save = True, savePath = '../data/models/eloModelResults.csv')
+
+    # for c in [200, 212.5, 225, 237.5, 250]:
+    #     for k in [87.5, 100, 112.5, 125]:
+    #         for hfa in [ 50, 60, 70]:
+    #             for scoreUpdate in [ScoreUpdateExpectedPointsMerge(reg_path, 0.5)]: 
+    #                 weight_list = [.125, .25, .375, .5, .625]
+    #                 exp = None
+    #                 for weight in weight_list:
+    #                     scoreUpdate.regWeight = weight
+    #                     ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 
+    #                                     'regWeight' : weight}
     #                     print(ratingConfig)
     #                     eloRatingConfig = EloRatingConfig(**ratingConfig)
     #                     er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)

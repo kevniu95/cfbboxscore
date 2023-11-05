@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     df = process_years(2016, 2023)
     reg_train, reg_test = train_test_split(df, test_size = 0.2)
-    x_vars = ['YPP_x','SuccessRate_x', 'Plays_x', 'Plays_y']
+    x_vars = ['YPP_x','SuccessRate_x', 'YPP_y','SuccessRate_y', 'Plays_x', 'Plays_y']
     y_var = 'PF'
     base_x : Tuple[pd.DataFrame, pd.DataFrame] = (reg_train[x_vars].copy(), reg_test[x_vars].copy())
     y_pts : Tuple[pd.DataFrame, pd.DataFrame] = (reg_train[y_var].copy(), reg_test[y_var].copy())
