@@ -4,6 +4,7 @@ import pandas as pd
 from util.logger_config import setup_logger
 import numpy as np
 from joblib import load
+import sklearn
 
 logger = setup_logger(__name__)
 
