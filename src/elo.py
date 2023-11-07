@@ -10,7 +10,6 @@ from util.logger_config import setup_logger
 from sklearn.metrics import log_loss
 from src.scoreUpdate import *
 
-
 logger = setup_logger(__name__)
 # Elo by winloss
 # Elo by PF/PA
@@ -28,11 +27,12 @@ class EloRatingConfig():
         if isinstance(self.scoreUpdate, ScoreUpdateRawPointsExp):
             self.exp = kwargs.get('exp', 10)
             self.scoreUpdate.exp = self.exp
+        self.its = (kwargs.get('its', 1))
 
     @property
     def dictForm(self) -> Dict[str, Any]:
-        keys = ['c', 'k', 'scoreUpdate', 'hfa', 'exp', 'regWeight']
-        vals = [self.c, self.k, self.scoreUpdate, self.hfa, self.exp, self.regWeight]
+        keys = ['c', 'k', 'scoreUpdate', 'hfa', 'exp', 'regWeight', 'its']
+        vals = [self.c, self.k, self.scoreUpdate, self.hfa, self.exp, self.regWeight, self.its]
         print(keys)
         print(vals)
         return dict(zip(keys, vals))
@@ -100,17 +100,19 @@ class EloYearRater():
 
     def _getDateList(self) -> List[Any]:
         min_date = self.base_df['Date'].min()
-        first_date = self._nextSaturday(min_date)
+        first_date = self._nextSunday(min_date)
         max_date = self.base_df['Date'].max()
         start, end = sorted([first_date, max_date])
         
         # Create the list of dates incremented by one week
-        date_list = pd.date_range(start=start, end=end, freq='W-SAT').tolist()
+        date_list = pd.date_range(start=start, end=end, freq='W-SUN', inclusive = 'both').tolist()
         return date_list
 
     @staticmethod
-    def _nextSaturday(date):
-        return (date + pd.Timedelta((5 - date.dayofweek) % 7 + 1, unit='d')).normalize()
+    def _nextSunday(date):
+        while date.dayofweek != 6:
+            date += pd.Timedelta(days = 1)
+        return date
 
     def beginRatings(self, times : int):
         for i in range(times):
@@ -128,12 +130,13 @@ class EloYearRater():
                 raise Exception("EloYearRater Error: while creating weekly dataframe, minimum date is less than or equal to last week's value")
             if len(current_df[current_df['Team'].duplicated(keep=False)]) > 0:
                 logger.error("EloYearRater Error: while creating weekly dataframe, found duplicates by team")
+                print(current_df[current_df['Team'].duplicated(keep=False)])
                 raise Exception("EloYearRater Error: while creating weekly dataframe, found duplicates by team")
             
             prv_date = date
             weekRatings = EloWeekRater(current_df, self.currentRatings, date, config = self.eloRatingConfig)
             self.weekDict[date] = weekRatings
-            self.currentRatings = weekRatings.getNewRatings()
+            self.currentRatings = weekRatings.currentRatings
             self.lossResults[date] = weekRatings.getNewLogLossResults()
 
 class EloWeekRater():
@@ -142,26 +145,41 @@ class EloWeekRater():
                  date : pd.Timestamp, 
                  config : EloRatingConfig
                 ):
-        self.base_df = base_df
-        self.initRatings = ratings
+        self.base_df = base_df # Shouldn't need to be updated
+        self.final_df = None # Updated at end of each getNewRatings() call
+        self.currentRatings = ratings # Updated with getNewRatings()call
         self.date = date
         self.config = config
         self._loadConfig()
-        self.newRatingDf = self._generateNewRatings()
-    
+        self.generateNewRatings()
+        
     def _loadConfig(self):
         self.c = self.config.c
         self.k = self.config.k
         self.scoreUpdate = self.config.scoreUpdate
         self.hfa = self.config.hfa
         self.exp = self.config.exp
+        self.its = self.config.its
+
+    def generateNewRatings(self) -> None:
+        for i in range(self.its):
+            ''' On each iteration, leave base_df alone, update final_df'''
+            self.final_df = self._generateNewRatings()  
         
     def _generateNewRatings(self) -> pd.DataFrame:
+        """
+        Create a generateNewRatings function
+        1. Merge current ratings with base_df
+        2. Calculate new rating
+        3. Return new ratings and new base_df
+            4. New ratings and base_df must be in same format from start to finish
+        """
         df = self.base_df.copy()
         if len(df) == 0:
             return pd.DataFrame(columns = ['Team_x','Rating_x_new', 'Win','ex'])
-        df = df.merge(self.initRatings, on = 'Team', how = 'left', indicator = 'tm1')
-        df = df.merge(self.initRatings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2')
+        df = df.merge(self.currentRatings, left_on = 'Team', right_on = 'Team', how = 'left', indicator = 'tm1')
+        df = df.merge(self.currentRatings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2')
+        
         df['tm1'] = np.where(df['tm1'] == 'both', 1, 0)
         df['tm2'] = np.where(df['tm2'] == 'both', 1, 0)
         if len(df) > df['tm1'].sum() or len(df) > df['tm2'].sum():
@@ -175,27 +193,20 @@ class EloWeekRater():
         df['ex'] = df['qx'] / (df['qx'] + df['qy'])
         df['sa'] = self.scoreUpdate.getSa(df)
         df['Rating_x_new'] = df['Rating_x'] + self.k * (self.scoreUpdate.getSa(df) - df['ex'])
-        
-        # Reassign self.base_df to be new values for updated columns of df, but limited to columns that were originally in self.base_df
-        self.base_df.loc[df.index, self.base_df.columns.intersection(df.columns)] = df.loc[:, self.base_df.columns.intersection(df.columns)]
+        self.currentRatings = self._updateCurrentRatings(df)
         return df
     
-    @property
-    def newRatings(self) -> pd.DataFrame:
-        if hasattr(self, '_newRatings_cache'):
-            return self._newRatings_cache
-        else:
-            return self._newRatings()
-
-    def _newRatings(self) -> pd.DataFrame:
-        # Private implementation of getNewRatings() that returns a dataframe
-        merged = self.initRatings.merge(self.newRatingDf[['Team_x', 'Rating_x_new']], left_on='Team', right_on='Team_x', how='left')
+    def _updateCurrentRatings(self, df : pd.DataFrame) -> pd.DataFrame:
+        merged = self.currentRatings.merge(df[['Team_x', 'Rating_x_new']], left_on = 'Team', right_on = 'Team_x', how='left')
         merged['Rating'] = merged['Rating_x_new'].fillna(merged['Rating'])
-        self._newRatings_cache = merged[['Team', 'Rating']]
-        return self._newRatings_cache
-    
+        return merged[['Team', 'Rating']]    
+
     def getNewLogLossResults(self) -> pd.DataFrame:
-        return self.newRatingDf[['Win', 'ex']]
+        if 'Win' not in self.final_df.columns or 'ex' not in self.final_df.columns:
+            logger.error(f"Error getting log loss results for week {self.date}. 'Win' or 'ex' not in base_df")
+            raise Exception("Error in EloWeekRater class - Win or ex not in base_df")
+        return self.final_df[['Win', 'ex']]
+    
 
 if __name__ == '__main__':
     path = pathlib.Path(__file__).parent.resolve()
@@ -213,7 +224,7 @@ if __name__ == '__main__':
     scoreUpdate = ScoreUpdateExpectedPointsMerge(reg_path, 0.375)
     exp = None
     hfa = 60
-    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 'regWeight' : .375}
+    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 'regWeight' : .375, 'its' : 7}
     eloRatingConfig = EloRatingConfig(**ratingConfig)
     # er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
     # er.beginRating()
@@ -221,12 +232,12 @@ if __name__ == '__main__':
     
     eyr = EloYearRater(df, 2023, eloRatingConfig)
     eyr.beginRating()
-    eyr.beginRating()
-    eyr.beginRating()
-    eyr.beginRating()
-    eyr.beginRating()
-    eyr.beginRating()
-    eyr.beginRating()
+    # eyr.beginRating()
+    # eyr.beginRating()
+    # eyr.beginRating()
+    # eyr.beginRating()
+    # eyr.beginRating()
+    # eyr.beginRating()
     print(eyr.currentRatings.sort_values('Rating', ascending = False))
 
     # # 150 already done

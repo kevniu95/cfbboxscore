@@ -1,4 +1,5 @@
-from abc import ABC, List, abstractmethod
+from abc import ABC, abstractmethod
+from typing import List
 import pandas as pd
 from util.logger_config import setup_logger
 import numpy as np
