@@ -111,6 +111,18 @@ class ScoreUpdateExpectedPoints(ScoreUpdate):
         diff = df_copy['PF_exp'] - df_copy['PA_exp']
         return diff
     
+    def getExpectedScore(self, df : pd.DataFrame) -> pd.DataFrame:
+        df_copy = df.copy()
+        reg_cols = ['YPP_x','SuccessRate_x', 'YPP_y','SuccessRate_y', 'Plays_x', 'Plays_y']
+        df_copy['PF_exp'] = self.regModel.predict(df[reg_cols])
+        
+        df_copy[['YPP_x', 'YPP_y']] = df_copy[['YPP_y', 'YPP_x']]
+        df_copy[['SuccessRate_x', 'SuccessRate_y']] = df_copy[['SuccessRate_y', 'SuccessRate_x']]
+        df_copy[['Plays_x', 'Plays_y']] = df_copy[['Plays_y', 'Plays_x']]
+        df_copy['PA_exp'] = self.regModel.predict(df_copy[reg_cols])
+        return df_copy[['PF_exp', 'PA_exp']].round(1)
+
+    
     def _getSa(self, df) -> pd.Series:
         # logger.info("Generating new sa for expected points ScoreUpdate")
         diff = self._getExpectedDiff(df)

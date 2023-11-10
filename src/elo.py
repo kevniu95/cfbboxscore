@@ -57,10 +57,9 @@ class EloRater():
     
     def beginRatings(self, iterations : int = 1):
         for year in range(self.min_season, self.max_season + 1):
+            print(f"Processing year {year}")
             eyr = EloYearRater(self.base_df, year, self.eloRatingConfig)
             eyr.beginRatings(iterations)
-            # print("Here is the year's loss results")
-            # print(eyr.lossResults)
             self.lossResultsContainer[year] = eyr.lossResults
     
     def getLossCalcColumns(self) -> pd.DataFrame:
@@ -68,12 +67,15 @@ class EloRater():
         for year, results in self.lossResultsContainer.items():
             a = pd.concat(list(results.values()))
             res.append(a)
-        return pd.concat(res)
+        result_df = pd.concat(res)
+        result_df[['Win', 'ex']] = result_df[['Win', 'ex']].apply(pd.to_numeric, errors='coerce')
+        return result_df
         
     def getScoredResults(self, save : bool = False, savePath : str = None) -> float:
         lossCalcColumns = self.getLossCalcColumns()
-        lossCalcColumns[['Win', 'ex']] = lossCalcColumns[['Win', 'ex']].apply(pd.to_numeric, errors='coerce')
         results = log_loss(lossCalcColumns['Win'], lossCalcColumns['ex'])
+        lossCalcColumns1 = lossCalcColumns[lossCalcColumns['weekNumber'] <= 10].copy()
+        results1 = log_loss(lossCalcColumns1['Win'], lossCalcColumns1['ex'])
         lossCalcColumns2 = lossCalcColumns[lossCalcColumns['weekNumber'] > 10].copy()
         results2 = log_loss(lossCalcColumns2['Win'], lossCalcColumns2['ex'])
         if save:
@@ -81,11 +83,12 @@ class EloRater():
             df['min_season'] = self.min_season
             df['max_season'] = self.max_season
             df['samples'] = len(lossCalcColumns)
+            df['firstHalfScore'] = results1
+            df['secondHalfScore'] = results2
             df['score'] = results
-            df['score2'] = results2
             headerFlag = not os.path.exists(savePath)
             df.to_csv(savePath, mode = 'a', index = False, header = headerFlag)
-        return results
+        return results, results1, results2
     
 class EloYearRater():
     def __init__(self, base_df : pd.DataFrame, year : int, eloRatingConfig : EloRatingConfig, currentRatings : pd.DataFrame = None):
@@ -112,7 +115,7 @@ class EloYearRater():
     def _getDateList(self) -> List[Any]:
         min_date = self.base_df['Date'].min()
         first_date = self._nextSunday(min_date)
-        max_date = self.base_df['Date'].max()
+        max_date = self.base_df['Date'].max() + pd.Timedelta(days = 6)  
         start, end = sorted([first_date, max_date])
         
         # Create the list of dates incremented by one week
@@ -127,11 +130,7 @@ class EloYearRater():
 
     def beginRatings(self, times : int):
         for dt in self.dateList:
-            print()
-            print(f"Processing date {dt}")
-            print(f'Number of times is {times}')
             for i in range(times):
-                print(f"iteration number {i}")
                 # Limit self.dateList to all dates from beginning up to and including dt
                 dateList = self.dateList[:self.dateList.index(dt) + 1]
                 # Somehow limit dateList to date in question
@@ -157,7 +156,6 @@ class EloYearRater():
 
         Question to think through - how would we save out the LogLossResults
         """
-        print(f"Beginning ratings for year {self.year}")
         prv_date : pd.Timestamp = pd.Timestamp(self.year, 1, 1, 0)
         weekNum = len(dateList) - 1
         if iterationNum == 0:
@@ -186,7 +184,14 @@ class EloYearRater():
                 # print(f"Saving results for date {date}")
                 self.lossResults[date] = weekRatings.getNewLogLossResults()
                 # print(self.lossResults[date].head())
-
+    
+    def getScores(self, team: str):
+        scoreUpdate = self.eloRatingConfig.scoreUpdate 
+        df = self.base_df
+        df = df[df['Team'] == team].copy()
+        df[['PF_exp', 'PA_exp']] = scoreUpdate.getExpectedScore(df)
+        print(df[['Date', 'Location','Opponent', 'PF', 'PA', 'PF_exp', 'PA_exp']])
+        
 class EloWeekRater():
     def __init__(self, base_df : pd.DataFrame, 
                  ratings : pd.DataFrame, 
@@ -272,29 +277,35 @@ if __name__ == '__main__':
     os.chdir(path)
 
     reg_path =  '../data/models/regression/PF_reg.joblib'
-    df = process_years(2016, 2017)
+    df = process_years(2016, 2024)
     c = 225
-    k = 112.5
-    scoreUpdate = ScoreUpdateExpectedPointsMerge(reg_path, 0.375)
+    k = 40
+    regWeight = 0.5
+    scoreUpdate = ScoreUpdateExpectedPointsMerge(reg_path, regWeight)
     exp = None
-    hfa = 60
-    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 'regWeight' : .375, 'its' : 1}
+    hfa = 55
+    ratingConfig = {'c' : c, 'k' : k, 'scoreUpdate' : scoreUpdate, 'hfa' : hfa, 'exp' : exp, 'regWeight' : regWeight, 'its' : 2}
     eloRatingConfig = EloRatingConfig(**ratingConfig)
     # er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
     # er.beginRating()
     # print(er.getResults())
-    scoreUpdateList = [ScoreUpdateExpectedPoints(reg_path), 
-                   ScoreUpdateRawPointsLinear(), 
-                   ScoreUpdateExpectedPointsMerge(reg_path, 0.375)]
+    # scoreUpdateList = [ScoreUpdateExpectedPoints(reg_path), 
+    #                ScoreUpdateRawPointsLinear(), 
+    #                ScoreUpdateExpectedPointsMerge(reg_path, 0.375)]
 
-    # eyr = EloYearRater(df, 2023, eloRatingConfig)
-    # eyr.beginRating()
+    eyr = EloYearRater(df, 2023, eloRatingConfig)
+    # eyr.beginRatings(2)
     # print(eyr.currentRatings.sort_values('Rating', ascending = False))
+    eyr.getScores('Alabama')
 
-    eloRatingConfig = EloRatingConfig(**ratingConfig)
-    er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2016)
-    er.beginRatings(4)
-    print(er.getScoredResults(save= False))
+
+    
+
+    # eloRatingConfig = EloRatingConfig(**ratingConfig)
+    # er = EloRater(df, eloRatingConfig, min_season = 2023, max_season = 2023)
+    # er.beginRatings(2)
+    # print(er.getLossCalcColumns())
+    # print(er.getScoredResults(save= False))
     
     # # 150 already done
     # for c in [150, 200, 250]:
@@ -315,13 +326,19 @@ if __name__ == '__main__':
     #                     er.beginRating()
     #                     er.getResults(save = True, savePath = '../data/models/eloModelResults.csv')
 
-    # for c in [150, 200, 250]:
-    #     for k in [100, 200, 300]:
-    #         for hfa in [25, 50, 75]:
-    #             for its in [1, 3, 5]:  
+    # 187.5, 200 done already
+    # for c in [200, 225, 250, 275]:
+    #     print(c)
+    #     for k in [40, 45, 50]: # WHen finished explore more below 75
+    #         print(k)
+    #         for hfa in [55, 67.5, 75]: # WHen finished, converge on 50
+    #             print(hfa)
+    #             for its in [1, 2]:  
+    #                 print(its)
     #                 for scoreUpdate in scoreUpdateList: 
+    #                     print(scoreUpdate)
     #                     if isinstance(scoreUpdate, ScoreUpdateExpectedPointsMerge):
-    #                         weight_list = [0, .25, .5, .75, 1]
+    #                         weight_list = [.5] # Come back to weight adjustments after toggling rest of parameters
     #                     else:
     #                         weight_list = [None]
     #                     for weight in weight_list:
@@ -330,6 +347,6 @@ if __name__ == '__main__':
     #                                         'regWeight' : weight, 'its' : its}
     #                         print(ratingConfig)
     #                         eloRatingConfig = EloRatingConfig(**ratingConfig)
-    #                         er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2016)
-    #                         er.beginRating()
+    #                         er = EloRater(df, eloRatingConfig, min_season = None, max_season = 2022)
+    #                         er.beginRatings(its)
     #                         er.getScoredResults(save = True, savePath = '../data/models/eloModelResults_its.csv')
