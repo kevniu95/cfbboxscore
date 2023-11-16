@@ -2,7 +2,7 @@ import os
 import pathlib
 from typing import Dict, List, Any
 from abc import ABC, abstractmethod
-
+import datetime
 import pandas as pd
 import numpy as np
 from .combine import process_years
@@ -52,14 +52,14 @@ class EloRater():
     def beginRating(self):
         for year in range(self.min_season, self.max_season + 1):
             eyr = EloYearRater(self.base_df, year, self.eloRatingConfig)
-            eyr.beginRating()
+            eyr.getRating()
             self.lossResultsContainer[year] = eyr.lossResults
     
     def beginRatings(self, iterations : int = 1):
         for year in range(self.min_season, self.max_season + 1):
             print(f"Processing year {year}")
             eyr = EloYearRater(self.base_df, year, self.eloRatingConfig)
-            eyr.beginRatings(iterations)
+            eyr.getRatings(iterations)
             self.lossResultsContainer[year] = eyr.lossResults
     
     def getLossCalcColumns(self) -> pd.DataFrame:
@@ -94,22 +94,24 @@ class EloYearRater():
     def __init__(self, base_df : pd.DataFrame, year : int, eloRatingConfig : EloRatingConfig, currentRatings : pd.DataFrame = None):
         self.year = year        
         self.eloRatingConfig = eloRatingConfig
-        self.base_df = self._limitFrame(base_df)
+        self.base_df = self._prepFrame(base_df)
         self.dateList = self._getDateList()
         teamList = list(self.base_df['Team'].unique())
         self.currentRatings = self._initRatings(currentRatings, teamList)
         self.weekDict : Dict[str, EloWeekRater] = {}
         self.lossResults : Dict[str, pd.DataFrame] = {}
+        self.rated : bool = False
     
     def _initRatings(self, currentRatings: pd.DataFrame = None, teamList: List[str] = None) -> pd.DataFrame:
         return currentRatings if currentRatings is not None else pd.DataFrame({'Team': teamList, 'Rating': 1500})
     
-    def _limitFrame(self, base_df) -> pd.DataFrame:
+    def _prepFrame(self, base_df) -> pd.DataFrame:
         keep_cols = self.eloRatingConfig.get_keep_cols()
         return_df = base_df.loc[base_df['Season'] == self.year, keep_cols].copy()
         if len(return_df) == 0:
             logger.error("EloYearRater Error: Limiting dataframe yielded empty dataset. Re-check base dataset")
             raise Exception("EloYearRater Error: Limiting dataframe yielded empty dataset. Re-check base dataset")
+        return_df['sa'] = self.eloRatingConfig.scoreUpdate.getSa(return_df)
         return return_df
 
     def _getDateList(self) -> List[Any]:
@@ -127,16 +129,49 @@ class EloYearRater():
         while date.dayofweek != 6:
             date += pd.Timedelta(days = 1)
         return date
-
-    def beginRatings(self, times : int):
-        for dt in self.dateList:
-            for i in range(times):
-                # Limit self.dateList to all dates from beginning up to and including dt
-                dateList = self.dateList[:self.dateList.index(dt) + 1]
-                # Somehow limit dateList to date in question
-                self.beginRating(dateList, i)
-
-    def beginRating(self, dateList : List[Any], iterationNum : int = 0):
+    
+    def _polishRatingSet(self, df : pd.DataFrame) -> pd.DataFrame:
+        df = df.merge(self.currentRatings, left_on = 'Team', right_on = 'Team', how = 'left', indicator = 'tm1')
+        df = df.merge(self.currentRatings, left_on = 'Opponent', right_on = 'Team', how = 'left', indicator = 'tm2') 
+        df['Rating_x_hfa'] = df['Rating_x'] + (0.5 - df['Location']) * self.eloRatingConfig.hfa 
+        df['Rating_y_hfa'] = df['Rating_y'] + (0.5 - (1 - df['Location'])) * self.eloRatingConfig.hfa
+        df['qx'] = 10 ** (df['Rating_x_hfa'] / self.eloRatingConfig.c)  
+        df['qy'] = 10 ** (df['Rating_y_hfa'] / self.eloRatingConfig.c)  
+        df['ex'] = df['qx'] / (df['qx'] + df['qy'])
+        df['expected_diff'] = (df['ex'] - 0.5) / 0.0255
+        df['actual_diff'] = (df['PF'] - df['PA'])
+        if isinstance(self.eloRatingConfig.scoreUpdate, ScoreUpdateExpectedPointsMerge):
+            df[['PF_exp', 'PA_exp']] = scoreUpdate.getExpectedScore(df)
+            df['actual_diff_exp'] = df['PF_exp'] - df['PA_exp'] 
+        df.rename(columns = {'Team_x' : 'Team'}, inplace= True)
+        df['Location'].replace({0 : '', 1 : '@', 0.5 : 'N'}, inplace = True)
+        return df
+        
+    def getRatings(self, times : int, path : str = '') -> pd.DataFrame:
+        if os.path.exists(path):
+            self.base_df = pd.read_pickle(path)
+            self.currentRatings = self.base_df[['Team', 'Rating_x']].drop_duplicates().rename(columns = {'Rating_x' : 'Rating'})
+            return self.currentRatings
+        
+        if not self.rated:
+            for dt in self.dateList:
+                for i in range(times):
+                    # Limit self.dateList to all dates from beginning up to and including dt
+                    dateList = self.dateList[:self.dateList.index(dt) + 1]
+                    # Somehow limit dateList to date in question
+                    self.getRating(dateList, i)
+            self.currentRatings.sort_values('Rating', ascending = False, inplace = True)
+            self.rated = True
+            self.base_df = self._polishRatingSet(self.base_df)
+            if path:
+                df = pd.DataFrame.from_dict({k : [v] for k, v in self.eloRatingConfig.dictForm.items()})
+                df['date_calculated'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                df1 = pd.merge(df, self.base_df, how='cross')
+                df1.to_pickle(path)
+            return self.currentRatings
+        return self.currentRatings
+    
+    def getRating(self, dateList : List[Any], iterationNum : int = 0):
         """
         What is the scope of this function?
 
@@ -161,9 +196,7 @@ class EloYearRater():
         if iterationNum == 0:
             prv_date = dateList[-2] if len(dateList) > 1 else prv_date
             dateList = dateList[-1:]
-        # print('prv_date and dateList values are now the following...')
-        # print(prv_date)
-        # print(dateList)
+        
         for date in dateList:
             current_df = self.base_df[self.base_df['Date'].between(prv_date, date, inclusive = 'right')].copy()  
             max_min_day_diff = (current_df['Date'].max() - current_df['Date'].min()).days
@@ -181,16 +214,16 @@ class EloYearRater():
             self.weekDict[date] = weekRatings
             self.currentRatings = weekRatings.currentRatings
             if iterationNum == 0:
-                # print(f"Saving results for date {date}")
                 self.lossResults[date] = weekRatings.getNewLogLossResults()
-                # print(self.lossResults[date].head())
-    
-    def getScores(self, team: str):
-        scoreUpdate = self.eloRatingConfig.scoreUpdate 
+                
+    def getExpectedScores(self, team: str, path :str) -> pd.DataFrame:
+        if not self.rated:
+            self.getRatings(2, path)
         df = self.base_df
-        df = df[df['Team'] == team].copy()
-        df[['PF_exp', 'PA_exp']] = scoreUpdate.getExpectedScore(df)
-        print(df[['Date', 'Location','Opponent', 'PF', 'PA', 'PF_exp', 'PA_exp']])
+        keep_subset = ['Date', 'Team', 'Location','Opponent', 'Rating_x','Rating_y', 'PF', 'PA', 'PF_exp', 'PA_exp','actual_diff', 'actual_diff_exp', 'expected_diff']
+        df[['Rating_x', 'Rating_y']] = df[['Rating_x', 'Rating_y']].round(2)
+        keep_subset = [i for i in keep_subset if i in df.columns]
+        return df.loc[df['Team'] == team, keep_subset].copy()
         
 class EloWeekRater():
     def __init__(self, base_df : pd.DataFrame, 
@@ -248,8 +281,7 @@ class EloWeekRater():
         df['qx'] = 10 ** (df['Rating_x_hfa'] / self.c)
         df['qy'] = 10 ** (df['Rating_y'] / self.c)
         df['ex'] = df['qx'] / (df['qx'] + df['qy'])
-        df['sa'] = self.scoreUpdate.getSa(df)
-        df['Rating_x_new'] = df['Rating_x'] + self.k * (self.scoreUpdate.getSa(df) - df['ex'])
+        df['Rating_x_new'] = df['Rating_x'] + self.k * (df['sa'] - df['ex'])
         self.currentRatings = self._updateCurrentRatings(df)
 
         if self.innerItsDone == 0:
@@ -294,11 +326,37 @@ if __name__ == '__main__':
     #                ScoreUpdateExpectedPointsMerge(reg_path, 0.375)]
 
     eyr = EloYearRater(df, 2023, eloRatingConfig)
-    # eyr.beginRatings(2)
+    # print(eyr.getRatings(2, '../data/ratings/rating_set_2022.pkl'))
     # print(eyr.currentRatings.sort_values('Rating', ascending = False))
-    eyr.getScores('Alabama')
+    # print(eyr.getExpectedScores('Virginia', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Louisville', '../data/ratings/rating_set_11_09.pkl'))
 
-
+    # print(eyr.getExpectedScores('Louisiana', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Southern Mississippi', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('South Alabama', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Tulane', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Memphis', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Arkansas State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Virginia Tech', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Texas State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('UTSA', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Coastal Carolina', '../data/ratings/rating_set_11_09.pkl'))
+    print(eyr.getExpectedScores('Bowling Green', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Georgia', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Illinois', '../data/ratings/2022.pkl'))
+    # print(eyr.getExpectedScores('Michigan', '../data/ratings/2022.pkl'))
+    # print(eyr.getExpectedScores('Michigan', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Rutgers', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Wisconsin', /'../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Michigan State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Boise State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Fresno State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Arizona State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('San Jose State', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Wyoming', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('Air Force', '../data/ratings/rating_set_11_09.pkl'))
+    # print(eyr.getExpectedScores('UCF', '../data/ratings/rating_set_11_09.pkl'))
+    
     
 
     # eloRatingConfig = EloRatingConfig(**ratingConfig)
